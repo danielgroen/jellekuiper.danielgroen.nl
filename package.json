@@ -9,7 +9,7 @@
   },
   "author": "Daniel",
   "license": "ISC",
-  "homepage": "https://github.com/danielgroen/jellekuipers.github.io",
+  "homepage": "https://github.com/danielgroen/jellekuiper.github.io",
   "devDependencies": {
     "async": "^2.5.0",
     "breakpoint-sass": "^2.7.1",
