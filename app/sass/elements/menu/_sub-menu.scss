@@ -1,0 +1,46 @@
+.sub-menu {
+	border-bottom: 1px solid $grey-light;
+
+	li {
+		flex: 0 0 25%;
+		min-width: 25%;
+		padding-bottom: 20px;
+		margin-bottom: -2px;
+		flex-direction: column;
+		margin-right: 0 !important;
+
+		a {
+			color: $links;
+		}
+
+		&.active,
+		&:hover {
+			border-bottom: 3px solid $secundary;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@include breakpoint($tablet) {
+	.sub-menu {
+		li {
+			padding-bottom: $padding;
+			width: auto;
+			display: block;
+			margin-right: 0;
+			border-bottom: none !important;
+
+			&:first-child {
+				display: none;
+			}
+
+			&.active,
+			&:hover {
+				border-bottom: none;
+			}
+		}
+	}
+}

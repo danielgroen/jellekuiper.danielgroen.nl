@@ -1,0 +1,20 @@
+.image-block {
+	column-count: $column-count-mob;
+	column-gap: $column-gap-mob;
+	column-span: all;
+}
+
+@include breakpoint($tablet) {
+	.image-block {
+		column-count: $column-count-tablet;
+	column-gap: $column-gap-mob;
+		column-span: all;
+	}	
+}
+
+@include breakpoint($desktop){
+	.image-block {
+		column-count: $column-count;
+		column-span: all;
+	}
+}

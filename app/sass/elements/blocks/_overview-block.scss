@@ -1,0 +1,85 @@
+.overview-block {
+	.category {
+		width: 100%;
+		margin-bottom: 15px;
+		height: 200px;
+		position: relative;
+		background-size: cover;
+		background-attachment: 50% 50%;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: block;
+
+		&:hover {
+			.text {
+				&:after {
+					width: 120%;
+					margin-left: -10%;
+				}
+			}
+		}
+
+		&:first-child {
+			background-image: url("../img/resized/trouwen.jpg");
+		}
+		&:nth-child(2) {
+			background-image: url("../img/resized/portretten.jpg");
+		}
+		&:nth-child(3){
+			background-image: url("../img/resized/moeders.jpg");
+		}
+		&:nth-child(4) {
+			background-image: url("../img/resized/publicatie.jpg");
+		}
+
+		.text {
+			position: absolute;
+			bottom: $gutter;
+			box-shadow: $shadow;
+			transform: translateX(-50%);
+			padding:  4% 26%;
+			background-color: $white;
+			border-radius: $border-radius;
+			left: 50%;
+			font-weight: 400;
+			font-size: 1.5rem;
+			color: $linkshover;
+
+			&:after {
+				transition: all $speed;
+				content: '';
+				display: block;
+				width: 100%;
+				background-color: $secundary;
+				height:2px;
+			}
+		}
+	}
+}
+@include breakpoint($tablet) {
+	.overview-block {
+		column-count: $column-count-mob;
+		column-gap: $column-gap-mob;
+		column-span: all;
+		margin-top: 110px !important;
+
+		.category {
+			&:first-child {
+				min-height: 300px;
+			}
+			&:nth-child(2) {
+				min-height: 500px;
+			}
+			&:nth-child(3){
+				min-height: 500px;
+			}
+			&:nth-child(4) {
+				min-height: 300px;
+			}
+
+			.text {
+				padding:  5% 19%;
+			}
+		}
+	}
+}

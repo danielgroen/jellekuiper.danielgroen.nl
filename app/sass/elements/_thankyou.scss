@@ -1,0 +1,68 @@
+.thankyou {
+	width: 90vw;
+	height: 70vh;
+	top: 15vh;
+	left: 5vw;
+	position: fixed;
+	border-radius: $border-radius;
+	background-color: white;
+	z-index: 50;
+	text-align: center;
+	display: none;
+
+	&.visible {
+		display: block;
+	}
+
+	.inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		padding: $padding;
+
+		> * {
+			align-self: center;
+			margin: $padding*2 0;
+		}
+
+		h2 {
+			font-size: 32px;
+		}
+
+		.checkmark {
+			width: 60px;
+			flex: 0 0 auto;
+			fill: $secundary;
+		}
+
+		.send {
+			color: $white;
+			font-weight: 800;
+			font-size: 1rem;
+			text-transform: uppercase;
+			border: none;
+			padding: 1rem;
+			transition: all $speed/2;
+			border-radius: $border-radius;
+			margin-bottom: 0;
+			cursor: pointer;
+		    display: block;
+   			width: 80%;
+			background-color: rgba($secundary, 1);
+		}
+	}
+}
+
+@include breakpoint($desktop) {
+	.thankyou {
+		width: 30vw;
+		height: 40vh;
+		top: 30vh;
+		left: 35vw;
+
+		.inner {
+			padding: $padding*4;
+		}
+	}
+}

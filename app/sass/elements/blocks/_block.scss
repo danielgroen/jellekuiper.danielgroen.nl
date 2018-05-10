@@ -1,0 +1,39 @@
+main {
+	.block {
+		margin: 0;
+		width: 100%;
+		padding: $column-gap-mob;
+
+		p {
+			a {
+				color: $secundary;
+			}
+		}
+	}
+}
+
+@include breakpoint($tablet) {
+	main {
+		.block {
+			padding: 0;
+			margin-top: $gutter / 2;
+
+
+
+			.left {
+			    padding-right: 15px;
+			}
+
+			.right{
+			    padding-left: 15px;
+			}
+
+			.left,
+			.right {
+				width: 50%;
+				overflow: visible;
+				float: left;
+			}
+		}
+	}
+}

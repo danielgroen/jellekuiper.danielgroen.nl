@@ -1,0 +1,79 @@
+.testimonials {
+	margin-top: $gutter;
+	margin-bottom: $gutter;
+
+	.owl-carousel {
+		border: $border;
+		border-radius: $border-radius;
+		overflow: visible;
+
+		.owl-dots {
+			position: absolute;
+			width: 100%;
+			z-index: 50;
+
+			.owl-dot {
+				span {
+					width: 15px;
+   					height: 15px;
+				}
+			}
+		}
+
+		.owl-item {
+			article {
+				.quote {
+					padding: $gutter;
+					padding: 50px;
+					font-style: italic;
+					color: #222;
+					line-height: 1.7;
+					font-size: 1rem;
+					text-align: justify;
+					text-justify: inter-word;
+					position: relative;
+
+					&:before {
+						content: "“";
+						position: absolute;
+						font-size: 3rem;
+						line-height: 0;
+						left: $gutter / 4;
+						color: $secundary;
+						text-align: center;
+						font-weight: 800;
+						width: 30px;
+					}
+
+					&:after {
+						content: "”";
+						text-align: center;
+						width: 30px;
+						position: absolute;
+						font-size: 3rem;
+						right: $gutter / 2;
+						line-height: 0;
+						bottom: $gutter;
+						vertical-align: center;
+						color: $secundary;		
+						font-weight: 800;
+					}
+				}
+
+				.name {
+					font-weight: bold;
+					font-size: 1.125rem;
+					text-align: right;
+					margin-bottom: 30px;
+					margin-right: 60px;
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint($tablet) {
+	.testimonials {
+	margin-top: 0;
+	}
+}

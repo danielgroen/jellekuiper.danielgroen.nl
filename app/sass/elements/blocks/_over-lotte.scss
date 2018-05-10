@@ -1,0 +1,40 @@
+@include breakpoint($tablet) {
+	.over.lotte {
+		main {
+			.block {
+				padding: 0;
+				margin-top: $gutter / 2;
+
+				.two-column {
+					padding: 0;
+					width: calc(50% - 15px);
+					overflow: visible;
+					float: left;
+					border: $border;
+					border-radius: $border-radius;
+
+					> *:not(img) {
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+
+					&.left {
+						padding-top: 30px;
+					    margin-right: 30px;
+					}
+
+					&.right {
+						img {
+							display: block;
+						}
+
+						p {
+							padding-top: 30px;
+							margin-bottom: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

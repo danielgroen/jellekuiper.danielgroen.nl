@@ -1,0 +1,133 @@
+.block.prices {
+    padding: 0;
+
+	article.price {
+	    display: flex;
+	    border-top: $border;
+	    border-bottom: $border;
+	    flex-flow: column nowrap;
+	    align-items: stretch;
+	    margin-bottom: 15px;
+
+	    a {
+	    	color: $secundary;
+	    }
+
+	    &.pregnancy {
+	    	.top {
+	    		background-image: url("../img/resized/tarieven/zwangersschapsshoot2.png");
+	    	}
+	    }
+
+	    &.family {
+	    	.top {
+	    		background-image: url("../img/resized/tarieven/familieshoot.png");
+	    	}
+	    }
+
+	    &.portrait {
+	    	.top {
+	    		background-image: url("../img/resized/tarieven/portret.png");
+	    	}
+	    }
+
+	    &.mariage {
+	    	.top {
+	    		background-image: url("../img/resized/trouwen.jpg");
+	    	}
+	    }
+
+		.top {
+			height: 150px;
+    		background-size: cover;
+    		position: relative;
+    		background-position: 80% 50%;
+
+    		.title {
+    			color: $white;
+    			z-index: 5;
+    			position: absolute;
+    			bottom: $gutter/2;
+    			left: $gutter/2;
+    			font-size: 1.6rem;
+    			font-weight: 400;
+
+    			.break {
+    				display: inline-block;
+    			}
+    		}
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				background-color: rgba($black, .4);
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+		}
+
+		.bottom {
+			padding: $gutter/2;
+			position: relative;
+
+			.description {
+				margin-bottom: 20px;
+			}
+
+			ul {
+				li {
+					&:before {
+						content: "- ";
+					}
+				}
+			}
+
+			.price {
+				color: $secundary;
+				text-align: right;
+				font-weight: 800;
+				font-size: 1.4rem;
+				padding: $padding*2;
+
+				.from {
+					font-weight: 400;
+					color: $black;
+				}				
+			}
+		}
+	}
+}
+
+@include breakpoint($tablet) {
+	.block.prices {
+		article.price {
+			border: $border;
+			border-radius: $border-radius;
+		    margin-bottom: 30px;
+
+			.bottom {
+			    padding-bottom: 80px;
+
+				.price {
+					position: absolute;
+					bottom: 20px;
+					right: 20px;
+				}
+			}
+		}
+	}
+}
+
+
+@include breakpoint($desktop) {
+	.block.prices {
+		article.price {
+
+			.bottom {
+			}
+		}
+	}
+}

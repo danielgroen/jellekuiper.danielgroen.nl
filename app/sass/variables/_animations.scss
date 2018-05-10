@@ -1,0 +1,31 @@
+$speed: .3s;
+
+@keyframes fullscreen-fadein {
+    0%  {opacity: 0; transform: scale(0.85);}
+    100% {opacity: 1; transform: scale(1);}
+}
+
+@keyframes transformY-fadein {
+	0%  {transform: translateY(30px);}
+	30% {opacity: 0;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes slide-left-in {
+	0%  {transform: translateX(-60px); opacity: 0;}
+    100% {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes slide-right-in {
+	0%  {transform: translateX(60px); opacity: 0;}
+    100% {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes loading {
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes bounce  {
+  0%, 100% {transform: scale(0.0);}
+  50% {transform: scale(1.0);}
+}

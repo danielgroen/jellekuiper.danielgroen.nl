@@ -1,0 +1,29 @@
+body {
+	@include font('normal');
+}
+
+a:not(.button) {
+	@include font('normal');
+	transition: color $speed;
+	color: $links;
+	text-decoration: none;
+
+	&.active {
+		color: $secundary;
+		border-bottom: 1px solid $secundary;
+	}
+
+
+	&:hover {
+		color: $linkshover;
+	}
+
+	&:focus {
+	    outline: none;
+	}
+}
+.owl-dot.active {
+	span {
+		background: #777 !important;
+	}
+}

@@ -1,0 +1,29 @@
+.image-mobile-navigations {
+	display: none;
+	position: fixed;
+	bottom: $gutter / 2;
+	left: 0;
+	width: 100%;
+		&.visible {
+			display: flex;
+		}
+
+		> * {
+			pointer-events: cursor;
+			display: block;
+			flex: 0 0 33%;
+			max-height: 25px;
+
+		}
+
+}
+
+@include breakpoint($tablet) {
+	.image-mobile-navigations {
+		display: none;
+
+		&.visible {
+			display: none;
+		}
+	}
+}

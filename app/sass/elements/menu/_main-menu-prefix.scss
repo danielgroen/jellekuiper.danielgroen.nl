@@ -1,0 +1,26 @@
+body.fotos:not(.trouwen):not(.moeders):not(.portretten):not(.publicatie) {
+	.main-menu-prefix {
+		color: $secundary;
+	}
+	&:hover {
+		color: $linkshover ;
+	}
+}
+
+.main-menu-prefix {
+	display: none;
+    width: fit-content;
+    margin-bottom: 1rem;
+	
+	&:hover {
+		color: $primary;
+		font-weight: 400;
+	}
+}
+
+@include breakpoint($tablet) {
+	.main-menu-prefix {
+		display: inline;
+		float: left;
+	}
+}
