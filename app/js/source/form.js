@@ -15,8 +15,13 @@ if ($('.tel').length > 0 ) {
 var $contactForm = $('.form');
 $contactForm.submit(function(e) {
 	e.preventDefault();
+
+	if ( $('#honeypot').val() ) {
+	  return false;
+	}
+	
 	$.ajax({
-		url: '//formspree.io/groendaniel@live.nl',
+		url: 'https://script.google.com/macros/s/AKfycbwlwMPubAkNkrZTSPdjHgqA11f0LEPDZMaT3I25-0WurUoznng/exec',
 		method: 'POST',
 		data: $(this).serialize(),
 		dataType: 'json',
@@ -32,6 +37,7 @@ $contactForm.submit(function(e) {
 			})
 		},
 		error: function(err) {
+			console.log(err);
 			$contactForm.find('.alert--loading').hide();
 			$contactForm.append('<div class="alert alert--error">Oops! er ging iets mis...</div>');
 		}

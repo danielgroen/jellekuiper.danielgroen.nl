@@ -16,6 +16,7 @@ function debounce(callback, time) {
   };
 };
 
+//TODO::dit herschrijven naar alleen css: input:placeholder-shown 
 // formvalidator
 var invalid = 0;
 function validateForm() {
