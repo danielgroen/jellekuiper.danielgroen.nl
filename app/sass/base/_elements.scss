@@ -1,0 +1,11 @@
+body {
+	@include font('normal');
+	width: 100%;
+	overflowX: hidden;
+}
+
+.owl-dot.active {
+	span {
+		background: #777 !important;
+	}
+}

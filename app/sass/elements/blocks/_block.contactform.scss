@@ -1,4 +1,4 @@
-.contactform {
+.block.contactform {
 	input, textarea, label {
 		width: 100%;
 		box-sizing: border-box;
@@ -17,6 +17,12 @@
 	  color: $grey;
 	}
 
+	label {
+		font-weight: 800;
+		margin-bottom: 5px;
+		display: block;
+	}
+
 	input, textarea {
 		max-width: 100%;
 		border: $border;
@@ -25,6 +31,7 @@
 		@include font;
 		margin-bottom: $gutter / 2.5;
 	}
+	
 	input[type='submit'],
 	.send {
 		background-color: rgba($secundary, .5);
@@ -42,10 +49,46 @@
 			background-color: rgba($secundary, 1);
 		}
 	}
+}
 
-	label {
-		font-weight: 800;
-		margin-bottom: 5px;
-		display: block;
+.load-wrapper {
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	top: calc(50% - 25px);
+	left: calc(50% - 25px);
+	opacity: 0;
+	transition: all $speed linear;
+	z-index: 50;
+	pointer-events: none;
+
+	&.visible {
+		opacity: 1;
+	}
+
+	.spinner {
+	  	position: absolute;
+	    width: 50px;
+	    height: 50px;
+	    margin: 0 auto;
+	  	animation: loading 2s linear infinite;
+
+		.bubble-1,
+		.bubble-2 {
+		    position: absolute;
+		    top: 0;
+		    width: 25px;
+		    height: 25px;
+		    border-radius: 100%;
+		    background-color: #ff6825;
+		    animation: bounce 2s ease-in-out infinite;
+			
+			&:not(.bubble-1){
+			    top: auto;
+			    bottom: 0;
+			    animation-delay: -1.0s;
+			}
+		}
 	}
 }
+

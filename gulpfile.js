@@ -40,8 +40,7 @@ const 			gulp 				= require('gulp'),
 				},
 				
 				host = {
-					sitename: "https://studioginger.nl",
-					username: "sven"
+					sitename: "https://jellekuiper.nl"
 				};
 
 // Setup browsersync.

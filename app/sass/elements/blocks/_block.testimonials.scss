@@ -1,4 +1,4 @@
-.testimonials {
+.block.testimonials {
 	margin-top: $gutter;
 	margin-bottom: $gutter;
 
@@ -72,8 +72,8 @@
 	}
 }
 
-@include breakpoint($tablet) {
-	.testimonials {
-	margin-top: 0;
+@include breakpoint($desktop) {
+	.block.testimonials {
+		margin-top: 0;
 	}
 }

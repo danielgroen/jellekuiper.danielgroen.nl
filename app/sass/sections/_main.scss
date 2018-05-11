@@ -1,22 +1,6 @@
-main {
-	@include max-width;
+.main {
 	max-width: $max-width;
 	width: 100%;
     overflow: hidden;
     margin: 0;
-}
-
-body.fotos {
-	main {
-		overflow: visible;
-	}
-}
-
-@include breakpoint($tablet) {
-	main {
-		width: 100%;
-		margin: 0 auto;
-		margin-top: 50px;
-		// margin-top: 15px;
-	}
 }

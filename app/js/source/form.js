@@ -1,8 +1,8 @@
 //telephone 
 tel1 = 'tel:';
-tel2 = '06';
-tel3 = '244';
-tel4 = '249';
+tel2 = '020';
+tel3 = '772';
+tel4 = '45';
 tel5 = '79';
 
 if ($('.tel').length > 0 ) {
@@ -12,11 +12,11 @@ if ($('.tel').length > 0 ) {
 }
 
 // form
-var $contactForm = $('.contactform');
+var $contactForm = $('.form');
 $contactForm.submit(function(e) {
 	e.preventDefault();
 	$.ajax({
-		url: '//formspree.io/studioginger11@gmail.com',
+		url: '//formspree.io/groendaniel@live.nl',
 		method: 'POST',
 		data: $(this).serialize(),
 		dataType: 'json',
@@ -29,12 +29,11 @@ $contactForm.submit(function(e) {
 			$('.thankyou').addClass('visible');
 			$('.thankyou .send, .overtake').on('click touch', function() {
 				location.reload();
-				console.log('jo');
 			})
 		},
 		error: function(err) {
 			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+			$contactForm.append('<div class="alert alert--error">Oops! er ging iets mis...</div>');
 		}
 	});
 });
