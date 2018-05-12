@@ -118,7 +118,7 @@ gulp.task('build', ['js', 'css'], function() {
 	    function (next) {
 			gulp.src(app + htmlFiles)
 				.pipe(styleInject({encapsulated: false}))
-			    .pipe(replace('<link rel="stylesheet" type="text/css" href="css/stylesheet.css">', ' '))
+			    .pipe(replace('<link rel="stylesheet" type="text/css" href="css/stylesheet.css" async defer>', ' '))
 			    .pipe(replace('<style><!-- inject-style src="./dist/css/stylesheet.css" --></style>', ' '))
 			    .pipe(replace('../img/', 'img/'))
 				.pipe(htmlmin({collapseWhitespace: true}))

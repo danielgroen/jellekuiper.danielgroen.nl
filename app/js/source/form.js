@@ -12,6 +12,7 @@ if ($('.tel').length > 0 ) {
 }
 
 // form
+// TODO:: emailadres omzetten
 var $contactForm = $('.form');
 var e = "groendaniel",
   mail = "gmail.com";
