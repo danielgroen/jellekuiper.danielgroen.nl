@@ -13,8 +13,9 @@ if ($('.tel').length > 0 ) {
 
 // form
 var $contactForm = $('.form');
-var email = "groendaniel@gmail.com";
-$('.to').val(email);
+var e = "groendaniel",
+  mail = "gmail.com";
+$('.to').val(e + '@' + mail);
 
 $contactForm.submit(function(e) {
   e.preventDefault();
@@ -24,7 +25,7 @@ $contactForm.submit(function(e) {
   }
   
   $.ajax({
-    url: 'https://script.google.com/macros/s/AKfycbwlwMPubAkNkrZTSPdjHgqA11f0LEPDZMaT3I25-0WurUoznng/exec',
+    url: 'https://script.google.com/macros/s/AKfycbxqE_YvIkezI6uUbiLA1TPIdrKbNqHylojTWqt8Du6hfwqvBWFP/exec',
     method: 'POST',
     data: $(this).serialize(),
     dataType: 'json',
