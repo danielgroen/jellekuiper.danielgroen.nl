@@ -1,0 +1,8 @@
+.button {
+	background-color: $primary;
+	color: $white;
+	border-radius: $border-radius;
+	text-decoration: none;
+	padding: $padding $gutter;
+	display: inline-block;
+}

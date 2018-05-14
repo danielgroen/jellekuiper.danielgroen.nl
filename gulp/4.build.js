@@ -64,5 +64,4 @@ gulp.task('build-img', () => {
 
 
 
-
 gulp.task('build',  gulp.series('build-css', 'build-fonts', 'build-inlinecss', 'build-cname', 'build-html', 'build-js', 'build-data', 'build-img'));

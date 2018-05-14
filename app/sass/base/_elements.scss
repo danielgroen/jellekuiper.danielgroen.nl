@@ -1,8 +1,27 @@
 body {
 	@include font('normal');
 	width: 100%;
-	overflowX: hidden;
-	border: 5px solid yellow;
+	overflow-x: hidden;
+}
+
+.invisible,
+.none {
+	display: none;
+}
+
+.transparent {
+	opacity: 0;
+}
+
+* {
+	@include selection {
+		background: $primary;
+		color: $white;
+	}
+
+	&:focus {
+		outline: none;
+	}
 }
 
 .owl-dot.active {

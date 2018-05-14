@@ -2,6 +2,11 @@ $speed: .3s;
 $easing: ease-in-out;
 $easing-cubic: cubic-bezier(0.7, 0, 0.3, 1);
 
-@keyframes loading {
+@keyframes rotation {
     100% {transform: rotate(360deg);}
+}
+
+@keyframes scale  {
+  0%, 100% {transform: scale(0.0);}
+  50% {transform: scale(1.0);}
 }

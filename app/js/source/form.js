@@ -1,21 +1,26 @@
-//telephone 
-tel1 = 'tel:';
-tel2 = '020';
-tel3 = '772';
-tel4 = '45';
-tel5 = '79';
+// mob            // tel 
+tel1 = 'mob:';    tel1 = 'tel:';
+tel2 = '06';      tel2 = '020';
+tel3 = '49';      tel3 = '772';
+tel4 = '84';      tel4 = '45';
+tel5 = '86';      tel5 = '79';
+tel6 = '01';
 
-if ($('.tel').length > 0 ) {
-	$('.tel').attr('href', tel1 + tel2 + tel3 + tel4 + tel5);
-	$('.tel').text( tel2 + '-' + tel3 + ' ' + tel4 + ' ' + tel5);
+if ($('.mob').length > 0 ) {
+	$('.mob').attr('href', tel1 + tel2 + tel3 + tel4 + tel5 + tel6);
+	$('.mob').text( tel2 + '-' + tel3 + ' ' + tel4 + ' ' + tel5 + ' ' + tel6);
 
 }
 
-// form
-// TODO:: emailadres omzetten
+if ($('.tel').length > 0 ) {
+  $('.tel').attr('href', tel1 + tel2 + tel3 + tel4 + tel5);
+  $('.tel').text( tel2 + '-' + tel3 + ' ' + tel4 + ' ' + tel5);
+}
+
+
 var $contactForm = $('.form');
-var e = "groendaniel",
-  mail = "gmail.com";
+var e = "info",
+  mail = "jellekuiper.nl";
 $('.to').val(e + '@' + mail);
 
 $contactForm.submit(function(e) {

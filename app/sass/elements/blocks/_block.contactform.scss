@@ -2,19 +2,23 @@
 	input, textarea, label {
 		width: 100%;
 		box-sizing: border-box;
+
+	&:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
 	}
 
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	  color: $grey;
+	  color: $placeholder;
 	}
 	::-moz-placeholder { /* Firefox 19+ */
-	  color: $grey;
+	  color: $placeholder;
 	}
 	:-ms-input-placeholder { /* IE 10+ */
-	  color: $grey;
+	  color: $placeholder;
 	}
 	:-moz-placeholder { /* Firefox 18- */
-	  color: $grey;
+	  color: $placeholder;
 	}
 
 	label {

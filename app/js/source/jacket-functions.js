@@ -18,7 +18,6 @@ function debounce(callback, time) {
 
 //TODO::dit herschrijven naar alleen css: input:placeholder-shown 
 // formvalidator
-console.log('changed');
 var invalid = 0;
 function validateForm() {
     $('.form-field').each(function () {
@@ -39,4 +38,26 @@ function validateForm() {
 
 $( ".form-field" ).on('keydown',function(e) {
   validateForm();
+});
+
+
+
+// parralax scrolling
+var breakpoint = 768;
+offset = 0;
+$.fn.parallax = function(strength, offset) {
+  if (this.length != 0) {
+    if (!$.isNumeric(offset)) { offset = 0; }
+    if ( $(window).width() > breakpoint  ) {
+      if ( this[0].offsetTop < ( $(window).scrollTop() + $(window).height() )) {
+         this.css('top', Math.round( ( $(window).scrollTop() - this[0].offsetTop ) * strength + offset ) +'px');
+      }
+    } else {
+        this.css('top', '');
+    }
+  }
+};
+
+$(window).on('scroll load', function() {
+  $('.hero-image img').parallax(0.2);
 });
