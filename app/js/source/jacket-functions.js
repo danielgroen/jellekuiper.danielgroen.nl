@@ -18,6 +18,7 @@ function debounce(callback, time) {
 
 //TODO::dit herschrijven naar alleen css: input:placeholder-shown 
 // formvalidator
+console.log('changed');
 var invalid = 0;
 function validateForm() {
     $('.form-field').each(function () {
