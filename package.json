@@ -34,7 +34,7 @@
     "gulp-sitemap": "^4.2.0",
     "gulp-style-inject": "^0.1.0",
     "gulp-uglify": "^2.0.1",
-    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-mozjpeg": "^7.0.0",
     "main-bower-files": "^2.13.1",
     "require-dir": "^1.0.0",
     "sass-strip-unit": "^1.0.0",
