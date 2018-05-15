@@ -1,5 +1,8 @@
 .block {
 	margin: 0;
-	width: 100%;
+	width: #{100vw / 24 * 22};
+	margin-top: #{100vw / 24 * 22};
+	margin: 0 auto;
+
 }
 

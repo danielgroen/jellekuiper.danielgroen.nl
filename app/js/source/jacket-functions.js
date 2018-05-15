@@ -40,24 +40,34 @@ $( ".form-field" ).on('keydown',function(e) {
   validateForm();
 });
 
+// menu toggle
+$('.menu-toggle').on('click', function(e){
+   $(this).toggleClass('active');
+   $('body').toggleClass('pinned');
+});
 
 
 // parralax scrolling
-var breakpoint = 768;
+var breakpoint = 720;
 offset = 0;
 $.fn.parallax = function(strength, offset) {
   if (this.length != 0) {
     if (!$.isNumeric(offset)) { offset = 0; }
     if ( $(window).width() > breakpoint  ) {
       if ( this[0].offsetTop < ( $(window).scrollTop() + $(window).height() )) {
-         this.css('top', Math.round( ( $(window).scrollTop() - this[0].offsetTop ) * strength + offset ) +'px');
+        var transformY =  Math.round( ( $(window).scrollTop() - this[0].offsetTop ) * strength + offset )+ "px" ;
+         this.css({
+        "-webkit-transform":"translateY(" + transformY + ")",
+        "-ms-transform":"translateY(" + transformY + ")",
+        "transform":"translateY(" + transformY + ")"
+        });
       }
     } else {
-        this.css('top', '');
+        this.css('transformY', '');
     }
   }
 };
 
 $(window).on('scroll load', function() {
-  $('.hero-image img').parallax(0.2);
+  $('.hero-image .img').parallax(0.5);
 });

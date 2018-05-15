@@ -2,41 +2,73 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	height: 500px;
+	height: 70vh;
 	justify-content: center;
     position: relative;
+    width: 100vw;
 
 	.introduction {
+		width: #{100vw / 24 * 22};
 		color: $white;
 		align-self: center;
 		max-width: $max-width;
 		text-align: center;
 	}
-
-	.hero-image {
-		width: 100vw;
-		overflow: hidden;
-		z-index: -1;
-		position: absolute;
-		height: 500px;
-
-		&:after {
-			content: '';
+	.image-wrapper {
+			width: 100vw;
+			overflow: hidden;
+			z-index: -1;
 			position: absolute;
-			width: 100%;
-			height: 100%;
 			top: 0;
-			left: 0;
-			z-index: 3;
-			background-color: rgba(black, .4);
+			height: 70vh;
+		
+		.hero-image {
+			position: relative;
+			width: 100%;
+			height: 70vh;
+			display: block;
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 3;
+				background-color: rgba(black, .4);
+			}
+
+			.img {
+				position: absolute;
+			  	object-fit: cover;
+				width: auto;
+				height: 100%;
+				display: block;
+			}
+		}
+	}
+}
+
+@include breakpoint($desktop) {
+	.block.hero {
+
+
+		.introduction {
+
 		}
 
-		img {
-			position: absolute;
-			width: 100%;
-			display: block;
-			transform: translateY(-25%);
+		.image-wrapper {
 
+			.hero-image {
+
+				.img {
+					position: absolute;
+					width: 100%;
+					display: block;
+					transform: translateY(-25%);
+				}
+			}
 		}
 	}
 }

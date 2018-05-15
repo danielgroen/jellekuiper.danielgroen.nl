@@ -43,14 +43,17 @@
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" async defer>
 	</head>
 	<body class="body">
+
 		<header class="header">
-			<nav class="nav">
+			<nav class="main-menu">
+				<div class="menu-toggle"></div>
 				<h1 class="logo"><a href="/">Jelle Kuiper</a></h1>
-				<ul class="main-menu">
-					<li><a href="/Trouwambtenaar">Trouwambtenaar</a></li>
-					<li><a href="/Bedrijfsoptredens" >Bedrijfsoptredens</a></li>
-					<li><a href="/Theaterproducties">Theaterproducties</a></li>
-					<li><a href="/Contact" class="button">Contact</a></li>
+				<ul class="nav">
+					<li class="menu-item"><a class="menu-link" href="/Trouwambtenaar">Home</a></li>
+					<li class="menu-item"><a class="menu-link" href="/Trouwambtenaar">Trouwambtenaar</a></li>
+					<li class="menu-item"><a class="menu-link" href="/Bedrijfsoptredens" >Bedrijfsoptredens</a></li>
+					<li class="menu-item"><a class="menu-link" href="/Theaterproducties">Theaterproducties</a></li>
+					<li class="menu-item"><a class="menu-link" href="/Contact" class="button">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -63,9 +66,11 @@
 				<p>Jelle kan met recht een creatieve duizendpoot worden genoemd. Hij is cabaretier en verzorgt optredens op maat. Hij is officieel trouwambtenaar in heel Nederland. Ook is hij theaterproducent van o.a. de Buurman en Buurman voorstellingen en regisseert hij Stefano Keizers.</p>
 				<a class="button" href="/contact">Contact</a>
 			</div>
-			<picture class="hero-image">
-				<img src="img/scape4.jpg" alt="Jelle Kuiper">
-			</picture>
+			<div class="image-wrapper">
+				<picture class="hero-image">
+					<img class="img" src="img/scape4.jpg" alt="Jelle Kuiper">
+				</picture>
+			</div>
 		</div>
 
 		<main class="main">
@@ -174,7 +179,7 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<ul class="menu">
+			<ul class="nav">
 				<li class="menu-item">
 					<a href="/" class="menu-link">Home</a>
 				</li>

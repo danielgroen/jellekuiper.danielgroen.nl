@@ -1,2 +1,37 @@
 .main-menu {
+
+	.nav {
+		display: flex;
+		height: 100vh;
+		z-index: 10;
+		width: 100vw;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: all 0.25s ease;
+		background-color: $white;
+		position: fixed;
+		flex-direction: column;
+		justify-content: space-around;
+		pointer-events: none;
+
+		.menu-item {
+			width: 100%;
+			text-align: center;
+			
+			.menu-link {
+				width: 100%;
+				text-decoration: none;
+				color: $secundary;
+			}
+		}
+	}
+
+	// open menu
+	.menu-toggle.active {
+		~ .nav {
+			pointer-events: all;
+			opacity: 1;
+		}
+	} 
 }

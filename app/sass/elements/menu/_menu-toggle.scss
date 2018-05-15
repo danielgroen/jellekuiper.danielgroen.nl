@@ -1,0 +1,51 @@
+.main-menu {
+
+	// menu toggle
+	.menu-toggle {
+		$menuHeight: 30px;
+		$barWidth: 40px;
+		$barHeight: 6px;
+		position: absolute;
+		right: $padding;
+		top: $padding;
+		width: $barWidth;
+		height: $menuHeight;
+		cursor: pointer;
+		border-top: $barHeight solid $white; 
+		border-bottom: $barHeight solid $white;
+		transition: all 0.25s $easing-cubic;
+		transform-origin: center;
+		z-index: 20;
+
+		&:before, &:after {
+			content: "";
+			background-color: $white;
+			width: $barWidth;
+			height: $barHeight;
+			position: absolute;
+			top: 50%; 
+			transform: translateY(-50%);
+			transform-origin: center;
+			transition: all 0.25s $easing-cubic;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		&.active {
+			transform: rotate(45deg);
+			position: fixed;
+			border-color: transparent;
+
+			&:before,
+			&:after {
+				background-color: $secundary !important;
+			}
+
+			&:after { 
+				transform: translateY(-50%) rotate(-90deg);
+			}
+		}
+	}
+}
