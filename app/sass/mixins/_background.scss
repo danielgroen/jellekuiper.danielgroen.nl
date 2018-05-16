@@ -1,0 +1,17 @@
+@mixin background() {
+	margin-top: $gutter;
+    position: relative;
+	margin-bottom: $gutter;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		width: 150vw;
+		height: calc(100% + (#{$gutter} * 2);
+		top: -$gutter;
+		left: -50vw;
+		z-index: -1;
+		background-color: $grey-light;
+		border: 1px solid #eaeaea;
+	}
+}

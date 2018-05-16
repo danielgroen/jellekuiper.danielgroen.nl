@@ -4,5 +4,9 @@
 	margin-top: #{100vw / 24 * 22};
 	margin: 0 auto;
 
+	.subtitle {
+		@include font('textheader');
+		display: block;
+	}
 }
 

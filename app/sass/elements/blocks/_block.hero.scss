@@ -2,8 +2,9 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	height: 70vh;
-	justify-content: center;
+	height: 80vh;
+	justify-content: flex-end;
+	padding-bottom: $padding * 2;
     position: relative;
     width: 100vw;
 
@@ -13,19 +14,39 @@
 		align-self: center;
 		max-width: $max-width;
 		text-align: center;
+
+		.title {
+			@include font('title');
+		}
+		
+		.subtitle {
+			@include font('subtitle');
+		}		
+
+		.introduction,
+		.title {
+			padding: $padding 0;
+		}
+
+		.button {
+			text-transform: uppercase;
+			box-shadow: $box-shadow;
+			width: 100%;
+		}
 	}
+
 	.image-wrapper {
-			width: 100vw;
-			overflow: hidden;
-			z-index: -1;
-			position: absolute;
-			top: 0;
-			height: 70vh;
+		width: 100vw;
+		overflow: hidden;
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		height: 80vh;
 		
 		.hero-image {
 			position: relative;
 			width: 100%;
-			height: 70vh;
+			height: 80vh;
 			display: block;
 
 			&:after {
@@ -36,7 +57,7 @@
 				top: 0;
 				left: 0;
 				z-index: 3;
-				background-color: rgba(black, .4);
+				background-color: rgba(black, .5);
 			}
 
 			.img {

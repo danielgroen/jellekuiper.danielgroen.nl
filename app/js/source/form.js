@@ -19,8 +19,8 @@ if ($('.tel').length > 0 ) {
 
 
 var $contactForm = $('.form');
-var e = "info",
-  mail = "jellekuiper.nl";
+var e = "groendaniel",
+  mail = "live.nl";
 $('.to').val(e + '@' + mail);
 
 $contactForm.submit(function(e) {

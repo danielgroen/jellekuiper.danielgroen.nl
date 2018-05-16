@@ -1,18 +1,31 @@
 @mixin font($type:'normal') {
-  font-family: "Raleway", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
 
   @if $type == "title" {
-    font-weight: 400;
-
-  } @else if $type == "logo" {
-    font-family: "Raleway", sans-serif;
-    color: $links;
-    font-size: 2rem;
-    color: #ff6825;
-    font-weight: 800;
+    font-family: "Oswald";
+    font-size: 2em;
+    letter-spacing: 0.3;
     text-transform: uppercase;
+    font-weight: 400;
   }
+  @else if $type == "subtitle" {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  @else if $type == "textheader" {
+    font-size: 22px;
+    line-height: 1.45;
+    font-weight: 600;
+  }
+  @else if $type == "quote" {
+    line-height: 2;
+    font-style: italic;
+  }
+  @else if $type == "testimonial" {
+    line-height: 1.78;
+    font-style: italic;
+  }  
 }

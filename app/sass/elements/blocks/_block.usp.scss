@@ -1,4 +1,10 @@
-.block.usp {
+.block.usps {
+	.usp {
+		.quote {
+			@include font('quote');
+		}
+	}
+
 	p {
 		margin-bottom: 20px;
 	}

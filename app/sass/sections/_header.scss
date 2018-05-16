@@ -2,4 +2,14 @@
 	position: absolute;
 	width: 100%;
 	z-index: 5;
+
+    .logo {
+		@include font('title');
+		position: absolute;
+		font-size: 20px;
+		line-height: 13px;
+		left: #{100vw / 24 * 1};
+		top: $padding;
+		color: white;
+    }
 }

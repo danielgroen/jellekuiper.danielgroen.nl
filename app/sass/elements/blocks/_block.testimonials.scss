@@ -1,72 +1,84 @@
 .block.testimonials {
-	margin-top: $gutter;
-	margin-bottom: $gutter;
+	@include background();
+
+	.inner {
+		&:before,
+		&:after {
+			color: $primary;
+			text-align: center;
+			position: absolute;
+			font-size: 3rem;
+			@include font('title');
+			width: 30px;
+			line-height: 0;
+			font-weight: 800;
+		}
+
+		&:before {
+			content: "“";
+			left: -10px;
+		}
+
+		&:after {
+			content: "”";
+			bottom: 0;
+			right: -10px;
+		}
+	}
+
+	.owl-item.active {
+		+ .owl-item {
+			overflow: hidden;
+		}
+	}
 
 	.owl-carousel {
-		border: $border;
-		border-radius: $border-radius;
 		overflow: visible;
 
 		.owl-dots {
 			position: absolute;
 			width: 100%;
 			z-index: 50;
+		    counter-reset: increment;
 
 			.owl-dot {
+				&:before {
+					counter-increment: increment;
+					content: counter(increment);
+				}
 				span {
-					width: 15px;
-   					height: 15px;
+					display: none;
 				}
 			}
+
+		}
+		.owl-prev,
+		.owl-next {
+			fill: $primary;
+			position: absolute;
+			width: 30px;
+		}
+		.owl-prev {
+			left: 0;
+		}
+
+		.owl-next {
+			right: 0;
 		}
 
 		.owl-item {
-			article {
-				.quote {
-					padding: $gutter;
-					padding: 50px;
-					font-style: italic;
-					color: #222;
-					line-height: 1.7;
-					font-size: 1rem;
-					text-align: justify;
-					text-justify: inter-word;
-					position: relative;
+			.quote {
+				@include font('testimonial');
 
-					&:before {
-						content: "“";
-						position: absolute;
-						font-size: 3rem;
-						line-height: 0;
-						left: $gutter / 4;
-						color: $secundary;
-						text-align: center;
-						font-weight: 800;
-						width: 30px;
-					}
 
-					&:after {
-						content: "”";
-						text-align: center;
-						width: 30px;
-						position: absolute;
-						font-size: 3rem;
-						right: $gutter / 2;
-						line-height: 0;
-						bottom: $gutter;
-						vertical-align: center;
-						color: $secundary;		
-						font-weight: 800;
-					}
-				}
+			}
 
-				.name {
-					font-weight: bold;
-					font-size: 1.125rem;
-					text-align: right;
-					margin-bottom: 30px;
-					margin-right: 60px;
-				}
+			.name {
+				font-weight: bold;
+				font-size: 1.125rem;
+				text-align: right;
+				margin-bottom: 30px;
+				margin-right: 60px;
 			}
 		}
 	}

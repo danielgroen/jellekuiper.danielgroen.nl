@@ -3,21 +3,21 @@
 		width: 100%;
 		box-sizing: border-box;
 
-	&:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px white inset;
-}
+		&:-webkit-autofill {
+	    	-webkit-box-shadow: 0 0 0 30px white inset;
+		}
 	}
 
-	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	::-webkit-input-placeholder {
 	  color: $placeholder;
 	}
-	::-moz-placeholder { /* Firefox 19+ */
+	::-moz-placeholder {
 	  color: $placeholder;
 	}
-	:-ms-input-placeholder { /* IE 10+ */
+	:-ms-input-placeholder {
 	  color: $placeholder;
 	}
-	:-moz-placeholder { /* Firefox 18- */
+	:-moz-placeholder {
 	  color: $placeholder;
 	}
 
@@ -51,47 +51,6 @@
 		&.validated {
 			cursor: pointer;
 			background-color: rgba($secundary, 1);
-		}
-	}
-}
-
-.load-wrapper {
-	position: fixed;
-	height: 50px;
-	width: 50px;
-	top: calc(50% - 25px);
-	left: calc(50% - 25px);
-	opacity: 0;
-	transition: all $speed linear;
-	z-index: 50;
-	pointer-events: none;
-
-	&.visible {
-		opacity: 1;
-	}
-
-	.spinner {
-	  	position: absolute;
-	    width: 50px;
-	    height: 50px;
-	    margin: 0 auto;
-	  	animation: loading 2s linear infinite;
-
-		.bubble-1,
-		.bubble-2 {
-		    position: absolute;
-		    top: 0;
-		    width: 25px;
-		    height: 25px;
-		    border-radius: 100%;
-		    background-color: #ff6825;
-		    animation: bounce 2s ease-in-out infinite;
-			
-			&:not(.bubble-1){
-			    top: auto;
-			    bottom: 0;
-			    animation-delay: -1.0s;
-			}
 		}
 	}
 }
