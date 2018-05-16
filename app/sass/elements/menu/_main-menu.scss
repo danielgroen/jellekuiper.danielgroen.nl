@@ -10,7 +10,6 @@
 		left: 0;
 		opacity: 0;
 		transition: all 0.25s ease;
-		background-color: $white;
 		position: fixed;
 		flex-direction: column;
 		justify-content: space-around;
@@ -34,6 +33,7 @@
 		~ .nav {
 			pointer-events: all;
 			opacity: 1;
+			background-color: $white;
 		}
 	} 
 }

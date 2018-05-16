@@ -1,12 +1,12 @@
 .footer {
 	max-width: $max-width;
-	width: 100%;
+	width: #{100vw /24 * 22};
     margin: 0 auto;
     position: relative;
-
-    * {
-    	color: $white;
-    }
+    text-align: center;
+    padding: $gutter 0;
+    display: flex;
+    flex-direction: column;
 
 	&:before {
 		content: '';
@@ -18,4 +18,24 @@
 		z-index: -1;
 		background-color: $grey;
 	}
+
+    * {
+    	color: $white;
+    }
+
+    .nav {
+    	@include font('textheader');
+    	font-size: 18px;
+
+    	.menu-item {
+    		padding: $padding 0;
+    	}
+    }
+
+    .address {
+    	font-style: normal;
+    	line-height: 2;
+    	order: 3;
+    }
+
 }

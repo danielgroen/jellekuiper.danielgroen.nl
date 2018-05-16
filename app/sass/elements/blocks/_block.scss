@@ -1,8 +1,7 @@
-.block {
-	margin: 0;
+main > .block {
 	width: #{100vw / 24 * 22};
-	margin-top: #{100vw / 24 * 22};
-	margin: 0 auto;
+	// margin-top: #{100vw / 24 * 22};
+	margin: $gutter*1.5 auto;
 
 	.subtitle {
 		@include font('textheader');

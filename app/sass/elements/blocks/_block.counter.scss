@@ -1,0 +1,17 @@
+.block.counter {
+	@include background();
+	display: flex;
+	justify-content: space-around;
+
+	> div {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+
+		.counter {
+			color: $primary;
+			font-size: 2em;
+		}
+	}
+}
