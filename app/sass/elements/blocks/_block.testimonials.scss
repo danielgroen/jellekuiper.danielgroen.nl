@@ -4,83 +4,42 @@
 	.inner {
 		&:before,
 		&:after {
+			@include font('title');
 			color: $primary;
 			text-align: center;
 			position: absolute;
-			font-size: 3rem;
-			@include font('title');
+			font-size: 4rem;
 			width: 30px;
 			line-height: 0;
 			font-weight: 800;
+			opacity: .6;
+			filter: saturate(1.2);
 		}
 
 		&:before {
 			content: "“";
 			left: -10px;
+			top: 0;
+			line-height: 3.5rem;
 		}
 
 		&:after {
 			content: "”";
-			bottom: 0;
+			bottom: 1rem;
 			right: -10px;
 		}
 	}
 
-	.owl-item.active {
-		+ .owl-item {
-			overflow: hidden;
-		}
+	.quote {
+		@include font('testimonial');
 	}
 
-	.owl-carousel {
-		overflow: visible;
-
-		.owl-dots {
-			position: absolute;
-			width: 100%;
-			z-index: 50;
-		    counter-reset: increment;
-
-			.owl-dot {
-				&:before {
-					counter-increment: increment;
-					content: counter(increment);
-				}
-				span {
-					display: none;
-				}
-			}
-
-		}
-		.owl-prev,
-		.owl-next {
-			fill: $primary;
-			position: absolute;
-			width: 30px;
-		}
-		.owl-prev {
-			left: 0;
-		}
-
-		.owl-next {
-			right: 0;
-		}
-
-		.owl-item {
-			.quote {
-				@include font('testimonial');
-
-
-			}
-
-			.name {
-				font-weight: bold;
-				font-size: 1.125rem;
-				text-align: right;
-				margin-bottom: 30px;
-				margin-right: 60px;
-			}
-		}
+	.name {
+		margin-top: $padding;
+		font-weight: bold;
+		font-size: 1.125rem;
+		text-align: right;
+		margin-bottom: 30px;
 	}
 }
 

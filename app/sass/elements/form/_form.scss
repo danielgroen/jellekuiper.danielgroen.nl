@@ -1,3 +1,6 @@
+.contactform {
+	min-height: 100vh;
+	
 	input, textarea, label {
 		width: 100%;
 		box-sizing: border-box;
@@ -28,14 +31,14 @@
 
 	input, textarea {
 		max-width: 100%;
-		border: 1px solid #eaeaea;
+		border: 1px solid #afafaf;
 		background-color: transparent;
 		border-radius: $border-radius;
 		padding: 10px 1rem;
 		@include font;
 		margin-bottom: $gutter / 2.5;
 	}
-	
+
 	input[type='submit'],
 	.send {
 		background-color: $primary;
@@ -45,6 +48,7 @@
 		text-transform: uppercase;
 		border: none;
 		padding: 1rem;
+		margin-top: $padding;
 		transition: all $speed/2;
 		margin-bottom: 0;
 
@@ -53,3 +57,4 @@
 			background-color: rgba($secundary, 1);
 		}
 	}
+}

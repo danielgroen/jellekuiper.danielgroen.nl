@@ -32,6 +32,17 @@
     	}
     }
 
+    .social-media {
+        fill: $white;
+        height: 36px;
+        width: 36px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: .5em;
+        margin: $gutter 5px;
+        box-sizing: border-box;
+    }
+
     .address {
     	font-style: normal;
     	line-height: 2;

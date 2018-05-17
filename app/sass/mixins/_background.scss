@@ -1,14 +1,14 @@
 @mixin background() {
-	margin-top: $gutter;
+	margin-top: $gutter*4;
+	margin-bottom: $gutter*4;
     position: relative;
-	margin-bottom: $gutter;
 	
 	&:after {
 		content: '';
 		position: absolute;
 		width: 150vw;
-		height: calc(100% + (#{$gutter} * 2);
-		top: -$gutter;
+		height: calc(100% + (#{$gutter} * 4);
+		top: -$gutter*2;
 		left: -50vw;
 		z-index: -1;
 		background-color: $grey-light;

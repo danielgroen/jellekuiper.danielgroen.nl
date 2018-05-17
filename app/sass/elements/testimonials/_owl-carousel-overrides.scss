@@ -1,0 +1,56 @@
+.owl-item.active {
+	+ .owl-item {
+		overflow: hidden;
+	}
+}
+
+.owl-carousel {
+	overflow: visible;
+	position: relative;
+
+	.owl-dots {
+		position: absolute;
+		width: #{100vw / 24 * 20};
+		margin-left: #{100vw / 24 * 1};
+		z-index: 50;
+	    counter-reset: increment;
+
+		.owl-dot {
+			&:before {
+				counter-increment: increment;
+				content: counter(increment);
+				color: $secundary;
+				padding: 5px;
+				opacity: .4;
+				
+
+			}
+			
+			&.active {
+				&:before {
+					opacity: 1;
+				}
+			}
+
+			span {
+				display: none;
+			}
+		}
+
+	}
+	.owl-prev,
+	.owl-next {
+		fill: $primary;
+		position: absolute;
+		bottom:  $gutter;
+		width: 30px;
+	}
+	
+	.owl-prev {
+		left: 0;
+	}
+
+	.owl-next {
+		right: 0;
+	}
+}

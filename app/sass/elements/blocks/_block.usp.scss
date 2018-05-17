@@ -1,23 +1,17 @@
 .block.usps {
 	.usp {
+		margin-bottom: $gutter;
+		display: flex;
+		flex-direction: column;
+
+		.subtitle {
+			padding: $padding 0;
+		}
+
 		.quote {
 			@include font('quote');
+			margin-bottom: $gutter;
 		}
 	}
 
-	p {
-		margin-bottom: 20px;
-	}
-	ul {
-		li {
-			margin-left: 12px;
-			position: relative;
-			
-			&:before {
-				content: "- ";
-				position: absolute;
-				left: -14px;
-			}
-		}
-	}
 }
