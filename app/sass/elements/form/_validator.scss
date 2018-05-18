@@ -1,0 +1,11 @@
+.contactform {
+
+	[required] {
+		&:placeholder-shown {
+			~ .send {
+				background-color: rgba($primary,.6);
+				pointer-events: none;
+			}
+		}
+	}
+}

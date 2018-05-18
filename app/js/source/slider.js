@@ -26,4 +26,10 @@ jsonLoader().done(function() {
 		autoplayTimeout:5000,
 		autoplayHoverPause:true
 	});
+
+	owl.on('changed.owl.carousel', function(event) {
+		var owlDots = $('.owl-dots');
+		var activeItem = Math.floor( (owlDots.find('.active').index()) / 10 );
+		owlDots.attr('data-item',activeItem)
+	})
 })

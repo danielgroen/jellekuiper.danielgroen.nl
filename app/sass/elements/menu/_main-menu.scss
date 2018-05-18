@@ -16,15 +16,38 @@
 		pointer-events: none;
 
 		.menu-item {
+			@include font('subtitle');
 			width: 100%;
 			text-align: center;
-			@include font('subtitle');
-			
+
 			.menu-link {
+				position: relative;
 				width: 100%;
 				text-decoration: none;
 				color: $secundary;
+
+				&:after {
+					content: '';
+					transition: width .3s $easing-cubic;
+					width: 0;
+					background-color: $primary;
+					height: 6px;
+					left: 15px;
+					bottom: 3px;
+					opacity: .5;
+					position: absolute;
+				}
 			}
+
+			&:hover,
+			&.active {
+				.menu-link {
+					&:after {
+						width: calc(100% - 5px);
+					}
+				}				
+			}
+
 		}
 	}
 

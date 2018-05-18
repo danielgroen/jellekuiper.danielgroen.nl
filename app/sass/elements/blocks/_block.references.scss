@@ -1,0 +1,47 @@
+.block.references {
+	.reference {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: $padding;
+		text-align: center;
+		min-height: $gutter * 10;
+		color: $white;
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.title {
+			@include font('title');
+			text-shadow: $text-shadow;
+		}
+
+		.keywords {
+			@include font('textheader');
+			font-size: 1rem;
+			text-shadow: $text-shadow;
+		}
+
+		.reference-image {
+			.img {
+				position: absolute;
+				z-index: -1;
+				height: 100%;
+				left: 0;
+				top: 0;
+				width: auto;
+			}
+		}
+
+		.button {
+			text-transform: uppercase;
+			width: #{100vw / 24 * 20};
+			left: #{100vw / 24 * 1};
+			position: absolute;
+			bottom: $padding;
+			font-weight: 600;
+		}
+	}
+}

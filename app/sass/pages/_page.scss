@@ -1,0 +1,7 @@
+.page {
+	.block {
+		&.references {
+			@include background();
+		}
+	}
+}

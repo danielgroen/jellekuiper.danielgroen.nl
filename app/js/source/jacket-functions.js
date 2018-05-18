@@ -16,30 +16,6 @@ function debounce(callback, time) {
   };
 };
 
-//TODO::dit herschrijven naar alleen css: input:placeholder-shown 
-// formvalidator
-var invalid = 0;
-function validateForm() {
-    $('.form-field').each(function () {
-        if ($(this).val() == '') {
-            invalid++;
-        }
-    });
-
-
-   if ( invalid > 0) {
-    	invalid = 0;
-  		$('input[type="submit"').removeClass('validated');
-   }
-   else {
-		$('input[type="submit"').addClass('validated');
-   }
-}
-
-$( ".form-field" ).on('keydown',function(e) {
-  validateForm();
-});
-
 // menu toggle
 $('.menu-toggle').on('click', function(e){
    $(this).toggleClass('active');
@@ -82,7 +58,7 @@ $(function($) {
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
              if (target.length) {
                $('html,body').animate({
-                   scrollTop: target.offset().top
+                   scrollTop: target.offset().top - 80
               }, 500);
               return false;
           }

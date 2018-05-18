@@ -1,8 +1,9 @@
 .block.usps {
 	.usp {
-		margin-bottom: $gutter;
+		margin-bottom: $gutter*2;
 		display: flex;
 		flex-direction: column;
+
 
 		.subtitle {
 			padding: $padding 0;

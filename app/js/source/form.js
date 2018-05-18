@@ -1,32 +1,27 @@
-// mob            // tel 
-mob1 = 'tel:';    tel1 = 'tel:';    var e = "groendaniel";
-mob2 = '06';      tel2 = '020';     var mail = "live.nl";
-mob3 = '49';      tel3 = '772';
-mob4 = '84';      tel4 = '45';
-mob5 = '86';      tel5 = '79';
-mob6 = '01';
+var mobile  = '06 ';    var telephone  = '020 ';     var email = "groendaniel";    
+    mobile += '49 ';        telephone += '772 ';         email += "@live.nl";
+    mobile += '84 ';        telephone += '45 ';
+    mobile += '86 ';        telephone += '79';
+    mobile += '01';
 
 if ($('.mob').length > 0 ) {
-	$('.mob').attr('href', mob1 + mob2 + mob3 + mob4 + mob5 + mob6);
-	$('.mob').text( mob2 + '-' + mob3 + ' ' + mob4 + ' ' + mob5 + ' ' + mob6);
+	$('.mob').attr('href', 'tel:' + mobile.replace(/ +/g, "")).text( mobile);
 }
 
 if ($('.tel').length > 0 ) {
-  $('.tel').attr('href', tel1 + tel2 + tel3 + tel4 + tel5);
-  $('.tel').text( tel2 + '-' + tel3 + ' ' + tel4 + ' ' + tel5);
+  $('.tel').attr('href', 'tel:' + telephone.replace(/ +/g, "")).text( telephone);
 }
 
 if ($('.mail').length > 0 ) {
-  $('.mail').attr('href', 'mailto:' + e + '@' + mail);
-  $('.mail').text( e + '@' + mail);
+  $('.mail').attr('href', 'mailto:' + email ).text(email);
 }
 
 
 var $contactForm = $('.form');
-$('.to').val(e + '@' + mail);
 
 $contactForm.submit(function(e) {
   e.preventDefault();
+  $('.to').val(email);
 
   if ( $('#honeypot').val() ) {
     return false;

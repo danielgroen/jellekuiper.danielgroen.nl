@@ -1,5 +1,5 @@
 .contactform {
-	min-height: 100vh;
+	min-height: calc(100vh - 80px);
 	
 	input, textarea, label {
 		width: 100%;
@@ -42,6 +42,8 @@
 	input[type='submit'],
 	.send {
 		background-color: $primary;
+		cursor: pointer;
+		pointer-events: all;
 		color: $white;
 		font-weight: 800;
 		font-size: 1rem;
@@ -51,10 +53,5 @@
 		margin-top: $padding;
 		transition: all $speed/2;
 		margin-bottom: 0;
-
-		&.validated {
-			cursor: pointer;
-			background-color: rgba($secundary, 1);
-		}
 	}
 }

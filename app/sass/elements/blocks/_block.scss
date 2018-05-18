@@ -6,6 +6,7 @@ main > .block {
 	.subtitle {
 		@include font('textheader');
 		display: block;
+		padding-bottom: $padding;
 	}
 
 	ul {
