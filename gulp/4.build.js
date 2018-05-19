@@ -50,8 +50,9 @@ gulp.task('build-cname', () => {
 			.pipe(gulp.dest(global.paths.dist));
 	}
 	else {
-		return gulp.src(global.paths.dist + global.paths.cname, {read: false})
-			.pipe(remove(global.paths.dist + global.paths.cname));
+		return gulp.src(global.paths.dist)
+		// return gulp.src(global.paths.dist + global.paths.cname, {read: false})
+			// .pipe(remove(global.paths.dist + global.paths.cname));
 	}
 
 });

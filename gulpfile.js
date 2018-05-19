@@ -23,12 +23,22 @@ global.ghpagesOptions = {
 	'branch': 'gh-pages'
 }
 
-global.options = {
-	sitename: "https://jellekuiper.nl",
-	production: false,
-	staginPathPrefix: "jellekuiper.github.io/"
-}
-
 global.browserSync = browserSync;
 requireDir('./gulp', { recurse: false });
 gulp.task('default', gulp.series('serve'));
+
+
+
+
+			//  MAIN SETTINGS  //
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+global.options = {
+	production: false,
+	sitename: "https://jellekuiper.nl",
+	staginPathPrefix: "jellekuiper.github.io/"
+}
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
