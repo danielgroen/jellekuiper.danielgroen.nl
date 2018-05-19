@@ -8,6 +8,7 @@ let gulp 				= require('gulp'),
 	htmlmin				= require('gulp-htmlmin'),
 	concat 				= require('gulp-concat'),
 	uglify 				= require('gulp-uglify'),
+	remove				= require('gulp-clean'),
 	mozjpeg 			= require('imagemin-mozjpeg'),
 	imagemin 			= require('gulp-imagemin');
 
@@ -23,19 +24,36 @@ gulp.task('build-fonts', () => {
 });
 
 gulp.task('build-inlinecss', () => {
+
+	if (global.options.production === true) {
+		var newLinks = '<a href="/';
+	}
+	else {
+		var newLinks = '<a href="/' + global.options.staginPathPrefix;
+	}
+
 	return gulp.src(global.paths.app + global.paths.htmlFiles)
 		.pipe(styleInject({encapsulated: false}))
 	    .pipe(replace('<link rel="stylesheet" type="text/css" href="css/stylesheet.css" async defer>', ' '))
 	    .pipe(replace('<style><!-- inject-style src="./dist/css/stylesheet.css" --></style>', ' '))
+	    .pipe(replace('<a href="/', newLinks))
 	    .pipe(replace('../img/', 'img/'))
 		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest(global.paths.dist));
 });
 
 gulp.task('build-cname', () => {
-	return gulp.src(global.paths.app + global.paths.cname)
-		.pipe(concat('CNAME'))
-		.pipe(gulp.dest(global.paths.dist));
+
+	if (global.options.production === true) {
+		return gulp.src(global.paths.app + global.paths.cname)
+			.pipe(concat('CNAME'))
+			.pipe(gulp.dest(global.paths.dist));
+	}
+	else {
+		return gulp.src(global.paths.dist + global.paths.cname, {read: false})
+			.pipe(remove(global.paths.dist + global.paths.cname));
+	}
+
 });
 
 gulp.task('build-html', () => {

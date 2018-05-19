@@ -18,9 +18,11 @@
     "github-pages": "^3.0.2",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-css-image-dimensions": "^1.1.5",
     "gulp-cssnano": "^2.1.2",
+    "gulp-gh-pages": "*",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.3.0",
     "gulp-inject": "^4.3.0",
@@ -40,7 +42,6 @@
     "sass-strip-unit": "^1.0.0",
     "singularitygs": "^1.7.1",
     "stream-series": "^0.1.1",
-    "webfontloader": "^1.6.28",
-    "gulp-gh-pages": "git+ssh://git@github.com/tekd/gulp-gh-pages.git#update-dependency"
+    "webfontloader": "^1.6.28"
   }
 }

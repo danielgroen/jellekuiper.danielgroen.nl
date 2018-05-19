@@ -2,12 +2,11 @@
 
 /* Sizes */
 $desktop: 720px;
-$border-radius: 3px;
 
 $max-width: 960px;
 $gutter: 25px;
 $padding: 1rem;
-
+$offset: 50px;
 /* Grids */
 @include add-grid(24);
 @include add-grid(37 at $desktop);

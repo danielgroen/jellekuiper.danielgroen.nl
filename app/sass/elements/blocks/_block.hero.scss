@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	height: calc(100vh - 80px);
+	height: calc(100vh - #{$offset});
 	justify-content: flex-end;
 	padding-bottom: $padding * 2;
     position: relative;
@@ -41,12 +41,12 @@
 		z-index: -1;
 		position: absolute;
 		top: 0;
-		height: calc(100vh - 80px);
+		height: calc(100vh - #{$offset});
 		
 		.hero-image {
 			position: relative;
 			width: 100%;
-			height: calc(100vh - 80px);
+			height: calc(100vh - #{$offset});
 			display: block;
 
 			&:after {

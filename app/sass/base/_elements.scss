@@ -1,7 +1,11 @@
+body,
+html {
+	overflow-x: hidden;
+}
+
 body {
 	@include font('normal');
 	width: 100%;
-	overflow-x: hidden;
 }
 
 .invisible,
