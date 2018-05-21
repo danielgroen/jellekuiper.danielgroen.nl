@@ -1,9 +1,8 @@
 .contactform {
-
 	[required] {
 		&:placeholder-shown {
 			~ .send {
-				background-color: rgba($primary,.6);
+				background-color: rgba($primary,1);
 				pointer-events: none;
 			}
 		}

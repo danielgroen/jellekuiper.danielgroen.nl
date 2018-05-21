@@ -13,35 +13,93 @@
 			margin-bottom: 0;
 		}
 
-		.title {
-			@include font('title');
-			text-shadow: $text-shadow;
-		}
+		.introduction {
+			.title {
+				@include font('title');
+				text-shadow: $text-shadow;
+			}
 
-		.keywords {
-			@include font('textheader');
-			font-size: 1rem;
-			text-shadow: $text-shadow;
+			.keywords {
+				@include font('textheader');
+				font-size: 1rem;
+				text-shadow: $text-shadow;
+			}
+
+			.description {
+				text-align: left;
+				display: none;
+			}
+
+			.button {
+				text-transform: uppercase;
+				width: #{100vw / 24 * 20};
+				left: #{100vw / 24 * 1};
+				position: absolute;
+				bottom: $padding;
+				font-weight: 600;
+			}
+			
 		}
 
 		.reference-image {
 			.img {
 				position: absolute;
 				z-index: -1;
-				height: 100%;
+				width: 100%;
 				left: 0;
 				top: 0;
-				width: auto;
+				min-height: 100%;
+				height: auto;
 			}
 		}
 
-		.button {
-			text-transform: uppercase;
-			width: #{100vw / 24 * 20};
-			left: #{100vw / 24 * 1};
-			position: absolute;
-			bottom: $padding;
-			font-weight: 600;
+	}
+}
+
+@include breakpoint($desktop) {
+	.block.references {
+		.reference {
+			flex-direction: row;
+			justify-content: space-between;
+			color: $black;
+			text-align: left;
+			margin-bottom: $gutter;
+
+			&:nth-child(even) {
+				.introduction {
+					order: 2;
+				}
+			}
+
+			.introduction {
+				flex: 0 0 calc(50% - 15px);
+				padding: $gutter * 2;
+
+				.title,
+				.keywords {
+					text-shadow: none;
+				}
+
+				.description {
+					display: block;
+				}
+
+				.button{
+					position: static;
+					width: 100%;
+					text-align: center;
+				}
+					
+			}
+
+			.reference-image {
+				flex: 0 0 calc(50% - 15px);
+				
+
+				.img {
+					position: static;
+				}
+			}		
 		}
 	}
 }

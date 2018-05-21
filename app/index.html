@@ -80,25 +80,34 @@
 			<!-- block reference -->
 			<section class="block references">
 				<article class="reference">
-					<h3 class="title">Trouwambtenaar</h3>
-					<p class="keywords">Persoonlijk, humoristisch, ontspannen.</p>
-					<a href="/trouwambtenaar" class="button">Lees meer</a>
-					<picture class="reference-image">
-						<img class="img" src="img/scape4.jpg" alt="Jelle Kuiper">
-					</picture>
-				</article>
-								<article class="reference">
-					<h3 class="title">Bedrijfsoptredens</h3>
-					<p class="keywords">Bijzonder, spannend, krachtig.</p>
-					<a href="/bedrijfsoptredens" class="button">Lees meer</a>
+					<div class="introduction">
+						<h3 class="title">Trouwambtenaar</h3>
+						<p class="keywords">Persoonlijk, humoristisch, ontspannen.</p>
+						<p class="description">Omdat standaard huwelijksceremonies best wat leuker en wat minder stijf kunnen heeft Jelle in 2005 besloten zijn cabarettalent hierop in te zetten. Sindsdien is hij buitengewoon ambtenaar van de burgerlijke stand. Hij zorgt dat jouw belangrijkste dag van je leven een unieke ervaring wordt, voor jullie én voor jullie gasten. De toon van jullie dag wordt gezet met een ontspannen en intieme ceremonie vol humor en interactie.</p>
+						<a href="/trouwambtenaar" class="button">Lees meer</a>
+					</div>
 					<picture class="reference-image">
 						<img class="img" src="img/scape4.jpg" alt="Jelle Kuiper">
 					</picture>
 				</article>
 				<article class="reference">
-					<h3 class="title">Theaterproducties</h3>
-					<p class="keywords">Creatief, aangrijpend, radicaal.</p>
-					<a href="/theaterproducties" class="button">Lees meer</a>
+					<div class="introduction">
+						<h3 class="title">Bedrijfsoptredens</h3>
+						<p class="keywords">Bijzonder, spannend, krachtig.</p>
+						<p class="description">Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presentatie, dagvoorzitterschap of een op maat gemaakte optreden tijdens een congres of zakelijke bijeenkomst. Altijd met  groot succes. Jelle zorgt er altijd voor dat zijn optreden naadloos aansluit op het thema van het congres of de bedrijfsbijeenkomst.</p>
+						<a href="/bedrijfsoptredens" class="button">Lees meer</a>
+					</div>
+					<picture class="reference-image">
+						<img class="img" src="img/scape4.jpg" alt="Jelle Kuiper">
+					</picture>
+				</article>
+				<article class="reference">
+					<div class="introduction">
+						<h3 class="title">Theaterproducties</h3>
+						<p class="keywords">Creatief, aangrijpend, radicaal.</p>
+						<p class="description">Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presentatie, dagvoorzitterschap of een op maat gemaakte optreden tijdens een congres of zakelijke bijeenkomst. Altijd met  groot succes. Jelle zorgt er altijd voor dat zijn optreden naadloos aansluit op het thema van het congres of de bedrijfsbijeenkomst.</p>
+						<a href="/theaterproducties" class="button">Lees meer</a>
+					</div>
 					<picture class="reference-image">
 						<img class="img" src="img/scape4.jpg" alt="Jelle Kuiper">
 					</picture>
@@ -110,17 +119,17 @@
 				<strong class="subtitle">Contact</strong>
 				<p>Heb je een vraag of wil je kennis maken? Bel op <a class="tel"></a> of stuur me een berichtje.</p>
 				<form id="gform" class="form" method="POST">
-					<label for="name">Naam</label>
-				    <input class="form-field" type="text" name="name" placeholder="B.v. Charlotte van Dijk" required>
+					<label class="name" for="name">Naam</label>
+				    <input class="name form-field" type="text" name="name" placeholder="B.v. Charlotte van Dijk" required>
 				    
-					<label for="email">E-mail</label>
-				    <input class="form-field" type="email" name="email" placeholder="B.v. charlottevandijk@gmail.com" required>
+					<label class="email" for="email">E-mail</label>
+				    <input class="email form-field" type="email" name="email" placeholder="B.v. charlottevandijk@gmail.com" required>
 
-					<label for="subject">Onderwerp</label>
-				    <input class="form-field" type="text" name="subject" placeholder="Bv. Trouwambtenaar Amsterdam" required>
+					<label class="subject" for="subject">Onderwerp</label>
+				    <input class="subject form-field" type="text" name="subject" placeholder="Bv. Trouwambtenaar Amsterdam" required>
 					
-					<label for="message">Bericht</label>
-				    <textarea class="form-field" name="message" rows="5" placeholder="Bv. Hoi Jelle, ik ga trouwen op op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Laura" required></textarea>
+					<label class="message" for="message">Bericht</label>
+				    <textarea class="message form-field" name="message" rows="5" placeholder="Bv. Hoi Jelle, ik ga trouwen op op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Laura" required></textarea>
 				    <input type="hidden" id="honeypot" type="text" name="honeypot" value="" />
 				    <input type="hidden"class="to" type="text" name="to" value="" />
 				    <input class="send button" type="submit" value="Verstuur bericht" >

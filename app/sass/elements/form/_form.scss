@@ -10,6 +10,20 @@
 		}
 	}
 
+	input:required {
+	    box-shadow:none;
+		border: 1px solid #d0d0d0;
+	    background: transparent;
+	}
+
+	input:not(:placeholder-shown) {
+		&:invalid {
+			box-shadow:0 0 0px blue;
+			border: 1px solid #f99;
+			background: #fff9f9;
+		}
+	}
+	
 	::-webkit-input-placeholder {
 	  color: $placeholder;
 	}
@@ -31,7 +45,7 @@
 
 	input, textarea {
 		max-width: 100%;
-		border: 1px solid #afafaf;
+		border: 1px solid #d0d0d0;
 		background-color: transparent;
 		border-radius: $border-radius;
 		padding: 10px 1rem;
@@ -53,5 +67,31 @@
 		margin-top: $padding;
 		transition: all $speed/2;
 		margin-bottom: 0;
+	}
+}
+
+@include breakpoint ($desktop) {
+	.contactform {
+		.name {
+			width: #{$max-width / 37 * 18};
+			margin-right: #{$max-width / 37 * 1};
+			display: inline-block;
+		}
+		
+		.email {
+			left: #{$max-width / 37 * 19};
+			width: #{$max-width / 37 * 18};
+			position: absolute;
+		}
+		
+		label.email {
+			margin-top: -85px;
+		}
+
+		input[type='submit'],
+		.send {
+			width: auto;
+			min-width: 350px;
+		}
 	}
 }
