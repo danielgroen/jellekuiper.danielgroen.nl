@@ -7,7 +7,10 @@ let gulp = require('gulp'),
 gulp.task('browsersync', () => {
     global.browserSync.init({
         server: {
-            baseDir: global.paths.app
+            baseDir: global.paths.app,
+            serveStaticOptions: {
+                extensions: ["html"]
+            }
         },
         ghostMode: false
     });

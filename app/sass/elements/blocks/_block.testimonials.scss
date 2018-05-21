@@ -13,8 +13,8 @@
 			width: 30px;
 			line-height: 0;
 			font-weight: 800;
-			opacity: .6;
-			filter: saturate(1.2);
+			opacity: .9;
+			z-index: -1;
 		}
 
 		&:before {
