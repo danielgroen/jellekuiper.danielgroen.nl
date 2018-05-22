@@ -1,6 +1,4 @@
 .contactform {
-	min-height: calc(100vh - #{$offset});
-	
 	input, textarea, label {
 		width: 100%;
 		box-sizing: border-box;
@@ -70,28 +68,28 @@
 	}
 }
 
-@include breakpoint ($desktop) {
+@include breakpoint($desktop) {
 	.contactform {
 		.name {
-			width: #{$max-width / 37 * 18};
-			margin-right: #{$max-width / 37 * 1};
+			width: calc(var(--max-width) / 37 * 17);
+			margin-right: calc(var(--max-width) / 37 * 1);
 			display: inline-block;
 		}
 		
 		.email {
-			left: #{$max-width / 37 * 19};
-			width: #{$max-width / 37 * 18};
+			width: calc(var(--max-width) / 37 * 17);
+			display: inline;
 			position: absolute;
 		}
 		
 		label.email {
-			margin-top: -85px;
+			margin-top: -30px;
 		}
 
 		input[type='submit'],
 		.send {
-			width: auto;
-			min-width: 350px;
+			width: calc(var(--max-width) / 37 * 15);
+			margin-left: calc(var(--max-width) / 37 * 1);
 		}
 	}
 }

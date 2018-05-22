@@ -1,10 +1,9 @@
 .footer {
-	max-width: $max-width;
-	width: #{100vw /24 * 22};
+	width: calc(var(--max-width) /24 * 22);
     margin: 0 auto;
     position: relative;
     text-align: center;
-    padding: $gutter 0;
+    padding: $padding*2 0;
     flex-direction: column;
 
 	&:before {
@@ -27,7 +26,7 @@
     	font-size: 18px;
 
     	.menu-item {
-    		padding: $padding 0;
+    		padding: $padding/1.5 0;
     	}
     }
 
@@ -45,5 +44,31 @@
     .address {
     	font-style: normal;
     	line-height: 2;
+    }
+}
+
+@include breakpoint($desktop) {
+    .footer {
+        width: calc(var(--max-width) / 37 * 35);
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+
+        .nav {
+            flex: 0 0 calc(var(--max-width) / 37 * 18);
+            max-width: calc(var(--max-width) / 37 * 18);
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 calc(var(--max-width) / 37 * 18);
+            max-width: calc(var(--max-width) / 37 * 18);
+
+            .icons {
+                order: 3;
+            }
+        }
+
     }
 }

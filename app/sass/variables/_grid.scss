@@ -3,7 +3,7 @@
 /* Sizes */
 $desktop: 600px;
 
-$max-width: 960px;
+
 $gutter: 25px;
 $padding: 1rem;
 $offset: 50px;
@@ -14,13 +14,20 @@ $offset: 50px;
 /* Gutters */
 @include add-gutter(0);
 
+
+:root {--max-width: 100vw;}
+@media only screen and (min-width: 960px) {
+  :root { --max-width: 960px !important;}
+}
+
+
 // Singularity visualizer
 body:after {
   content: '';
   display: none;
   width: 100%;
   height: 100%;
-  max-width: $max-width;
+  max-width: var(--max-width);
   position: fixed;
   left: 50%;
   top: 0;

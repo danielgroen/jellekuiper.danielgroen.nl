@@ -1,4 +1,9 @@
 .block.contactform {
-
+	min-height: calc(100vh - #{$offset});
 }
 
+@include breakpoint ($desktop) {
+	.block.contactform {
+		min-height: auto;
+	}
+}

@@ -4,16 +4,14 @@
 	.inner {
 	    padding: 0;
 	    width: 100%;
-		height: calc( (100vw /  24 * 22) / 16 * 9);
-		max-height: #{$max-width / 16 * 9};
+		height: calc(var(--max-width) / 16 * 9);
 
 	    iframe {
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: #{100vw / 24 * 22};
-			height: calc( (100vw /  24 * 22) / 16 * 9);
-			max-height: #{$max-width / 16 * 9};
+			height: calc(var(--max-width) / 16 * 9);
 	    }
 	}
 

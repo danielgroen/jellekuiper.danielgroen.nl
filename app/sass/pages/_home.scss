@@ -2,6 +2,75 @@
 	.block {
 		&.contactform {
 			@include background();
+			margin-bottom: $gutter*2;
+		}
+	}
+}
+
+@include breakpoint($desktop) {
+	.home {
+		.block {
+			&.references {
+				.reference {
+					flex-direction: row;
+					justify-content: space-between;
+					color: $black;
+					text-align: left;
+					margin-bottom: $gutter;
+
+					&:nth-child(even) {
+						.introduction {
+							order: 2;
+						}
+					}
+
+					.introduction {
+						flex: 0 0 calc(var(--max-width) / 37 * 17);
+						padding: calc(var(--max-width) / 37 * 1);
+
+						.title,
+						.keywords {
+							text-shadow: none;
+						}
+
+						.keywords {
+							position: relative;
+							padding-left: $gutter;
+							font-style: italic;
+							margin: $padding 0;
+
+							&:before {
+								content: '';
+								width: 5px;
+								height: 100%;
+								position: absolute;
+								left: 0;
+								background: $primary;
+							}
+						}
+
+						.description {
+							display: block;
+						}
+
+						.button{
+							position: static;
+							width: 100%;
+							text-align: center;
+						}
+							
+					}
+
+					.reference-image {
+						flex: 0 0 calc(var(--max-width) / 37 * 17);
+						
+
+						.img {
+							position: static;
+						}
+					}		
+				}
+			}
 		}
 	}
 }

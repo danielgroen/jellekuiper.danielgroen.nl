@@ -12,7 +12,7 @@
 		width: #{100vw / 24 * 22};
 		color: $white;
 		align-self: center;
-		max-width: $max-width;
+		max-width: var(--max-width);
 		text-align: center;
 
 		.title {
@@ -75,9 +75,12 @@
 	.block.hero {
 		justify-content: center;
 
-
 		.introduction {
+			max-width: calc(var(--max-width) / 37 * 22);
+		}
 
+		.button {
+			max-width: calc(var(--max-width) / 37 * 15);
 		}
 
 		.image-wrapper {
