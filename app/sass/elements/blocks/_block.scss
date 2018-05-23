@@ -1,8 +1,8 @@
 main > .block {
 	width: calc(var(--max-width) / 24 * 22);
-	//weet niet of dit goed is hieronder
     max-width: calc( var(--max-width) - (var(--max-width) / 37 * 2));
 	margin: $gutter*1.5 auto;
+	margin-bottom: $gutter*4;
 
 	.subtitle {
 		@include font('textheader');
@@ -36,5 +36,6 @@ main > .block {
 @include breakpoint($desktop) {
 	main > .block {
 		width: #{100vw / 37 * 35};
+
 	}
 }

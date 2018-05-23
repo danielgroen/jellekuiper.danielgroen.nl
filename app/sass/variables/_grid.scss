@@ -20,6 +20,8 @@ $offset: 50px;
   :root { --max-width: 960px !important;}
 }
 
+$max-width: var(--max-width);
+
 
 // Singularity visualizer
 body:after {

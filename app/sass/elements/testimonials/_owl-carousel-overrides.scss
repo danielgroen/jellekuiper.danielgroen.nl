@@ -8,38 +8,20 @@
 	overflow: visible;
 	position: relative;
 
+
 	.owl-dots {
 		position: relative;
-		width: #{100vw / 24 * 18};
-		margin-left: #{100vw / 24 * 2};
+		width: calc(var(--max-width) / 24 * 18);
+		margin-left: calc(var(--max-width) / 24 * 2);
 		z-index: 50;
 	    counter-reset: increment;
 	    bottom: -$padding/1.5;
 	    white-space: nowrap;
-		z-index: -1;
-
-
-	    &:before {
-	    	content: '';
-	    	left: #{100vw / 24 * -4};
-	    	width: #{100vw / 24 * 4};
-	    	height: $gutter;
-	    	background-color: $grey-light;
-	    	position: absolute;
-	    	z-index: 1;
-	    }
-	    &:after {
-	    	content: '';
-	    	z-index: 1;
-	    	right: #{100vw / 24 * -4};
-	    	width: #{100vw / 24 * 4};
-	    	height: $gutter;
-	    	background-color: $grey-light;
-	    	position: absolute;
-	    }
+		z-index: -2;
+		overflow: hidden;
 
 		.owl-dot {
-			width: #{100vw / 24 * 1.8};
+			width: calc(var(--max-width) / 24 * 1.8);
 			transition: all $speed $easing-cubic;
 
 			&:before {
@@ -90,7 +72,56 @@
 
 	[data-item="#{$i}"] {
 	    .owl-dot {
-			transform: translateX( #{100vw / 24 * (18 * $i) * -1});
+			transform: translateX( calc(var(--max-width) / 24 * (18 * #{$i}) * -1));
 	    }
+	}
+}
+
+@include breakpoint($desktop) {
+	.owl-carousel {
+		overflow: visible;
+		position: relative;
+
+		&:before,
+		&:after {
+			content: none;
+		}
+
+		.owl-item {
+			padding-bottom: 50px;
+		}
+
+		.owl-dots {
+			margin-bottom: 10px;
+			width: calc(var(--max-width) / 37 * 17);
+			margin-left: calc(var(--max-width) / 37 * 0);
+
+			.owl-dot {
+				width: calc(var(--max-width) / 37 * 1.7);
+			}
+		}
+
+		.owl-prev,
+		.owl-next {
+			top: -45px;
+		}
+		
+		.owl-next {
+			right: -100px;
+			z-index: 100;
+		}
+		
+		.owl-prev{
+			left: -100px;
+		}
+	}
+
+	@for $i from 1 through 6 {
+
+		[data-item="#{$i}"] {
+		    .owl-dot {
+				transform: translateX( calc(var(--max-width) / 37 * (17 * #{$i}) * -1));
+		    }
+		}
 	}
 }

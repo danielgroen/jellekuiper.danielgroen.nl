@@ -6,6 +6,11 @@
     padding: $padding*2 0;
     flex-direction: column;
 
+    .mail,
+    .tel {
+    text-decoration: underline;
+    }
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -69,6 +74,5 @@
                 order: 3;
             }
         }
-
     }
 }

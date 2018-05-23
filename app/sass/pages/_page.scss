@@ -2,6 +2,61 @@
 	.block {
 		&.references {
 			@include background();
+			margin-bottom: $gutter*2;
+		}
+	}
+}
+
+@include breakpoint($desktop) {
+	.page {
+		.block {
+
+			&.references {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+				.subtitle {
+					position: absolute;
+					left: 0;
+				}
+
+				.reference {
+					margin-top: 3rem;
+					width: calc(var(--max-width) / 37 * 17);
+					margin-bottom: 0;
+
+					.introduction {
+						.button {
+							text-transform: uppercase;
+							width: calc(var(--max-width) / 37 * 15);
+							left: calc(var(--max-width) / 37 * 1);
+							bottom: calc(var(--max-width) / 37 * 1);
+						}
+					}
+				}
+			}
+			
+			&.contactform {
+				display: flex;
+				justify-content: space-between;
+				height: 700px;
+
+				> * {
+					flex: 0 0 calc(var(--max-width) / 37 * 17);
+				}
+
+				.picture {
+					display: block;
+					height: 100%;
+					border: 1px solid red;
+					
+					.img {
+						height: 100%;
+					}
+				}
+
+			}
 		}
 	}
 }
