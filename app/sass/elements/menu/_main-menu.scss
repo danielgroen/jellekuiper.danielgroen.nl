@@ -27,7 +27,7 @@
 				&:after {
 					content: '';
 					transition: all 0.25s ease;
-					transition: width .3s $easing-cubic;
+					transition: width $speed $easing-cubic;
 					width: 0;
 					background-color: $primary;
 					height: 6px;
@@ -92,6 +92,10 @@
 						margin-top: -$padding;
 						display: inline-block;
 						box-shadow: $box-shadow;
+
+						&:after {
+							background-color: transparent;
+						}
 					}
 				}
 
