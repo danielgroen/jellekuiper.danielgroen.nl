@@ -2,6 +2,7 @@
 
 /* Sizes */
 $desktop: 770px;
+$max-width: 960px;
 
 $gutter: 25px;
 $padding: 1rem;
@@ -15,8 +16,8 @@ $offset: 50px;
 
 
 :root {--max-width: 100vw;}
-@media only screen and (min-width: $desktop) {
-  :root { --max-width: $desktop !important;}
+@media only screen and (min-width: $max-width) {
+  :root { --max-width: $max-width !important;}
 }
 
 $max-width: var(--max-width);

@@ -27,6 +27,8 @@
 					.introduction {
 						flex: 0 0 calc(var(--max-width) / 37 * 17);
 						padding: calc(var(--max-width) / 37 * 1);
+						position: static;
+						height: auto;
 
 						.title,
 						.keywords {
@@ -66,7 +68,7 @@
 						
 
 						.img {
-							position: static;
+
 						}
 					}		
 				}

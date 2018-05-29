@@ -7,6 +7,7 @@
 	padding-bottom: $padding * 2;
     position: relative;
     width: 100vw;
+	overflow: hidden;
 
 	.introduction {
 		width: #{100vw / 24 * 22};
@@ -74,9 +75,17 @@
 @include breakpoint($desktop) {
 	.block.hero {
 		justify-content: center;
+		height: calc(80vh - #{$offset});
+		padding: 0;
+
+		.title {
+			font-size: 3em !important;
+		}
 
 		.introduction {
 			max-width: calc(var(--max-width) / 37 * 22);
+			line-height: 1.7;
+			margin-bottom: $padding;
 		}
 
 		.button {
