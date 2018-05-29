@@ -49,3 +49,11 @@
 		}
 	}
 }
+
+@include breakpoint ($desktop) {
+	.main-menu {
+		.menu-toggle {
+			display: none;
+		}
+	}
+}

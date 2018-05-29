@@ -1,5 +1,4 @@
 .main-menu {
-
 	.nav {
 		padding-bottom: $gutter * 2;
 		display: flex;
@@ -9,7 +8,6 @@
 		top: 0;
 		left: 0;
 		opacity: 0;
-		transition: all 0.25s ease;
 		position: fixed;
 		flex-direction: column;
 		justify-content: space-around;
@@ -28,13 +26,15 @@
 
 				&:after {
 					content: '';
+					transition: all 0.25s ease;
 					transition: width .3s $easing-cubic;
 					width: 0;
 					background-color: $primary;
 					height: 6px;
 					left: 15px;
 					bottom: 3px;
-					opacity: .5;
+					z-index: -1;
+					opacity: 1;
 					position: absolute;
 				}
 			}
@@ -43,7 +43,7 @@
 			&.active {
 				.menu-link {
 					&:after {
-						width: calc(100% - 5px);
+						width: 100%;
 					}
 				}				
 			}
@@ -59,4 +59,55 @@
 			background-color: $white;
 		}
 	} 
+}
+
+@include breakpoint ($desktop) {
+	.main-menu {
+		.nav {
+			margin: $padding auto;
+			opacity: 1;
+			pointer-events: all;
+			position: static;
+			flex-direction: row;
+			width: calc(var(--max-width) / 37 * 35);
+			justify-content: flex-end;
+			background-color: transparent !important;
+			height: auto;
+
+			.menu-item {
+				width: auto;
+				margin-left: calc(var(--max-width) / 37 * 1);
+
+				&:first-child {
+					display: none;
+				}
+				
+				&:last-child {
+					.menu-link {
+						background-color: $primary;
+						color: $white;
+						border-radius: $border-radius;
+						text-decoration: none;
+						padding: $padding $gutter;
+						margin-top: -$padding;
+						display: inline-block;
+						box-shadow: $box-shadow;
+					}
+				}
+
+				.menu-link {
+					@include font('normal');
+					color:  $white;
+					width: auto;
+
+					&:after {
+						background-color: $white;
+						height: 1px;
+						left: 0;
+						bottom: 1px;
+					}
+				}
+			}
+		}
+	}
 }
