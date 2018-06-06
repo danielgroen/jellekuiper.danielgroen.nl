@@ -1,17 +1,12 @@
 'use strict';
 
-let gulp = require('gulp'),
-    reload = global.browserSync.reload;
+const   gulp = require('gulp'),
+        reload = global.browserSync.reload;
 
 // Setup browsersync.
 gulp.task('browsersync', () => {
     global.browserSync.init({
-        server: {
-            baseDir: global.paths.app,
-            serveStaticOptions: {
-                extensions: ["html"]
-            }
-        },
+        proxy: "localhost:4000",
         ghostMode: false
     });
 
@@ -22,4 +17,4 @@ gulp.task('browsersync', () => {
     gulp.watch(global.paths.app + global.paths.fonts, gulp.series('fonts'));
 });
 
-gulp.task('serve', gulp.series('browsersync', 'sass'));
+gulp.task('serve', gulp.parallel('browsersync', 'jekyll-serve', 'sass'));

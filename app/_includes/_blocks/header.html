@@ -1,0 +1,13 @@
+<header class="header">
+	<nav class="main-menu">
+		<div class="menu-toggle"></div>
+		<a href="/"><h1 class="logo">Jelle Kuiper</h1></a>
+		<ul class="nav">
+			<li class="menu-item {% if page.path == 'index.html' %}active{% endif %}"><a href="{{site.url}}" class="menu-link">Home</a></li>
+			<li class="menu-item {% if page.path == 'trouwambtenaar.html' %}active{% endif %}"><a href="trouwambtenaar" class="menu-link">Trouwambtenaar</a></li>
+			<li class="menu-item {% if page.path == 'bedrijfsoptredens.html' %}active{% endif %}"><a href="bedrijfsoptredens"  class="menu-link">Bedrijfsoptredens</a></li>
+			<li class="menu-item {% if page.path == 'theaterproducties.html' %}active{% endif %}"><a href="theaterproducties" class="menu-link">Theaterproducties</a></li>
+			<li class="menu-item"><a href="#Contact" class="menu-link">Contact</a></li>
+		</ul>
+	</nav>
+</header>

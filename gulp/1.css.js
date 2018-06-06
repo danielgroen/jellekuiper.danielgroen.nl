@@ -21,7 +21,7 @@ gulp.task('sass', () => {
 	        browsers: ['last 40 versions'],
         	cascade: false
 		}))
-		.pipe(gulp.dest(global.paths.app + '/css/'))
+		.pipe(gulp.dest(global.paths.app + '/assets/css/'))
 		.pipe(global.browserSync.stream());
 });
 
@@ -35,6 +35,6 @@ gulp.task('fonts', () => {
         	cascade: false
 		}))
         .pipe(concat('fonts.css'))
-        .pipe(gulp.dest(global.paths.app + '/css/'))
+        .pipe(gulp.dest(global.paths.app + '/assets/css/'))
 		.pipe(global.browserSync.stream());
 });

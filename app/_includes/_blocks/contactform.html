@@ -1,0 +1,34 @@
+<section class="block contactform" id="contact">
+	<form id="gform" class="form" method="POST">
+		<strong class="subtitle">Contact</strong>
+		<p>Heb je een vraag of wil je kennis maken? Bel op <a class="tel"></a> of stuur me een berichtje.</p>
+		<label for="name">Naam</label>
+	    <input class="form-field" type="text" name="name" placeholder="B.v. Charlotte van Dijk" required>
+	    
+		<label for="email">E-mail</label>
+	    <input class="form-field" type="email" name="email" placeholder="B.v. charlottevandijk@gmail.com" required>
+
+		<label for="subject">Onderwerp</label>
+	    <input class="form-field" type="text" name="subject" placeholder="Bv. Trouwambtenaar Amsterdam" required>
+		
+		<label for="message">Bericht</label>
+	    <textarea class="form-field" name="message" rows="5" placeholder="Bv. Hoi Jelle, ik ga trouwen op op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Laura" required></textarea>
+
+	    <input type="hidden" id="honeypot" type="text" name="honeypot" value="" />
+	    <input type="hidden"class="to" type="text" name="to" value="" />
+	    <input class="send button" type="submit" value="Verstuur bericht" >
+	</form>
+	
+	<picture data-focus-x="0.331" data-focus-y="-0.224"  class="focuspoint picture">
+			<img class="img" src="/assets/img/scape4.jpg" alt="Jelle Kuiper">
+	</picture>
+	
+	<div class="thankyou">
+		<div class="inner">{% include _svg/checkmark.svg %}
+			<h2>Dankjewel voor je bericht!</h2>
+			<p>Ik stuur je zo snel mogelijk een bericht terug.</p>
+			<a class="send" >Terug naar de site</a>
+		</div>
+	</div>
+	<div class="overtake"><div class="spinner"><div class="bubble-1"></div><div class="bubble-2"></div></div></div>
+</section>

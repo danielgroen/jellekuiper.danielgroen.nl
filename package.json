@@ -13,6 +13,7 @@
   "devDependencies": {
     "breakpoint-sass": "^2.7.1",
     "browser-sync": "^2.18.8",
+    "child_process": "^1.0.2",
     "event-stream": "^3.3.4",
     "gh-pages": "^1.1.0",
     "github-pages": "^3.0.2",
@@ -33,15 +34,16 @@
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8",
     "gulp-sass-globbing": "0.0.2",
-    "gulp-sitemap": "^4.2.0",
     "gulp-style-inject": "^0.1.0",
     "gulp-uglify": "^2.0.1",
     "imagemin-mozjpeg": "^7.0.0",
+    "jekyll": "^3.0.0-beta1",
     "main-bower-files": "^2.13.1",
     "require-dir": "^1.0.0",
     "sass-strip-unit": "^1.0.0",
     "singularitygs": "^1.7.1",
     "stream-series": "^0.1.1",
+    "util": "^0.10.4",
     "webfontloader": "^1.6.28"
   }
 }

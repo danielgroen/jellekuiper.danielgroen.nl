@@ -49,15 +49,6 @@
 			}
 
 		}
-	}
-
-	// open menu
-	.menu-toggle.active {
-		~ .nav {
-			pointer-events: all;
-			opacity: 1;
-			background-color: $white;
-		}
 	} 
 }
 

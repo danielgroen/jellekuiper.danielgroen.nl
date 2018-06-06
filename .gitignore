@@ -1,8 +1,9 @@
 node_modules
 bower_components
-.idea
 environment
-.publish
 dist
 app/css/
 app/js/*.js
+.idea
+.publish
+.sass-cache

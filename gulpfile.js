@@ -8,12 +8,12 @@ process.setMaxListeners(0);
 global.paths = {
 	'app': './app',
 	'dist': 'dist',
-	'jsFiles': '/js/source/*.js',
-	'data': '/data/*.json',
-	'images': '/img/**/*.{png,jpg,jpeg,ico}',
-	'sassFiles': '/sass/**/*.scss',
-	'fonts': '/font/*.scss',
-	'htmlFiles': '/*.html',
+	'jsFiles': '/assets/js/source/*.js',
+	'data': '/assets/data/*.json',
+	'images': '/assets/img/**/*.{png,jpg,jpeg,ico}',
+	'sassFiles': '/_sass/**/*.scss',
+	'fonts': 'assets/font/*.scss',
+	'htmlFiles': '/*.{html, md}',
 	'cssFiles': '/css/*.css',
 	'cname': '/CNAME',
 };
@@ -26,19 +26,3 @@ global.ghpagesOptions = {
 global.browserSync = browserSync;
 requireDir('./gulp', { recurse: false });
 gulp.task('default', gulp.series('serve'));
-
-
-
-
-			//  MAIN SETTINGS  //
-///////////////////////////////////////////////
-///////////////////////////////////////////////
-///////////////////////////////////////////////
-global.options = {
-	production: false,
-	sitename: "https://jellekuiper.nl",
-	staginPathPrefix: "jellekuiper.github.io/"
-}
-///////////////////////////////////////////////
-///////////////////////////////////////////////
-///////////////////////////////////////////////

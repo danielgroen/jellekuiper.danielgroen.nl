@@ -1,0 +1,57 @@
+# Jekyll configuration precedence:
+# 1. gulp task
+# 2. config.build.yml
+# 3. config.yml
+
+name: "Jelle Kuiper | Trouwambtenaar"
+description: "Voor een leuke trouwdag"
+url: webnozems.nl
+keywords: "trouwen jellekuiper jelle kuiper amsterdam" 
+author:
+  name: jellekuiper
+  email: info@jellekuiper.nl
+encoding: utf-8
+timezone: Europe/Amsterdam
+
+# folders
+baseurl: 
+source: /var/www/jellekuiper/app/
+destination: /var/www/jellekuiper/dist
+assets:
+  compress:
+    css: true
+    js: true
+
+
+# Owner/author information
+owner:
+  name: Jelle Kuiper
+  avatar: avatar.jpg
+  bio:  "Strategisch adviesbureau voor zorgondernemers."
+  email:  info@jellekuiper.nl
+  twitter:  jelle_kuipernl
+
+# exclude: ['img', 'pdf', 'css', 'js', 'fonts', 'bower_components', 'node_modules', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+keep_files: ['img', 'pdf']
+include: ['.htaccess']
+
+# _config.build.yml sets future and show_drafts to false on `gulp build`
+future: true
+show_drafts: true
+
+disqus:
+    shortname: 'jellekuiper'
+
+# Markdown library
+markdown: redcarpet
+#   extensions: ['fenced_code_blocks', 'smart']
+
+permalink: /:categories/:title/
+
+defaults:
+  - scope:
+      path: "" # empty string for all files
+    values:
+      layout: "page"
+      weight: 0
+      opengraph: 'opengraph.png'

@@ -1,0 +1,5 @@
+server {
+	error_page 404 /index.html;
+    listen       80;
+    server_name  www.jellekuiper.nl;
+}

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include _sections/head.html %}
+	<body class="body {% if page.path == 'index.html' %}home {% else %}page{% endif %}">
+		{% include _blocks/header.html %}
+		{% include _blocks/hero.html %}
+		<main>{{ content }}</main>
+		{% include _sections/footer.html %}
+	</body>
+</html>
