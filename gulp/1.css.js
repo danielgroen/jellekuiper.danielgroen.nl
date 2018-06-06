@@ -22,6 +22,7 @@ gulp.task('sass', () => {
         	cascade: false
 		}))
 		.pipe(gulp.dest(global.paths.app + '/assets/css/'))
+		.pipe(gulp.dest(global.paths.dist + '/assets/css/'))
 		.pipe(global.browserSync.stream());
 });
 

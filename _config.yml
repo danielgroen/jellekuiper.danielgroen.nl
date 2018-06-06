@@ -22,6 +22,10 @@ assets:
     css: true
     js: true
 
+sass:
+  sass_dir: assets/css
+  style: compressed
+
 
 # Owner/author information
 owner:

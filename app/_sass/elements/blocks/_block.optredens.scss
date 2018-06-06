@@ -1,0 +1,23 @@
+.block.optredens {
+	text-align: center;
+	
+	ul {
+		li {
+			display: inline !important;
+			list-style: none;
+			line-height: 2rem;
+			color: $grey;
+
+			&:before {
+				content: none;
+			}
+
+			&:not(:last-child):after {
+				content: " - ";
+				position: absolute;
+				right: -20px;
+				padding-right: 10px;
+			}
+		}
+	}
+}

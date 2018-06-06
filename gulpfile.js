@@ -12,7 +12,7 @@ global.paths = {
 	'data': '/assets/data/*.json',
 	'images': '/assets/img/**/*.{png,jpg,jpeg,ico}',
 	'sassFiles': '/_sass/**/*.scss',
-	'fonts': 'assets/font/*.scss',
+	'fonts': '/assets/font/*.scss',
 	'htmlFiles': '/*.{html, md}',
 	'cssFiles': '/css/*.css',
 	'cname': '/CNAME',

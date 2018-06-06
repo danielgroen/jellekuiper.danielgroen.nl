@@ -1372,6 +1372,21 @@ button::-moz-focus-inner {
       -o-transform: translateY(0);
       transform: translateY(0); } }
 
+.block.optredens {
+  text-align: center; }
+  .block.optredens ul li {
+    display: inline !important;
+    list-style: none;
+    line-height: 2rem;
+    color: #333333; }
+    .block.optredens ul li:before {
+      content: none; }
+    .block.optredens ul li:not(:last-child):after {
+      content: " - ";
+      position: absolute;
+      right: -20px;
+      padding-right: 10px; }
+
 .block.references .reference {
   display: -webkit-box;
   display: -webkit-flex;
