@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include _sections/head.html %}
+	<body class="body page detail">
+		{% include _blocks/header.html %}
+		<a href="/theaterproducties">{% include _svg/arrow-left.svg %} terug</a>
+		<h1 class="title">{{ page.title }}</h1>
+		<main>	
+			<picture class="hero-image">
+				<img class="img" src="{{ page.headerimage }}" alt="Jelle Kuiper">
+			</picture>
+			{{ content }}
+
+		</main>
+		{% include _sections/footer.html %}
+	</body>
+</html>
