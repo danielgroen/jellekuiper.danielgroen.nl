@@ -1630,15 +1630,29 @@ main > .block {
   .block.video .inner {
     padding: 0;
     width: 100%;
-    height: -webkit-calc(var(--max-width) / 16 * 9);
-    height: calc(var(--max-width) / 16 * 9); }
+    height: -webkit-calc(91.66667vw / 16 * 9);
+    height: calc(91.66667vw / 16 * 9); }
     .block.video .inner iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 91.66667vw;
-      height: -webkit-calc(var(--max-width) / 16 * 9);
-      height: calc(var(--max-width) / 16 * 9); }
+      height: -webkit-calc(91.66667vw / 16 * 9);
+      height: calc(91.66667vw / 16 * 9); }
+
+@media (min-width: 770px) {
+  .block.video .inner {
+    width: 100%;
+    height: -webkit-calc( (var(--max-width) / 37 * 35) / 16 * 9);
+    height: calc( (var(--max-width) / 37 * 35) / 16 * 9); }
+    .block.video .inner iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: -webkit-calc(var(--max-width));
+      width: calc(var(--max-width));
+      height: -webkit-calc( (var(--max-width) / 37 * 35) / 16 * 9);
+      height: calc( (var(--max-width) / 37 * 35) / 16 * 9); } }
 
 .thankyou {
   width: 90vw;
