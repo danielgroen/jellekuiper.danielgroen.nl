@@ -12,9 +12,16 @@
 			@include font('quote');
 			margin-bottom: $gutter;
 		}
-	}
 
+		.button {
+			text-transform: uppercase;
+			text-align: center;
+			width: calc(var(--max-width) / 24 * 22);
+			left: calc(var(--max-width) / 24 * 1);
+		}
+	}
 }
+
 @include breakpoint($desktop) {
 	.block.usps {
 		.usp {
@@ -38,12 +45,16 @@
 				}
 			}
 
+			.button {
+				text-transform: uppercase;
+				width: calc(var(--max-width) / 37 * 15);
+				left: calc(var(--max-width) / 37 * 1);
+				bottom: calc(var(--max-width) / 37 * 1);
+			}
+
 			.picture {
 				flex: 0 0 calc(var(--max-width) / 37 * 17);
 				position: relative;
-				
-				.img {
-				}
 			}		
 		}
 	}

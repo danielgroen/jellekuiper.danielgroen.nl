@@ -1,5 +1,13 @@
 <section class="block testimonials">
 	<div class="inner">
 		<strong class="subtitle">Reacties</strong>
+		<div class="owl-carousel owl-theme">
+			{% for testimonial in site.data.testimonials %}
+				<article>
+					<blockquote class="quote">{{ testimonial.text }}"</blockquote>
+					<p class="name">{{ testimonial.name }}</p>
+				</article>
+			{% endfor %}
+		</div>
 	</div>
 </section>

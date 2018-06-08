@@ -3,12 +3,12 @@
 
 	.inner {
 		&:before,
-		&:after {
+		.name:after {
 			@include font('title');
 			color: $primary;
 			text-align: center;
 			position: absolute;
-			font-size: 4.5rem;
+			font-size: 7rem;
 			letter-spacing: 1rem;
 			width: 30px;
 			line-height: 0;
@@ -23,12 +23,6 @@
 			top: 0;
 			line-height: 3.5rem;
 		}
-
-		&:after {
-			content: "”";
-			bottom: 2rem;
-			right: -10px;
-		}
 	}
 
 	.quote {
@@ -40,6 +34,15 @@
 		font-weight: bold;
 		font-size: 1.125rem;
 		text-align: right;
+		position: relative;
+		margin-right: 20px;
+
+		&:after {
+			content: "”";
+			bottom: 0rem;
+			text-align: right;
+			right: 0;
+		}
 	}
 }
 
@@ -47,5 +50,11 @@
 	.block.testimonials {
 		margin-top: 0;
 		width: calc(var(--max-width) / 37 * 17);
+
+		.name {
+			&:after {
+				bottom: -2rem;
+			}
+		}
 	}
 }

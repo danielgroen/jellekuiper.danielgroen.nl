@@ -1,0 +1,121 @@
+.detailpage {
+	position: relative;
+	.header {
+		position: relative;
+		height: 40px;
+
+		.logo {
+			color: $black;
+			display: none;
+		}
+
+		.main-menu .menu-toggle, {
+			border-color: black;
+
+			&:after {
+				background-color: black;
+			}
+		}
+	}
+
+	.hero-image {
+		display: block;
+		width: calc(var(--max-width) / 24 * 22);
+		max-width: calc( var(--max-width) - (var(--max-width) / 37 * 2));
+		margin: $gutter*1.5 auto;
+		z-index: -99;
+		position: relative;
+		max-height: 500px;
+		overflow: hidden;
+	}
+
+	.heading {
+		position: relative;
+
+		.back {
+			color: $grey;
+			top: 0;
+			margin-left: #{100vw / 24 * 1};
+			position: absolute;
+			margin-top: -$gutter*3;
+
+			svg {
+				color: $grey;
+				width: 10px;
+			}
+		}
+
+		.title {
+			color: black;
+			text-align: center;
+			font-size: 3rem !important;
+			margin: $gutter*2 0;
+			@include font('title');
+			display: block;
+		}
+	}
+
+
+
+	main {
+		.block.text + .button {
+			text-align: center;
+			text-transform: uppercase;
+			width: #{100vw / 24 * 22};
+			margin-left: #{100vw / 24 * 1};
+		}
+	}
+}
+
+@include breakpoint($desktop) {
+	.detailpage {
+		.header {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: $max-width;
+			height: auto;
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: 150vw;
+				height: 100%;
+				top: -$gutter;
+				left: -50vw;
+				z-index: -3;
+				background-color: $grey-light;
+				border: 1px solid #eaeaea;
+			}
+
+			.nav {
+				padding-bottom: 35px;
+
+				.menu-item:not(:last-child) {
+					a {
+						color: $placeholder;
+					}
+				}
+			}
+
+			.logo {
+				display: block;
+			    margin-top: -10px;
+			}
+		}
+
+			.heading {
+				.back {
+					position: absolute;
+				}
+			}
+
+		main {
+			.block.text + .button {
+				margin-left: 50%;
+				transform: translate(-50%);
+				display: inline-block;
+				width: auto;
+			}
+		}
+	}
+}

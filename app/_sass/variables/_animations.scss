@@ -10,3 +10,31 @@ $easing-cubic: cubic-bezier(.56,.1,.34,.91);
   0%, 100% {transform: scale(0.0);}
   50% {transform: scale(1.0);}
 }
+
+
+
+@keyframes fadeIn {
+	0% {
+		transform: translateY(40px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+main .block {
+	.usp .picture,
+	.reference {
+		opacity: 0;
+	}
+}
+
+.fade-in {
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: $easing;
+	animation-fill-mode: forwards;
+	animation-duration: $speed*3;
+}

@@ -10,26 +10,29 @@
 @include breakpoint($desktop) {
 	.page {
 		.block {
+
 			// reference block
 			&.references {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
+				flex-wrap: wrap;
+				padding-top: $gutter;
+
 
 				.subtitle {
 					position: absolute;
 					left: 0;
+					top: -$gutter/2;
 				}
 
 				.reference-image {
 					height: 100%;
 					min-height: 350px;
-					// width: calc(var(--max-width) / 24 * 17);
-					// height: 500px;
 				}
 
 				.reference {
-					margin-top: 3rem;
+					margin-top: $gutter;
 					width: calc(var(--max-width) / 37 * 17);
 					margin-bottom: 0;
 
@@ -43,6 +46,7 @@
 					}
 				}
 			}
+
 			// contactform
 			&.contactform {
 				display: flex;

@@ -18,6 +18,10 @@
 					text-align: left;
 					margin-bottom: $gutter;
 
+					&:after {
+						content: none;
+					}
+
 					&:nth-child(even) {
 						.introduction {
 							order: 2;
@@ -65,7 +69,13 @@
 
 					.reference-image {
 						flex: 0 0 calc(var(--max-width) / 37 * 17);
-						
+
+						&:not(.focuspoint) {
+							position: relative;
+							height: 420px;
+							width: 100%;
+							overflow: hidden;
+						}
 
 						.img {
 

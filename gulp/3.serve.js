@@ -11,7 +11,6 @@ gulp.task('browsersync', () => {
     });
 
     gulp.watch(global.paths.app + global.paths.htmlFiles).on('change', reload);
-    gulp.watch(global.paths.app + global.paths.data).on('change', reload);
     gulp.watch(global.paths.app + global.paths.jsFiles, gulp.series('js'));
     gulp.watch(global.paths.app + global.paths.sassFiles, gulp.series('sass'));
     gulp.watch(global.paths.app + global.paths.fonts, gulp.series('fonts'));

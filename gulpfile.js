@@ -9,7 +9,6 @@ global.paths = {
 	'app': './app',
 	'dist': 'dist',
 	'jsFiles': '/assets/js/source/*.js',
-	'data': '/assets/data/*.json',
 	'images': '/assets/img/**/*.{png,jpg,jpeg,ico}',
 	'sassFiles': '/_sass/**/*.scss',
 	'fonts': '/assets/font/*.scss',
