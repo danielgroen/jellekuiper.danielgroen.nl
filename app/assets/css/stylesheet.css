@@ -975,7 +975,10 @@ button::-moz-focus-inner {
       display: block;
       margin-top: -10px; }
   .detailpage .heading .back {
-    position: absolute; }
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -webkit-calc((100vw - var(--max-width))  / 2);
+    margin-left: calc((100vw - var(--max-width))  / 2); }
   .detailpage main .block.text + .button {
     margin-left: 50%;
     -webkit-transform: translate(-50%);
@@ -1719,7 +1722,13 @@ main > .block {
       bottom: -2rem; } }
 
 .block.text {
+  margin: 0 auto;
   margin-bottom: 50px; }
+
+@media (min-width: 770px) {
+  .block.text {
+    width: -webkit-calc(var(--max-width) / 37 * 31);
+    width: calc(var(--max-width) / 37 * 31); } }
 
 .block.usps .usp {
   margin-bottom: 50px;

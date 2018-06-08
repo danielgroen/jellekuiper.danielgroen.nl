@@ -103,11 +103,13 @@
 			}
 		}
 
-			.heading {
-				.back {
-					position: absolute;
-				}
+		.heading {
+			.back {
+				position: absolute;
+				margin-top: $gutter;
+				margin-left: calc((100vw - var(--max-width))  / 2);
 			}
+		}
 
 		main {
 			.block.text + .button {
