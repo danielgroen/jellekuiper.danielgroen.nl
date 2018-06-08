@@ -13893,6 +13893,31 @@ $('.block .counter').each(function (index) {
         }
     }, (1000 / counterValue * 2 ));
 })
+$(window).on('load scroll', function() {
+
+	$('main .block > .usp').each( function(i){
+	  var bottom_of_object = $(this).offset().top + 20,
+	  	  bottom_of_window = $(window).scrollTop() + $(window).height();
+
+	  if( bottom_of_window > bottom_of_object ){
+	    $(this).find('.picture').addClass("fade-in");
+	    $(this).find('.reference').addClass("fade-in");
+	  }
+	}); 
+
+	$('main .references .reference').each( function(i){
+  	  var that = $(this);
+	  var bottom_of_object = that.offset().top + 20,
+	  	  bottom_of_window = $(window).scrollTop() + $(window).height();
+
+	  if ( bottom_of_window > bottom_of_object ) {
+		var explode = function(){
+    		that.addClass("fade-in");
+		};
+	  	setTimeout(explode, 500 * i);
+	  }
+	}); 
+});
 /**
  * jQuery FocusPoint; version: 1.1.3
  * Author: http://jonathonmenz.com
@@ -13905,14 +13930,13 @@ $('.block .counter').each(function (index) {
 // focuspoint helper
 // https://jonom.github.io/jquery-focuspoint/demos/helper/index.html
 var focuspoint = $('.focuspoint');
-
 var images = {
 	'Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg' : {x: -0.15 , y: 0.53 },
 	'Bedrijfsoptredens-Jelle-Kuiper-hero.jpg' : {x: -0.40 , y: 0.47 },
 	'Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-2.jpg' : {x: -0.72 , y: 0.63 },
 	'Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-3.jpg' : {x: -0.23 , y: -0.30 },
 	'Bedrijfsoptreden-Jelle-Kuiper-contact.jpg' : {x: 0.15 , y: -0.36 },
-	'Bedrijfsoptreden-Jelle-Kuiper-presentatie-maxima.JPG' : {x: 0.28 , y: 0.54 },
+	'Bedrijfsoptreden-Jelle-Kuiper-presentatie-maxima.jpg' : {x: 0.28 , y: 0.54 },
 	'Bedrijfsoptreden-Jelle-Kuiper-quiz.jpg' : {x: 0.35 , y: 0.41 },
 	'Theaterproducties-Jelle-Kuiper-introductie.jpeg' : {x: -0.06 , y: 0.24 },
 	'Theaterproducties-judas-Jelle-Kuiper.jpg' : {x: 0.49 , y: -0.49 },
@@ -13924,6 +13948,7 @@ var images = {
 	'Trouwambtenaar-Jelle-Kuiper-leuktrouwen-prijs.jpg' : {x: -0.31 , y: 0.49 },
 	'Trouwambtenaar-Jelle-Kuiper-leuktrouwen.jpg' : {x: 0.07 , y: 0.47 },
 	'Trouwambtenaar-Jelle-Kuiper-Persoonlijk.jpg' : {x: 0.25 , y: 0.48 },
+	'jellekuiper.jpg' : {x: 0.09 , y: 0.27 },
 }
 
 $.each(focuspoint, function() {
@@ -13931,21 +13956,18 @@ $.each(focuspoint, function() {
 	var width = $(this).find('img').width(),
 		height = $(this).find('img').height()
 		src = $(this).find('img').attr('src');
-
-	console.log(src);
+		var that = $(this);
 
 	Object.keys(images).forEach(function(key) {
   		if (src.indexOf(key) !== -1) {
-			$(this).attr('data-image-w', width);
-			$(this).attr('data-image-h', height);
-			$(this).attr('data-focus-x', images[key].x);
-			$(this).attr('data-focus-y', images[key].y);
+			that.attr('data-image-w', width)
+				.attr('data-image-h', height)
+				.attr('data-focus-x', images[key].x)
+				.attr('data-focus-y', images[key].y);
 		}
 	});
-
-
-
 })
+
 //Fire plugin
 focuspoint.focusPoint();
 var mobile  = '06 ';    var telephone  = '020 ';     var email = "groendaniel";    
@@ -14067,31 +14089,8 @@ $(function($) {
       }
   });
 });
-var i = 0;
 
-function jsonLoader() {
-	return $.getJSON( "/assets/data/data.json", function( data ) {
-		testimonials(data); 
-	});
-};
-
-function testimonials(data) {
-	if (i == 0 ) {
-		var cards = [];
-		var index = i++;
-
-		$.each(data.testimonials, function( index, val ) {
-			cards.push( '<article><blockquote class="quote">' + val.text + '</blockquote><p class="name">' + val.name + '</p></article>');
-		});
-
-		$( "<div/>", {
-			"class": "owl-carousel owl-theme",
-			html: cards.join( "" )
-		}).appendTo( ".testimonials .inner" );
-	}
-};
-
-jsonLoader().done(function() {
+(function() {
 	var owl = $('.owl-carousel');
 
 	owl.owlCarousel({
@@ -14109,7 +14108,7 @@ jsonLoader().done(function() {
 		var activeItem = Math.floor( (owlDots.find('.active').index()) / 10 );
 		owlDots.attr('data-item',activeItem)
 	})
-})
+})();
 
 // this is the closing file
 });
