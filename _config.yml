@@ -44,7 +44,15 @@ disqus:
 markdown: redcarpet
 #   extensions: ['fenced_code_blocks', 'smart']
 
-permalink: /:categories/:title/
+permalink: /:path/
+
+collections:
+  pages:
+    permalink: /:path/
+    output: true
+  posts:
+    permalink: /theaterproducties/:path/
+    output: true
 
 defaults:
   - scope:
