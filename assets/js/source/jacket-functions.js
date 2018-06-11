@@ -24,29 +24,40 @@ $('.menu-toggle').on('click', function(e){
 
 
 // parralax scrolling
-var breakpoint = 720;
-offset = 0;
-$.fn.parallax = function(strength, offset) {
-  if (this.length != 0) {
-    if (!$.isNumeric(offset)) { offset = 0; }
-    if ( $(window).width() > breakpoint  ) {
-      if ( this[0].offsetTop < ( $(window).scrollTop() + $(window).height() )) {
-        var transformY =  Math.round( ( $(window).scrollTop() - this[0].offsetTop ) * strength + offset )+ "px" ;
-         this.css({
-        "-webkit-transform":"translateY(" + transformY + ")",
-        "-ms-transform":"translateY(" + transformY + ")",
-        "transform":"translateY(" + transformY + ")"
-        });
-      }
-    } else {
-        this.css('transformY', '');
-    }
-  }
-};
+// var breakpoint = 720;
+// offset = 0;
+// $.fn.parallax = function(strength, offset) {
+//   if (this.length != 0) {
+//     if (!$.isNumeric(offset)) { offset = 0; }
+//     if ( $(window).width() > breakpoint  ) {
+//       if ( this[0].offsetTop < ( $(window).scrollTop() + $(window).height() )) {
+//         var transformY =  Math.round( ( $(window).scrollTop() - this[0].offsetTop ) * strength + offset )+ "px" ;
+//          this.css({
+//         "-webkit-transform":"translateY(" + transformY + ")",
+//         "-ms-transform":"translateY(" + transformY + ")",
+//         "transform":"translateY(" + transformY + ")"
+//         });
+//       }
+//     } else {
+//         this.css('transformY', '');
+//     }
+//   }
+// };
+jQuery(document).ready(function(){
+  $(window).scroll(function(e){
+    parallaxScroll();
+  });
 
-$(window).on('scroll load', function() {
-  $('.hero-image .img').parallax(0.5);
-});
+  function parallaxScroll() {
+    var scrolled = $(window).scrollTop();
+    console.log(0 - (scrolled*.25));
+    $('.hero-image .img').css('margin-top',(0-(scrolled*.25) * -1)+'px');
+  }
+ }); 
+
+// $(window).on('scroll load', function() {
+//   $('.hero-image .img').parallax(0.5);
+// });
 
 
 // smooth scroll to an div 
