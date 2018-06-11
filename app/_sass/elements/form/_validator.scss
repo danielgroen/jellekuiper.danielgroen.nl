@@ -1,10 +1,22 @@
+// not validated
 .contactform {
 	[required] {
 		&:placeholder-shown {
-			~ .send {
-				background-color: rgba($primary,1);
+			~ .send,
+			~ input[type='submit'] {
+				background-color: #dcdcdc;
 				pointer-events: none;
 			}
 		}
+	}
+}
+
+// validated
+.contactform {
+	input[type='submit'],
+	.send {
+		background-color: $primary;
+		cursor: pointer;
+		pointer-events: all;
 	}
 }

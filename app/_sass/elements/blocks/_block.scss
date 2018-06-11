@@ -36,6 +36,5 @@ main > .block {
 @include breakpoint($desktop) {
 	main > .block {
 		width: #{100vw / 37 * 35};
-
 	}
 }

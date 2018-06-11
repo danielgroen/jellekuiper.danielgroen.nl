@@ -24,6 +24,10 @@
 
     * {
     	color: $white;
+
+        a:hover {
+            opacity: .7;
+        }
     }
 
     .nav {

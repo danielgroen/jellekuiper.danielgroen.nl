@@ -11,15 +11,14 @@
 		width: $barWidth;
 		height: $menuHeight;
 		cursor: pointer;
-		border-top: $barHeight solid $white; 
-		border-bottom: $barHeight solid $white;
+		border-top: $barHeight solid $menu-toggle; 
+		border-bottom: $barHeight solid $menu-toggle;
 		transition: all 0.25s $easing-cubic;
 		transform-origin: center;
-		z-index: 20;
 
 		&:before, &:after {
 			content: "";
-			background-color: $white;
+			background-color: $menu-toggle;
 			width: $barWidth;
 			height: $barHeight;
 			position: absolute;
@@ -52,6 +51,8 @@
 
 // open menu
 .menu-toggle.active {
+	z-index: 20;
+
 	~ .nav {
 		pointer-events: all;
 		opacity: 1;

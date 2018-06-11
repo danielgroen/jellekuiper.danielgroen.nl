@@ -3,8 +3,9 @@
 		width: 100%;
 		box-sizing: border-box;
 
+		// remove yellow background from autocomplete
 		&:-webkit-autofill {
-	    	-webkit-box-shadow: 0 0 0 30px white inset;
+	    	-webkit-box-shadow: 0 0 0 30px white inset !important;
 		}
 	}
 
@@ -49,13 +50,27 @@
 		padding: 10px 1rem;
 		@include font;
 		margin-bottom: $gutter / 2.5;
+
+		&:focus {
+			border: 1px solid #777777;
+			
+			&::-webkit-input-placeholder {
+			color: $white;
+			}
+			&::-moz-placeholder {
+			color: $white;
+			}
+			&:-ms-input-placeholder {
+			color: $white;
+			}
+			&:-moz-placeholder {
+			color: $white;
+			}
+		}
 	}
 
 	input[type='submit'],
 	.send {
-		background-color: $primary;
-		cursor: pointer;
-		pointer-events: all;
 		color: $white;
 		font-weight: 800;
 		font-size: 1rem;

@@ -33,6 +33,10 @@
 			text-transform: uppercase;
 			box-shadow: $box-shadow;
 			width: 100%;
+
+			&:hover {
+				background-color: $hover;
+			}
 		}
 	}
 

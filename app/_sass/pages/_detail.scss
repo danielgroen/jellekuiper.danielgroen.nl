@@ -1,20 +1,30 @@
 .detailpage {
-	position: relative;
+
+	&.pinned {
+		.heading {
+			.back {
+				z-index: 0;
+			}
+		}
+	}
+	.main-menu {
+		.menu-toggle {
+			$menuHeight: 20px;
+			$barWidth: 24px;
+			$barHeight: 3px;
+			border-top: $barHeight solid $black; 
+			border-bottom: $barHeight solid $black;
+			&:before, &:after {
+				background-color: $black;
+			}
+		}
+	}
 	.header {
-		position: relative;
 		height: 40px;
 
 		.logo {
 			color: $black;
 			display: none;
-		}
-
-		.main-menu .menu-toggle, {
-			border-color: black;
-
-			&:after {
-				background-color: black;
-			}
 		}
 	}
 
@@ -34,10 +44,11 @@
 
 		.back {
 			color: $grey;
-			top: 0;
+			top: $gutter*1.5;
 			margin-left: #{100vw / 24 * 1};
 			position: absolute;
-			margin-top: -$gutter*3;
+			margin-top: -$gutter*5;
+			z-index: 5;
 
 			svg {
 				color: $grey;
@@ -49,13 +60,12 @@
 			color: black;
 			text-align: center;
 			font-size: 3rem !important;
-			margin: $gutter*2 0;
+			margin-top: $gutter*4;
+			margin-bottom: $gutter*2;
 			@include font('title');
 			display: block;
 		}
 	}
-
-
 
 	main {
 		.block.text + .button {
@@ -67,13 +77,15 @@
 	}
 }
 
+
 @include breakpoint($desktop) {
 	.detailpage {
 		.header {
-			margin-left: auto;
-			margin-right: auto;
-			max-width: $max-width;
 			height: auto;
+
+			.logo {
+				display: block;
+			}
 
 			&:after {
 				content: '';
@@ -96,18 +108,23 @@
 					}
 				}
 			}
-
-			.logo {
-				display: block;
-			    margin-top: -10px;
-			}
 		}
 
 		.heading {
 			.back {
 				position: absolute;
-				margin-top: $gutter;
-				margin-left: calc((100vw - var(--max-width))  / 2);
+				margin-top: -$gutter*.5;
+				opacity: .7;
+				margin-left: calc((100vw - var(--max-width))  / 2 + (var(--max-width) / 37 * 1));
+				
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+			.title {
+				margin-top: $gutter*7;
+				position: relative;
 			}
 		}
 

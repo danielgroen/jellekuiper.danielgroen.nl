@@ -1,9 +1,13 @@
 .button {
-	background-color: $primary;
 	color: $white;
 	border-radius: $border-radius;
 	text-decoration: none;
 	padding: $padding $gutter;
 	display: inline-block;
 	box-shadow: $box-shadow;
+	background-color: $primary;
+	
+	&:hover {
+		background-color: $hover;
+	}
 }

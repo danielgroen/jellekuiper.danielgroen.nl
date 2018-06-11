@@ -1,4 +1,6 @@
 .main-menu {
+		position: relative;
+	
 	.nav {
 		padding-bottom: $gutter * 2;
 		display: flex;
@@ -41,6 +43,7 @@
 
 			&:hover,
 			&.active {
+				opacity: 1;
 				.menu-link {
 					&:after {
 						width: 100%;
@@ -67,6 +70,7 @@
 
 			.menu-item {
 				width: auto;
+				opacity: .7;
 				margin-left: calc(var(--max-width) / 37 * 1);
 
 				&:first-child {
@@ -74,6 +78,8 @@
 				}
 				
 				&:last-child {
+					opacity: 1;
+						
 					.menu-link {
 						background-color: $primary;
 						color: $white;
@@ -83,6 +89,10 @@
 						margin-top: -$padding;
 						display: inline-block;
 						box-shadow: $box-shadow;
+
+						&:hover {
+							background-color: $hover;
+						}
 
 						&:after {
 							background-color: transparent;
