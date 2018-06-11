@@ -7,6 +7,7 @@
 			}
 		}
 	}
+
 	.main-menu {
 		.menu-toggle {
 			$menuHeight: 20px;
@@ -43,14 +44,16 @@
 		position: relative;
 
 		.back {
-			color: $grey;
+			color: $black;
 			top: $gutter*1.5;
 			margin-left: #{100vw / 24 * 1};
 			position: absolute;
 			margin-top: -$gutter*5;
+			font-weight: 400;
 			z-index: 5;
 
 			svg {
+				fill: $black;
 				color: $grey;
 				width: 10px;
 			}
@@ -105,6 +108,10 @@
 				.menu-item:not(:last-child) {
 					a {
 						color: $placeholder;
+						&:after {
+							opacity: .7;
+							background-color: $placeholder;
+						}
 					}
 				}
 			}
@@ -112,13 +119,21 @@
 
 		.heading {
 			.back {
+				color: $placeholder;
 				position: absolute;
 				margin-top: -$gutter*.5;
-				opacity: .7;
 				margin-left: calc((100vw - var(--max-width))  / 2 + (var(--max-width) / 37 * 1));
+
+				svg {
+					fill: $placeholder;
+				}
 				
 				&:hover {
-					opacity: 1;
+					color: $black;
+
+					svg {
+						fill: $black;
+					}
 				}
 			}
 
