@@ -29,15 +29,13 @@
 		}
 	}
 
-	.hero-image {
+	.picture {
 		display: block;
 		width: calc(var(--max-width) / 24 * 22);
 		max-width: calc( var(--max-width) - (var(--max-width) / 37 * 2));
 		margin: $gutter*1.5 auto;
 		z-index: -99;
-		position: relative;
 		max-height: 500px;
-		overflow: hidden;
 	}
 
 	.heading {

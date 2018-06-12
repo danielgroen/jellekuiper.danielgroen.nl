@@ -1,10 +1,36 @@
+.hero-image {
+	display: block;
+	height: calc(100vh + 100px);
+	margin-top:-100px;
+	width: 100vw;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -5;
+	transform: 
+	  translateZ(-1px)
+	  scale(2);
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background-color: rgba(black, .5);
+	}
+}
+
 .block.hero {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	height: calc(100vh - #{$offset});
 	justify-content: flex-end;
-	padding-bottom: $padding * 2;
+	padding-bottom: $padding * 3;
     position: relative;
     width: 100vw;
 	overflow: hidden;
@@ -39,39 +65,12 @@
 			}
 		}
 	}
-
-	.image-wrapper {
-		width: 100vw;
-		overflow: hidden;
-		z-index: -1;
-		position: absolute;
-		top: 0;
-		height: calc(100vh - #{$offset});
-		
-		.hero-image {
-			position: static;
-			width: auto;
-			height: calc(100vh - #{$offset});
-			width: 100vw;
-
-			&:after {
-				content: '';
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				z-index: 3;
-				background-color: rgba(black, .5);
-			}
-		}
-	}
 }
 
 @include breakpoint($desktop) {
 	.block.hero {
 		justify-content: center;
-		height: calc(80vh - #{$offset});
+		height: calc(90vh );
 		padding: 0;
 
 		.title {
@@ -86,14 +85,6 @@
 
 		.button {
 			max-width: calc(var(--max-width) / 37 * 15);
-		}
-
-		.image-wrapper {
-			height: calc(80vh - #{$offset});
-
-			.hero-image {
-				height: calc(80vh - #{$offset});
-			}
 		}
 	}
 }

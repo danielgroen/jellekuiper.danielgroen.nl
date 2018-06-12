@@ -6,6 +6,12 @@ html {
 body {
 	@include font('normal');
 	width: 100vw;
+	height: auto;
+	height: 100vh;
+	overflow-x: hidden;
+	perspective: 1px;
+	perspective-origin: center center; 
+	transform-style: preserve-3d; // dont know if nessecary
 }
 
 .invisible,

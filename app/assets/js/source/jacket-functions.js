@@ -22,18 +22,6 @@ $('.menu-toggle').on('click', function(e){
    $('body').toggleClass('pinned');
 });
 
-// parralax
-jQuery(document).ready(function(){
-  $(window).scroll(function(e){
-    parallaxScroll();
-  });
-
-  function parallaxScroll() {
-    var scrolled = $(window).scrollTop();
-    $('.hero-image .img').css('margin-top',(0-(scrolled*.25) * -1)+'px');
-  }
- }); 
-
 // smooth scroll to an div 
 $(function($) {
    $('a[href*=\\#]:not([href=\\#])').click(function() {

@@ -1,4 +1,10 @@
-$(window).on('load scroll', function() {
+$(window).on('load', function() {
+	//load in first item of page
+	$('main .block:first-child .usp:first-child .picture').addClass("fade-in");
+	$('main .block:first-child .reference:first-child').addClass("fade-in");
+});
+
+$('.body').on('scroll', function() {
 
 	$('main .block > .usp').each( function(i){
 	  var bottom_of_object = $(this).offset().top + 20,
