@@ -1344,7 +1344,7 @@ main {
     top: -50px;
     display: block;
     position: absolute;
-    background: rgba(255, 255, 255, 0.5); }
+    background: rgba(255, 0, 0, 0.2); }
 
 .button {
   color: white;
@@ -1468,6 +1468,7 @@ main {
   z-index: -1;
   position: absolute;
   top: 0;
+  left: 0;
   z-index: -5;
   -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2); }
