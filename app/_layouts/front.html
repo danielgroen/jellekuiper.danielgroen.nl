@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	{% include _sections/head.html %}
-	<body class="body page">
+	<body class="body home">
 		{% include _blocks/header.html %}
 		{% include _blocks/hero.html %}
 		<main>
@@ -9,12 +9,9 @@
 
 			<!-- block reference -->
 			<section class="block references"> 
-				<strong class="subtitle">Jelle doet ook</strong>
-
 				{% assign sortedPages = site.pages | sort: 'order' %}
 				{% assign currentPage = page.path %}
 				{% for page in sortedPages %}{% if page.path contains '.html' %}
-				{% unless page.path contains currentPage %}
 				<article class="reference">
 					<div class="introduction">
 						<h3 class="title">{{page.title}}</h3>
@@ -26,8 +23,11 @@
 						<img class="img" src="{{page.headerimage}}" alt="Jelle Kuiper">
 					</picture>
 				</article>
-				{% endunless %}{% endif %}{% endfor %}
+				{% endif %}{% endfor %}
 			</section>
+
+			{% include _blocks/contactform.html %}
+			
 		</main>
 
 		{% include _sections/footer.html %}

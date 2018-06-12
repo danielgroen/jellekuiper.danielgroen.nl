@@ -11,5 +11,6 @@ gulp.task('js', function() {
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		.pipe(concat('build.js'))
 		.pipe(gulp.dest(global.paths.app + '/assets/js/'))
+		.pipe(gulp.dest(global.paths.dist + '/assets/js/'))
 		.pipe(global.browserSync.stream());
 });
