@@ -801,6 +801,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   width: 100vw;
+  height: auto;
   height: 100vh;
   overflow-x: hidden;
   -webkit-perspective: 1px;
@@ -1331,6 +1332,7 @@ main {
   margin: 0 auto;
   display: block;
   top: -500px;
+  position: static;
   z-index: 1;
   min-height: 200vh;
   -webkit-transform: translateZ(0);
@@ -1344,7 +1346,7 @@ main {
     top: -50px;
     display: block;
     position: absolute;
-    background: rgba(255, 0, 0, 0.2); }
+    background: white; }
 
 .button {
   color: white;
@@ -1462,7 +1464,8 @@ main {
 
 .hero-image {
   display: block;
-  height: 100vh;
+  height: -webkit-calc(100vh + 100px);
+  height: calc(100vh + 100px);
   margin-top: -100px;
   width: 100vw;
   z-index: -1;
@@ -1507,7 +1510,7 @@ main {
   -moz-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   position: relative;
   width: 100vw;
   overflow: hidden; }
@@ -1547,14 +1550,6 @@ main {
       width: 100%; }
       .block.hero .introduction .button:hover {
         background-color: #17a98c; }
-  .block.hero .image-wrapper {
-    width: 100vw;
-    overflow: hidden;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    height: -webkit-calc(100vh - 50px);
-    height: calc(100vh - 50px); }
 
 @media (min-width: 770px) {
   .block.hero {
@@ -1563,8 +1558,8 @@ main {
     -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: -webkit-calc(80vh - 50px);
-    height: calc(80vh - 50px);
+    height: -webkit-calc(90vh);
+    height: calc(90vh);
     padding: 0; }
     .block.hero .title {
       font-size: 3em !important; }
