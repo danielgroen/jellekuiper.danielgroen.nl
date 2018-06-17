@@ -17,6 +17,7 @@
 				flex-direction: row;
 				justify-content: space-between;
 				flex-wrap: wrap;
+				min-height: 350px;
 				padding-top: $gutter;
 
 
@@ -27,8 +28,8 @@
 				}
 
 				.reference-image {
+					max-width: 400px;
 					height: 100%;
-					min-height: 350px;
 				}
 
 				.reference {

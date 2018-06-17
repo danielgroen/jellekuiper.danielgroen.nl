@@ -1,19 +1,21 @@
 'use strict';
-
 const	gulp 			= require('gulp'),
 		child 			= require('child_process'),
 		image 			= require("gulp-image"),
 		jpegRecompress 	= require("imagemin-jpeg-recompress"),
 		mozjpeg 		= require("imagemin-mozjpeg"),
 		jpegoptim 		= require('jpegoptim-bin'),
-		gm 				= require('gulp-gm');
+		gm 				= require('gulp-gm'),
+		imageResize = require('gulp-image-resize');
+
+
 
 gulp.task('jekyll-build', () => {
   return child.spawn('jekyll', ['build']);
 });
 
 gulp.task("images:compress", function () {
-    return gulp.src(global.paths.dist + global.paths.imagespath + '**/*')
+    return gulp.src(global.paths.app + global.paths.imagespath + '**/*')
 	    .pipe(image({
 	        jpegRecompress: true,
 	        jpegoptim: false,
@@ -25,11 +27,14 @@ gulp.task("images:compress", function () {
 
 
 gulp.task('images:resize', function () {
-  gulp.src(global.paths.dist + global.paths.imagespath + '**/*')
-    .pipe(gm(function (gmfile) {
-      return gmfile.resize(1920, 1920);
-	  }))
-    .pipe(gulp.dest(global.paths.dist + global.paths.imagespath));
+  return gulp.src(global.paths.app + global.paths.imagespath + '**/*.{png,jpg,jpeg}')
+    .pipe(imageResize({
+      width : 1920,
+      height : 1920,
+      upscale : false,
+      imageMagick: true
+    }))
+    .pipe(gulp.dest(global.paths.app + global.paths.imagespath));
 });
 
-gulp.task('build',  gulp.series('jekyll-build', 'images:resize','images:compress'));
+gulp.task('build',  gulp.series('jekyll-build', 'images:resize', 'images:compress'));

@@ -1137,14 +1137,15 @@ button::-moz-focus-inner {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    min-height: 350px;
     padding-top: 25px; }
     .page .block.references .subtitle {
       position: absolute;
       left: 0;
       top: -12.5px; }
     .page .block.references .reference-image {
-      height: 100%;
-      min-height: 350px; }
+      max-width: 400px;
+      height: 100%; }
     .page .block.references .reference {
       margin-top: 25px;
       width: -webkit-calc(var(--max-width) / 37 * 17);
