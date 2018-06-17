@@ -1,1 +1,6 @@
-User-agent: *
+---
+layout: null
+---
+User-Agent: *
+Disallow: 
+Sitemap: {{ site.url | replace: 'http:', 'https:' }}/sitemap.xml

@@ -6,15 +6,15 @@ var browserSync = require('browser-sync').create();
 process.setMaxListeners(0);
 
 global.paths = {
-	'app': './app',
-	'dist': 'dist',
-	'jsFiles': '/assets/js/source/*.js',
-	'images': '/assets/img/**/*.{png,jpg,jpeg,ico}',
-	'sassFiles': '/_sass/**/*.scss',
-	'fonts': '/assets/font/*.scss',
-	'htmlFiles': '/*.{html, md}',
-	'cssFiles': '/css/*.css',
-	'cname': '/CNAME',
+	'app': './app/',
+	'dist': './dist/',
+	'jsFiles': 'assets/js/source/*.js',
+	'imagespath': 'assets/img/',
+	'sassFiles': '_sass/**/*.scss',
+	'fonts': 'assets/font/*.scss',
+	'htmlFiles': '*.{html, md}',
+	'cssFiles': 'css/*.css',
+	'cname': 'CNAME',
 };
 
 global.ghpagesOptions = {

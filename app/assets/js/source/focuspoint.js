@@ -34,8 +34,9 @@ var images = {
 $.each(focuspoint, function() {
 
 	var width = $(this).find('img').width(),
-		height = $(this).find('img').height()
+		height = $(this).find('img').height(),
 		src = $(this).find('img').attr('src');
+		
 		var that = $(this);
 
 	Object.keys(images).forEach(function(key) {
@@ -46,6 +47,7 @@ $.each(focuspoint, function() {
 				.attr('data-focus-y', images[key].y);
 		}
 	});
+
 })
 
 //Fire plugin

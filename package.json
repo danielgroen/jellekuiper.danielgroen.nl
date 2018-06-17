@@ -24,8 +24,10 @@
     "gulp-css-image-dimensions": "^1.1.5",
     "gulp-cssnano": "^2.1.2",
     "gulp-gh-pages": "*",
+    "gulp-gm": "0.0.9",
     "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-image": "^4.3.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-inject": "^4.3.0",
     "gulp-min": "0.0.2",
     "gulp-notify": "^3.0.0",
@@ -36,8 +38,10 @@
     "gulp-sass-globbing": "0.0.2",
     "gulp-style-inject": "^0.1.0",
     "gulp-uglify": "^2.0.1",
+    "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-mozjpeg": "^7.0.0",
     "jekyll": "^3.0.0-beta1",
+    "jpegoptim-bin": "^4.0.0",
     "main-bower-files": "^2.13.1",
     "require-dir": "^1.0.0",
     "sass-strip-unit": "^1.0.0",
@@ -45,5 +49,9 @@
     "stream-series": "^0.1.1",
     "util": "^0.10.4",
     "webfontloader": "^1.6.28"
+  },
+  "dependencies": {
+    "gm": "^1.23.1",
+    "sharp": "^0.20.3"
   }
 }
