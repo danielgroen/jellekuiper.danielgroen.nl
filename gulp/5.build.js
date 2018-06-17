@@ -14,6 +14,17 @@ gulp.task('jekyll-build', () => {
   return child.spawn('jekyll', ['build']);
 });
 
+gulp.task('images:resize', function () {
+  return gulp.src(global.paths.app + 'assets/original-img/**/*.{png,jpg,jpeg}')
+    .pipe(imageResize({
+      width : 1920,
+      height : 1920,
+      upscale : false,
+      imageMagick: true
+    }))
+    .pipe(gulp.dest(global.paths.app + global.paths.imagespath));
+});
+
 gulp.task("images:compress", function () {
     return gulp.src(global.paths.app + global.paths.imagespath + '**/*')
 	    .pipe(image({
@@ -24,17 +35,5 @@ gulp.task("images:compress", function () {
 	    }))
 	    .pipe(gulp.dest(global.paths.dist + global.paths.imagespath));
 })
-
-
-gulp.task('images:resize', function () {
-  return gulp.src(global.paths.app + global.paths.imagespath + '**/*.{png,jpg,jpeg}')
-    .pipe(imageResize({
-      width : 1920,
-      height : 1920,
-      upscale : false,
-      imageMagick: true
-    }))
-    .pipe(gulp.dest(global.paths.app + global.paths.imagespath));
-});
 
 gulp.task('build',  gulp.series('jekyll-build', 'images:resize', 'images:compress'));
