@@ -8,7 +8,8 @@
 }
 
 @include breakpoint($desktop) {
-	.page {
+	.page, 
+	.detailpage {
 		.block {
 
 			// reference block

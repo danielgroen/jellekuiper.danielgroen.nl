@@ -75,6 +75,13 @@
 			width: #{100vw / 24 * 22};
 			margin-left: #{100vw / 24 * 1};
 		}
+
+		.block.references {
+			@include background;
+			.subtitle {
+				display: none;
+			}
+		}
 	}
 }
 

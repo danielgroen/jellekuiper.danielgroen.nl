@@ -967,6 +967,24 @@ button::-moz-focus-inner {
   width: 91.66667vw;
   margin-left: 4.16667vw; }
 
+.detailpage main .block.references {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative; }
+  .detailpage main .block.references:after {
+    content: '';
+    position: absolute;
+    width: 150vw;
+    height: -webkit-calc(100% + (25px * 4));
+    height: calc(100% + (25px * 4));
+    top: -50px;
+    left: -50vw;
+    z-index: -3;
+    background-color: #fafafa;
+    border: 1px solid #eaeaea; }
+  .detailpage main .block.references .subtitle {
+    display: none; }
+
 @media (min-width: 770px) {
   .detailpage .header {
     height: auto; }
@@ -1013,12 +1031,12 @@ button::-moz-focus-inner {
     display: inline-block;
     width: auto; } }
 
-.home .block.contactform {
+.front .block.contactform {
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
   margin-bottom: 50px; }
-  .home .block.contactform:after {
+  .front .block.contactform:after {
     content: '';
     position: absolute;
     width: 150vw;
@@ -1031,7 +1049,7 @@ button::-moz-focus-inner {
     border: 1px solid #eaeaea; }
 
 @media (min-width: 770px) {
-  .home .block.references .reference {
+  .front .block.references .reference {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -1047,15 +1065,15 @@ button::-moz-focus-inner {
     color: #242424;
     text-align: left;
     margin-bottom: 25px; }
-    .home .block.references .reference:after {
+    .front .block.references .reference:after {
       content: none; }
-    .home .block.references .reference:nth-child(even) .introduction {
+    .front .block.references .reference:nth-child(even) .introduction {
       -webkit-box-ordinal-group: 3;
       -webkit-order: 2;
       -moz-box-ordinal-group: 3;
       -ms-flex-order: 2;
       order: 2; }
-    .home .block.references .reference .introduction {
+    .front .block.references .reference .introduction {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 -webkit-calc(var(--max-width) / 37 * 17);
       -moz-box-flex: 0;
@@ -1065,34 +1083,34 @@ button::-moz-focus-inner {
       padding: calc(var(--max-width) / 37 * 1);
       position: static;
       height: auto; }
-      .home .block.references .reference .introduction .title,
-      .home .block.references .reference .introduction .keywords {
+      .front .block.references .reference .introduction .title,
+      .front .block.references .reference .introduction .keywords {
         text-shadow: none; }
-      .home .block.references .reference .introduction .keywords {
+      .front .block.references .reference .introduction .keywords {
         position: relative;
         padding-left: 25px;
         font-style: italic;
         margin: 1rem 0; }
-        .home .block.references .reference .introduction .keywords:before {
+        .front .block.references .reference .introduction .keywords:before {
           content: '';
           width: 5px;
           height: 100%;
           position: absolute;
           left: 0;
           background: #1abc9c; }
-      .home .block.references .reference .introduction .description {
+      .front .block.references .reference .introduction .description {
         display: block; }
-      .home .block.references .reference .introduction .button {
+      .front .block.references .reference .introduction .button {
         position: static;
         width: 100%;
         text-align: center; }
-    .home .block.references .reference .reference-image {
+    .front .block.references .reference .reference-image {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 -webkit-calc(var(--max-width) / 37 * 17);
       -moz-box-flex: 0;
       -ms-flex: 0 0 calc(var(--max-width) / 37 * 17);
       flex: 0 0 calc(var(--max-width) / 37 * 17); }
-      .home .block.references .reference .reference-image:not(.focuspoint) {
+      .front .block.references .reference .reference-image:not(.focuspoint) {
         position: relative;
         height: 420px;
         width: 100%;
@@ -1116,7 +1134,8 @@ button::-moz-focus-inner {
     border: 1px solid #eaeaea; }
 
 @media (min-width: 770px) {
-  .page .block.references {
+  .page .block.references,
+  .detailpage .block.references {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -1139,19 +1158,23 @@ button::-moz-focus-inner {
     flex-wrap: wrap;
     min-height: 350px;
     padding-top: 25px; }
-    .page .block.references .subtitle {
+    .page .block.references .subtitle,
+    .detailpage .block.references .subtitle {
       position: absolute;
       left: 0;
       top: -12.5px; }
-    .page .block.references .reference-image {
+    .page .block.references .reference-image,
+    .detailpage .block.references .reference-image {
       max-width: 400px;
       height: 100%; }
-    .page .block.references .reference {
+    .page .block.references .reference,
+    .detailpage .block.references .reference {
       margin-top: 25px;
       width: -webkit-calc(var(--max-width) / 37 * 17);
       width: calc(var(--max-width) / 37 * 17);
       margin-bottom: 0; }
-      .page .block.references .reference .introduction .button {
+      .page .block.references .reference .introduction .button,
+      .detailpage .block.references .reference .introduction .button {
         text-transform: uppercase;
         width: -webkit-calc(var(--max-width) / 37 * 15);
         width: calc(var(--max-width) / 37 * 15);
@@ -1159,7 +1182,8 @@ button::-moz-focus-inner {
         left: calc(var(--max-width) / 37 * 1);
         bottom: -webkit-calc(var(--max-width) / 37 * 1);
         bottom: calc(var(--max-width) / 37 * 1); }
-  .page .block.contactform {
+  .page .block.contactform,
+  .detailpage .block.contactform {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -1171,13 +1195,15 @@ button::-moz-focus-inner {
     -ms-flex-pack: justify;
     justify-content: space-between;
     height: 700px; }
-    .page .block.contactform > * {
+    .page .block.contactform > *,
+    .detailpage .block.contactform > * {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 -webkit-calc(var(--max-width) / 37 * 17);
       -moz-box-flex: 0;
       -ms-flex: 0 0 calc(var(--max-width) / 37 * 17);
       flex: 0 0 calc(var(--max-width) / 37 * 17); }
-    .page .block.contactform .picture {
+    .page .block.contactform .picture,
+    .detailpage .block.contactform .picture {
       display: block;
       height: 100%; } }
 

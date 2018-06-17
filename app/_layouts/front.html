@@ -1,38 +1,34 @@
 
 {% include _sections/head.html %}
 
-<body class="body home">
+{% include _blocks/header.html %}
 
-	{% include _blocks/header.html %}
+{% include _blocks/hero.html %}
 
-	{% include _blocks/hero.html %}
+<main>
 
-	<main>
+	{{ content }}
 
-		{{ content }}
+	<section class="block references"> 
+		{% assign sortedPages = site.pages | sort: 'order' %}
+		{% assign currentPage = page.path %}
+		{% for page in sortedPages %}{% if page.path contains '.html' %}
+		<article class="reference">
+			<div class="introduction">
+				<h3 class="title">{{page.title}}</h3>
+				<p class="keywords">{{page.keywords}}</p>
+				<p class="description">{{page.teaserText}}</p>
+				<a href="/theaterproducties" class="button">Lees meer</a>
+			</div>
+			<picture class="focuspoint reference-image">
+				<img class="img" src="{{page.headerimage}}" alt="Jelle Kuiper">
+			</picture>
+		</article>
+		{% endif %}{% endfor %}
+	</section>
 
-		<section class="block references"> 
-			{% assign sortedPages = site.pages | sort: 'order' %}
-			{% assign currentPage = page.path %}
-			{% for page in sortedPages %}{% if page.path contains '.html' %}
-			<article class="reference">
-				<div class="introduction">
-					<h3 class="title">{{page.title}}</h3>
-					<p class="keywords">{{page.keywords}}</p>
-					<p class="description">{{page.teaserText}}</p>
-					<a href="/theaterproducties" class="button">Lees meer</a>
-				</div>
-				<picture class="focuspoint reference-image">
-					<img class="img" src="{{page.headerimage}}" alt="Jelle Kuiper">
-				</picture>
-			</article>
-			{% endif %}{% endfor %}
-		</section>
-
-		{% include _blocks/contactform.html %}
-		
-	</main>
-
-	{% include _sections/footer.html %}
+	{% include _blocks/contactform.html %}
 	
-</body>
+</main>
+
+{% include _sections/footer.html %}
