@@ -16,25 +16,3 @@ function debounce(callback, time) {
   };
 };
 
-// menu toggle
-$('.menu-toggle').on('click', function(e){
-   $(this).toggleClass('active');
-   $('body').toggleClass('pinned');
-});
-
-// smooth scroll to an div 
-$(function($) {
-   $('a[href*=\\#]:not([href=\\#])').click(function() {
-       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-          || location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-             if (target.length) {
-               $('html,body').animate({
-                   scrollTop: target.offset().top - 50
-              }, 500);
-              return false;
-          }
-      }
-  });
-});

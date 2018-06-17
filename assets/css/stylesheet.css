@@ -1137,14 +1137,15 @@ button::-moz-focus-inner {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    min-height: 350px;
     padding-top: 25px; }
     .page .block.references .subtitle {
       position: absolute;
       left: 0;
       top: -12.5px; }
     .page .block.references .reference-image {
-      height: 100%;
-      min-height: 350px; }
+      max-width: 400px;
+      height: 100%; }
     .page .block.references .reference {
       margin-top: 25px;
       width: -webkit-calc(var(--max-width) / 37 * 17);
@@ -2193,8 +2194,8 @@ main > .block {
           width: 0;
           background-color: #1abc9c;
           height: 6px;
-          left: 15px;
-          bottom: 3px;
+          left: 0;
+          bottom: -5px;
           z-index: -1;
           opacity: 1;
           position: absolute; }
@@ -2358,6 +2359,8 @@ main > .block {
         font-weight: 600;
         padding: 5px;
         opacity: .2; }
+      .owl-carousel .owl-dots .owl-dot:hover:before {
+        opacity: .5; }
       .owl-carousel .owl-dots .owl-dot span {
         display: none; }
       .owl-carousel .owl-dots .owl-dot.active:before {
@@ -2368,6 +2371,9 @@ main > .block {
     position: absolute;
     bottom: -25px;
     width: 30px; }
+    .owl-carousel .owl-prev:hover,
+    .owl-carousel .owl-next:hover {
+      fill: #17a98c; }
     .owl-carousel .owl-prev:focus, .owl-carousel .owl-prev:hover,
     .owl-carousel .owl-next:focus,
     .owl-carousel .owl-next:hover {
