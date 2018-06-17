@@ -13874,25 +13874,6 @@ nextItem = function() {
 	}
 };
 
-$('.block .counter').each(function (index) {
-    var that = $(this);
-    var counter = 0;
-    var counterValue = parseInt($(this).html());
-
-    if (counterValue) {
-        $(this).text('0');
-    }
-
-    var counterLoop = setInterval(function () {
-        if (counter <= counterValue) {
-            that.html(counter);
-            counter ++;
-        }
-        else {
-            clearInterval(counterLoop);
-        }
-    }, (1000 / counterValue * 2 ));
-})
 $(window).on('load', function() {
 	//load in first item of page
 	$('main .block:first-child .usp:first-child .picture').addClass("fade-in");
@@ -13924,6 +13905,25 @@ $('.body').on('scroll', function() {
 	  }
 	}); 
 });
+$('.block .counter').each(function (index) {
+    var that = $(this);
+    var counter = 0;
+    var counterValue = parseInt($(this).html());
+
+    if (counterValue) {
+        $(this).text('0');
+    }
+
+    var counterLoop = setInterval(function () {
+        if (counter <= counterValue) {
+            that.html(counter);
+            counter ++;
+        }
+        else {
+            clearInterval(counterLoop);
+        }
+    }, (1000 / counterValue * 2 ));
+})
 /**
  * jQuery FocusPoint; version: 1.1.3
  * Author: http://jonathonmenz.com
@@ -13959,21 +13959,20 @@ var images = {
 
 $.each(focuspoint, function() {
 
+	var width = $(this).find('img').width(),
+		height = $(this).find('img').height(),
+		src = $(this).find('img').attr('src');
+		
+		var that = $(this);
 
-		var width = $(this).find('img').width(),
-			height = $(this).find('img').height(),
-			src = $(this).find('img').attr('src');
-			
-			var that = $(this);
-
-		Object.keys(images).forEach(function(key) {
-	  		if (src.indexOf(key) !== -1) {
-				that.attr('data-image-w', width)
-					.attr('data-image-h', height)
-					.attr('data-focus-x', images[key].x)
-					.attr('data-focus-y', images[key].y);
-			}
-		});
+	Object.keys(images).forEach(function(key) {
+  		if (src.indexOf(key) !== -1) {
+			that.attr('data-image-w', width)
+				.attr('data-image-h', height)
+				.attr('data-focus-x', images[key].x)
+				.attr('data-focus-y', images[key].y);
+		}
+	});
 
 })
 
@@ -14049,27 +14048,11 @@ function debounce(callback, time) {
   };
 };
 
+
 // menu toggle
 $('.menu-toggle').on('click', function(e){
    $(this).toggleClass('active');
    $('body').toggleClass('pinned');
-});
-
-// smooth scroll to an div 
-$(function($) {
-   $('a[href*=\\#]:not([href=\\#])').click(function() {
-       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-          || location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-             if (target.length) {
-               $('html,body').animate({
-                   scrollTop: target.offset().top - 50
-              }, 500);
-              return false;
-          }
-      }
-  });
 });
 
 (function() {
@@ -14092,5 +14075,21 @@ $(function($) {
 	})
 })();
 
+// smooth scroll to an #id
+$(function($) {
+   $('a[href*=\\#]:not([href=\\#])').click(function() {
+       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+          || location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+             if (target.length) {
+               $('html,body').animate({
+                   scrollTop: target.offset().top - 50
+              }, 500);
+              return false;
+          }
+      }
+  });
+});
 // this is the closing file
 });

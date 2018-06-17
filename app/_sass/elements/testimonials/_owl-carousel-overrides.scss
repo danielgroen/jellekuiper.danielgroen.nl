@@ -31,6 +31,12 @@
 				font-weight: 600;
 				padding: 5px;
 				opacity: .2;
+
+			}
+			&:hover {
+				&:before {
+					opacity: .5;
+				}
 			}
 			
 			span {
@@ -52,6 +58,10 @@
 		position: absolute;
 		bottom:  -$gutter;
 		width: 30px;
+
+		&:hover {
+			fill: $hover;
+		}
 
 		&:focus,
 		&:hover {

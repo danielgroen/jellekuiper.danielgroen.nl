@@ -1,52 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-	{% include _sections/head.html %}
-	<body class="body page detailpage">
-		{% include _blocks/header.html %}
-		<div class="heading">
-			<a href="/theaterproducties" class="back">{% include _svg/arrow-left.svg %} terug</a>
-			<h1 class="title">{{ page.title }}</h1>
-		</div>
-		<main>	
-			<picture class="picture">
-				<img class="img" src="{{ page.headerimage }}" alt="Jelle Kuiper">
-			</picture>
-			
-			<section class="block text">
-				<p class="paragraph">{{ content }}</p>
-			</section>
 
-			{% if page.button %}
-				<a href="{{ page.externalUrl }}" target="blank" class="button">{{ page.button }}</a>
-			{% endif %}
+{% include _sections/head.html %}
 
+<body class="body page detailpage">
+	{% include _blocks/header.html %}
+	<div class="heading">
+		<a href="/theaterproducties" class="back">{% include _svg/arrow-left.svg %} terug</a>
+		<h1 class="title">{{ page.title }}</h1>
+	</div>
+	<main>	
+		<picture class="picture">
+			<img class="img" src="{{ page.headerimage }}" alt="Jelle Kuiper">
+		</picture>
+		
+		<section class="block text">
+			<p class="paragraph">{{ content }}</p>
+		</section>
 
-			{% include _blocks/video.html %}
-
-			{% include _blocks/contactform.html %}
-
-			<section class="block references"> 
-			<strong class="subtitle">Andere producties</strong>
-				{% assign sortedPages = site.pages | sort: 'order' %}
-				{% assign currentPage = page.path %}
-				{% for page in sortedPages %}{% if page.path contains '.md' %}
-				{% unless page.path contains currentPage %}
-				<article class="reference">
-					<div class="introduction">
-						<h3 class="title">{{page.title}}</h3>
-						<p class="keywords">Bijzonder, spannend, krachtig.</p>
-						<p class="description">{{page.teasertext}}</p>
-						<a href="{{page.url}}" class="button">Lees meer</a>
-					</div>
-					<picture class="focuspoint reference-image">
-						<img class="img" src="{{page.headerimage}}" alt="{{page.title}}">
-					</picture>
-				</article>
-				{% endunless %}{% endif %}{% endfor %}
-			</section>
+		{% if page.button %}
+			<a href="{{ page.externalUrl }}" target="blank" class="button">{{ page.button }}</a>
+		{% endif %}
 
 
-		</main>
-		{% include _sections/footer.html %}
-	</body>
-</html>
+		{% include _blocks/video.html %}
+
+		{% include _blocks/contactform.html %}
+
+		<section class="block references"> 
+		<strong class="subtitle">Andere producties</strong>
+			{% assign sortedPages = site.pages | sort: 'order' %}
+			{% assign currentPage = page.path %}
+			{% for page in sortedPages %}{% if page.path contains '.md' %}
+			{% unless page.path contains currentPage %}
+			<article class="reference">
+				<div class="introduction">
+					<h3 class="title">{{page.title}}</h3>
+					<p class="keywords">Bijzonder, spannend, krachtig.</p>
+					<p class="description">{{page.teasertext}}</p>
+					<a href="{{page.url}}" class="button">Lees meer</a>
+				</div>
+				<picture class="focuspoint reference-image">
+					<img class="img" src="{{page.headerimage}}" alt="{{page.title}}">
+				</picture>
+			</article>
+			{% endunless %}{% endif %}{% endfor %}
+		</section>
+
+
+	</main>
+	{% include _sections/footer.html %}
+</body>
