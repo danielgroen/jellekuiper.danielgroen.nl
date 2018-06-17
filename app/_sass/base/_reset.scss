@@ -19,7 +19,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	-webkit-font-smoothing:antialiased;
+	-webkit-font-smoothing: antialiased; // iphone font bug fix
+    -webkit-overflow-scrolling: touch; // iphone smooth scroll on divs
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
