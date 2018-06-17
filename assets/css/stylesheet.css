@@ -1150,7 +1150,6 @@ button::-moz-focus-inner {
       top: -12.5px; }
     .page .block.references .reference-image,
     .detailpage .block.references .reference-image {
-      max-width: 400px;
       height: 100%; }
     .page .block.references .reference,
     .detailpage .block.references .reference {
