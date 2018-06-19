@@ -19,12 +19,14 @@
 			@include font('subtitle');
 			width: 100%;
 			text-align: center;
+			transition: all $speed/2;
 
 			.menu-link {
 				position: relative;
 				width: 100%;
 				text-decoration: none;
 				color: $secundary;
+				transition: all $speed/2;
 
 				&:after {
 					content: '';

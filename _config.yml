@@ -9,10 +9,9 @@ url: https://webnozems.nl
 keywords: "trouwen jellekuiper jelle kuiper amsterdam" 
 author:
   name: jellekuiper
-  # de mail staat nog naar mij
   email: info@jellekuiper.nl
   bio:  "Strategisch adviesbureau voor zorgondernemers."
-  twitter:  jelle_kuipernl
+  twitter:  Jelle_Kuiper
 encoding: utf-8
 timezone: Europe/Amsterdam
 
