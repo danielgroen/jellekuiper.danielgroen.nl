@@ -33,7 +33,6 @@ var images = {
 
 function imageLoaded() {
 	$.each(focuspoint, function() {
-
 		var width = $(this).find('img').width(),
 			height = $(this).find('img').height(),
 			src = $(this).find('img').attr('src');

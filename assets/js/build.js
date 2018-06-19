@@ -13901,7 +13901,7 @@ $('.body').on('scroll', function() {
 		var explode = function(){
     		that.addClass("fade-in");
 		};
-	  	setTimeout(explode, 500 * i);
+	  	setTimeout(explode, 100 * i);
 	  }
 	}); 
 });
@@ -13959,7 +13959,6 @@ var images = {
 
 function imageLoaded() {
 	$.each(focuspoint, function() {
-
 		var width = $(this).find('img').width(),
 			height = $(this).find('img').height(),
 			src = $(this).find('img').attr('src');
@@ -14011,6 +14010,7 @@ if ($('.mail').length > 0 ) {
 var $contactForm = $('.form');
 
 $contactForm.submit(function(e) {
+  var event = e;
   e.preventDefault();
   $('.to').val(email);
 
@@ -14019,25 +14019,21 @@ $contactForm.submit(function(e) {
   }
   
   $.ajax({
-    url: 'https://script.google.com/macros/s/AKfycbxqE_YvIkezI6uUbiLA1TPIdrKbNqHylojTWqt8Du6hfwqvBWFP/exec',
+    url: 'https://script.google.com/macros/s/AKfycbyR85wci2UtjMI2C1C8tBKKEMUxB_jESOwBQtdyz8ANv-Se-us/exec',
     method: 'POST',
     data: $(this).serialize(),
     dataType: 'json',
     beforeSend: function(data) {
-      $('.load-wrapper').addClass('visible');
-      $('.overtake').addClass('visible');
+      $('.send.button').addClass('success').attr('value', 'Bericht verzonden');
     },
     success: function(data) {
-      $('.load-wrapper').removeClass('visible');
-      $('.thankyou').addClass('visible');
-      $('.thankyou .send, .overtake').on('click touch', function() {
-        location.reload();
-      })
+     $('#honeypot').val('sent');
+    },
+    ajaxComplete: function(data) {
+      alert('joo');
     },
     error: function(err) {
       console.log(err);
-      $contactForm.find('.alert--loading').hide();
-      $contactForm.append('<div class="alert alert--error">Oops! er ging iets mis...</div>');
     }
   });
 });

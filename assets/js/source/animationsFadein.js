@@ -25,7 +25,7 @@ $('.body').on('scroll', function() {
 		var explode = function(){
     		that.addClass("fade-in");
 		};
-	  	setTimeout(explode, 500 * i);
+	  	setTimeout(explode, 100 * i);
 	  }
 	}); 
 });
