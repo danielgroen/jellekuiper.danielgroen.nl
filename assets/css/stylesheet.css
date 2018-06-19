@@ -851,8 +851,7 @@ button::-moz-focus-inner {
   max-width: -webkit-calc( var(--max-width) - (var(--max-width) / 37 * 2));
   max-width: calc( var(--max-width) - (var(--max-width) / 37 * 2));
   margin: 37.5px auto;
-  z-index: -99;
-  max-height: 500px; }
+  height: 500px; }
 
 .detailpage .heading {
   position: relative; }
@@ -946,6 +945,8 @@ button::-moz-focus-inner {
   .detailpage .heading .title {
     margin-top: 175px;
     position: relative; }
+  .detailpage main .picture {
+    width: var(--max-width); }
   .detailpage main .block.text + .button {
     margin-left: 50%;
     -webkit-transform: translate(-50%);
@@ -1178,6 +1179,9 @@ button::-moz-focus-inner {
     background-color: #333333; }
   .footer * {
     color: white; }
+    .footer * a {
+      -webkit-transition: all 0.15s;
+      transition: all 0.15s; }
     .footer * a:hover {
       opacity: .7; }
   .footer .nav {
@@ -1373,7 +1377,8 @@ main {
 
 @media (min-width: 770px) {
   .block.contactform {
-    min-height: auto; } }
+    min-height: auto;
+    overflow: hidden; } }
 
 .block.counter {
   margin-top: 100px;
