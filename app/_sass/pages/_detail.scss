@@ -34,8 +34,7 @@
 		width: calc(var(--max-width) / 24 * 22);
 		max-width: calc( var(--max-width) - (var(--max-width) / 37 * 2));
 		margin: $gutter*1.5 auto;
-		z-index: -99;
-		max-height: 500px;
+		height: 500px;
 	}
 
 	.heading {
@@ -149,6 +148,11 @@
 		}
 
 		main {
+
+			.picture {
+				width: var(--max-width);
+			}
+
 			.block.text + .button {
 				margin-left: 50%;
 				transform: translate(-50%);

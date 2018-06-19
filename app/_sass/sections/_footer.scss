@@ -25,6 +25,10 @@
     * {
     	color: $white;
 
+        a {
+            transition: all $speed/2;
+        }
+
         a:hover {
             opacity: .7;
         }
