@@ -7,6 +7,7 @@
 	box-shadow: $box-shadow;
 	background-color: $primary;
 	transition: all $speed/2;
+	font-size: 16px !important;
 	
 	&:hover {
 		background-color: $hover;

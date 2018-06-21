@@ -51,6 +51,13 @@
 		margin-top: 0;
 		width: calc(var(--max-width) / 37 * 17);
 
+			.inner {
+				&:before,
+				.name:after {
+					font-size: 7rem !important;
+				}
+			}
+
 		.name {
 			&:after {
 				bottom: -2rem;

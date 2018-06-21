@@ -4,21 +4,35 @@
   line-height: 1.5;
   font-weight: 400;
 
+  @include breakpoint($desktop) {
+    font-size: 18px;
+  }
+
   @if $type == "title" {
     font-family: "Oswald";
-    font-size: 2em;
+    font-size: 2rem;
     letter-spacing: 0.3;
     text-transform: uppercase;
     font-weight: 500;
   }
+  
   @else if $type == "subtitle" {
     font-size: 18px;
     font-weight: 600;
+
+    @include breakpoint($desktop) {
+      font-size: 24px;
+    }
   }
+
   @else if $type == "textheader" {
     font-size: 22px;
     line-height: 1.45;
     font-weight: 600;
+
+    @include breakpoint($desktop) {
+      font-size: 24px;
+    }
   }
   @else if $type == "quote" {
     line-height: 2;

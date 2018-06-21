@@ -22,6 +22,9 @@
 	}
 	.header {
 		height: 40px;
+		&:after {
+			background-color: transparent !important;
+		}
 
 		.logo {
 			color: $black;
@@ -41,25 +44,25 @@
 		position: relative;
 
 		.back {
-			color: $black;
-			top: $gutter*1.5;
+			top: $gutter*1.7;
 			margin-left: #{100vw / 24 * 1};
 			position: absolute;
 			margin-top: -$gutter*5;
 			font-weight: 400;
 			z-index: 5;
+			color: transparent;
 
 			svg {
 				fill: $black;
 				color: $grey;
-				width: 10px;
+				width: 25px;
 			}
 		}
 
 		.title {
 			color: black;
 			text-align: center;
-			font-size: 3rem !important;
+			font-size: 2.5rem !important;
 			margin-top: $gutter*4;
 			margin-bottom: $gutter*2;
 			@include font('title');
@@ -73,6 +76,14 @@
 			text-transform: uppercase;
 			width: #{100vw / 24 * 22};
 			margin-left: #{100vw / 24 * 1};
+		}
+
+		.block.contactform {
+			overflow: hidden;
+
+			.picture {
+				margin: 0;
+			}
 		}
 
 		.block.references {
@@ -126,10 +137,12 @@
 				color: $placeholder;
 				position: absolute;
 				margin-top: -$gutter*.5;
+				top: $gutter*1.5;
 				margin-left: calc((100vw - var(--max-width))  / 2 + (var(--max-width) / 37 * 1));
 
 				svg {
 					fill: $placeholder;
+					width: 10px;
 				}
 				
 				&:hover {
@@ -158,6 +171,10 @@
 				transform: translate(-50%);
 				display: inline-block;
 				width: auto;
+			}
+
+			.block.references {
+				margin-bottom: $gutter*2;
 			}
 		}
 	}

@@ -60,7 +60,8 @@
 		}
 
 		.reference-image {
-			
+				width: calc(var(--max-width) / 24 * 22);
+
 			&:not(.focuspoint) {
 				position: absolute;
 				left: 0;

@@ -70,6 +70,7 @@
         .nav {
             flex: 0 0 calc(var(--max-width) / 37 * 18);
             max-width: calc(var(--max-width) / 37 * 18);
+            font-size: 18px !important;
         }
 
         .right {

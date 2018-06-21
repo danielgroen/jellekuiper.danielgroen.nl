@@ -3,6 +3,8 @@ title: Buurman en buurman
 headerimage: /assets/img/theaterproducties/buurman_en_buurman/Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-3.jpg
 teasertext: A JE TO! is alweer de 4e theater voorstelling van Buurman en Buurman.
 formimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
+subject: 'Bv. Theaterproducent'
+message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
 externalUrl: http://www.buurmantheater.nl/
 layout: detailpage
 order: 3
