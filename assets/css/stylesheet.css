@@ -1377,8 +1377,7 @@ main {
 
 @media (min-width: 770px) {
   .block.contactform {
-    min-height: auto;
-    overflow: hidden; } }
+    min-height: auto; } }
 
 .block.counter {
   margin-top: 100px;
