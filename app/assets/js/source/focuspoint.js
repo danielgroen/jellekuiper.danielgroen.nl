@@ -53,7 +53,6 @@ function imageLoaded() {
 }
 
 $(window).on('load', function() {
-	console.log('window loaded')
     $('img').each(function() {
         if( this.complete ) {
             imageLoaded.call( this );
