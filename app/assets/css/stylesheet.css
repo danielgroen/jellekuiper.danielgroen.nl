@@ -853,7 +853,7 @@ button::-moz-focus-inner {
   max-width: -webkit-calc( var(--max-width) - (var(--max-width) / 37 * 2));
   max-width: calc( var(--max-width) - (var(--max-width) / 37 * 2));
   margin: 37.5px auto;
-  height: 500px; }
+  height: 350px; }
 
 .detailpage .heading {
   position: relative; }
@@ -958,7 +958,8 @@ button::-moz-focus-inner {
     margin-top: 175px;
     position: relative; }
   .detailpage main .picture {
-    width: var(--max-width); }
+    width: var(--max-width);
+    height: 500px; }
   .detailpage main .block.text + .button {
     margin-left: 50%;
     -webkit-transform: translate(-50%);
@@ -1023,11 +1024,13 @@ button::-moz-focus-inner {
       height: auto; }
       .front .block.references .reference .introduction .title,
       .front .block.references .reference .introduction .keywords {
-        text-shadow: none; }
+        text-shadow: none;
+        font-size: 2rem; }
       .front .block.references .reference .introduction .keywords {
         position: relative;
         padding-left: 25px;
         font-style: italic;
+        font-size: 18px;
         margin: 1rem 0; }
         .front .block.references .reference .introduction .keywords:before {
           content: '';
@@ -1186,7 +1189,7 @@ button::-moz-focus-inner {
   margin: 0 auto;
   position: relative;
   text-align: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1513,14 +1516,13 @@ main {
   -moz-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: -webkit-calc(100vh - 50px);
-  height: calc(100vh - 50px);
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -moz-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  padding-bottom: 3rem;
+  height: -webkit-calc(90vh - 50px);
+  height: calc(90vh - 50px);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
   width: 100vw;
   overflow: hidden; }
@@ -1577,11 +1579,13 @@ main {
     -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: -webkit-calc(90vh);
-    height: calc(90vh);
+    height: -webkit-calc(85vh);
+    height: calc(85vh);
     padding: 0; }
     .block.hero .title {
       font-size: 3em !important; }
+    .block.hero .subtitle {
+      font-size: 20px !important; }
     .block.hero .introduction {
       max-width: -webkit-calc(var(--max-width) / 37 * 22);
       max-width: calc(var(--max-width) / 37 * 22);
@@ -2102,6 +2106,11 @@ main > .block {
     width: 100vw;
     top: 0;
     left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
     opacity: 0;
     position: fixed;
     -webkit-box-orient: vertical;
@@ -2273,6 +2282,9 @@ main > .block {
   .menu-toggle.active ~ .nav {
     pointer-events: all;
     opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
     background-color: white; }
 
 @media (min-width: 770px) {

@@ -37,12 +37,14 @@
 						.title,
 						.keywords {
 							text-shadow: none;
+							font-size: 2rem;
 						}
 
 						.keywords {
 							position: relative;
 							padding-left: $gutter;
 							font-style: italic;
+							font-size: 18px;
 							margin: $padding 0;
 
 							&:before {
