@@ -13906,19 +13906,19 @@ $('.body').on('scroll', function() {
 	}); 
 });
 var triggered = false;
-//eenmalig fixen
-if (triggered === false) {
+
     $('.body').on('scroll', function() {
-        console.log(triggered)
+        if (triggered === false) {
             $('.block .counter').each(function (index) {
                 var that = $(this),
                     counter = 0,
                     counterValue = parseInt($(this).html()),
                     bottom_of_object = $(this).offset().top + 20,
                     bottom_of_window = $(window).scrollTop() + $(window).height();
-                    triggered = true;
 
                 if( bottom_of_window > bottom_of_object ) {
+                    triggered = true;
+                    
                     if (counterValue) {
                         $(this).text('0');
                     }
@@ -13934,8 +13934,8 @@ if (triggered === false) {
                     }, (1000 / counterValue * 2 ));
                 }
             })
+        }
     });
-}
 /**
  * jQuery FocusPoint; version: 1.1.3
  * Author: http://jonathonmenz.com
@@ -14073,6 +14073,11 @@ $('.menu-toggle').on('click', function(e){
    $(this).toggleClass('active');
    $('body').toggleClass('pinned');
 });
+
+$('.main-menu a[href$="#contact"]').on('click', function(e){
+	$('.menu-toggle').toggleClass('active');
+});
+
 
 (function() {
 	var owl = $('.owl-carousel');
