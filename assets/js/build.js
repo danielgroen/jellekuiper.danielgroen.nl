@@ -13905,25 +13905,37 @@ $('.body').on('scroll', function() {
 	  }
 	}); 
 });
-$('.block .counter').each(function (index) {
-    var that = $(this);
-    var counter = 0;
-    var counterValue = parseInt($(this).html());
+var triggered = false;
+//eenmalig fixen
+if (triggered === false) {
+    $('.body').on('scroll', function() {
+        console.log(triggered)
+            $('.block .counter').each(function (index) {
+                var that = $(this),
+                    counter = 0,
+                    counterValue = parseInt($(this).html()),
+                    bottom_of_object = $(this).offset().top + 20,
+                    bottom_of_window = $(window).scrollTop() + $(window).height();
+                    triggered = true;
 
-    if (counterValue) {
-        $(this).text('0');
-    }
+                if( bottom_of_window > bottom_of_object ) {
+                    if (counterValue) {
+                        $(this).text('0');
+                    }
 
-    var counterLoop = setInterval(function () {
-        if (counter <= counterValue) {
-            that.html(counter);
-            counter ++;
-        }
-        else {
-            clearInterval(counterLoop);
-        }
-    }, (1000 / counterValue * 2 ));
-})
+                    var counterLoop = setInterval(function () {
+                        if (counter <= counterValue) {
+                            that.html(counter);
+                            counter ++;
+                        }
+                        else {
+                            clearInterval(counterLoop);
+                        }
+                    }, (1000 / counterValue * 2 ));
+                }
+            })
+    });
+}
 /**
  * jQuery FocusPoint; version: 1.1.3
  * Author: http://jonathonmenz.com
