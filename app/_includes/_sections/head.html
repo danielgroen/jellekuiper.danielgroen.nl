@@ -28,10 +28,10 @@
 
 		<meta property="og:title" content="{{ site.author.name }}">
 		<meta property="og:description" content="{{ site.description }}">
-		<meta property="og:image" content="{{ page.headerimage }}">
+		<meta property="og:image" content="{{ site.url | replace: 'http:', 'https:' }}{{ page.headerimage }}">
 		<meta property="og:image:width" content="{{page.imagewidth}}" />
 		<meta property="og:image:height" content="{{page.imageheight}}" />
-		<meta property="og:url" content="{{ site.url }}">
+		<meta property="og:url" content="{{ site.url | replace: 'http:', 'https:' }}{{ page.url }}">
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="{{ site.author.name }}">
 

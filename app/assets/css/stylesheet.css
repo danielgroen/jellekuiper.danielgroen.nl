@@ -2108,9 +2108,9 @@ main > .block {
     left: 0;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    -webkit-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
     opacity: 0;
     position: fixed;
     -webkit-box-orient: vertical;
@@ -2180,6 +2180,9 @@ main > .block {
     -moz-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
     width: -webkit-calc(var(--max-width) / 37 * 35);
     width: calc(var(--max-width) / 37 * 35);
     -webkit-box-pack: end;

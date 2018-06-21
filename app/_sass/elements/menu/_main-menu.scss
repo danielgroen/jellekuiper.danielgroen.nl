@@ -10,7 +10,7 @@
 		top: 0;
 		left: 0;
 		transition: all 0.25s ease;
-		transform: scale(.5);
+		transform: scale(.9);
 		opacity: 0;
 		position: fixed;
 		flex-direction: column;
@@ -67,6 +67,7 @@
 			pointer-events: all;
 			position: static;
 			flex-direction: row;
+			transform: scale(1);
 			width: calc(var(--max-width) / 37 * 35);
 			justify-content: flex-end;
 			background-color: transparent !important;
