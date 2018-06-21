@@ -58,6 +58,11 @@
     	font-style: normal;
     	line-height: 2;
     }
+    .icons a {
+        height: 70px;
+        display: inline-block;
+        overflow: visible;
+    }
 }
 
 @include breakpoint($desktop) {
