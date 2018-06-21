@@ -10,6 +10,20 @@
 @include breakpoint($desktop) {
 	.front {
 		.block {
+
+			&.contactform {
+				.salutation {
+					display: inline-block;
+					width: calc(var(--max-width) / 37 * 17);
+					
+					&-2 {
+						display: inline-block;
+						float: right;
+						width: calc(var(--max-width) / 37 * 17);
+					}
+				}
+			}
+			
 			&.references {
 				.reference {
 					flex-direction: row;

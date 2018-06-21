@@ -711,7 +711,7 @@ body:after {
   content: '';
   display: none;
   width: 100%;
-  height: 100%;
+  height: 5000vh;
   max-width: var(--max-width);
   position: fixed;
   left: 50%;
@@ -988,6 +988,15 @@ button::-moz-focus-inner {
     border: 1px solid #eaeaea; }
 
 @media (min-width: 770px) {
+  .front .block.contactform .salutation {
+    display: inline-block;
+    width: -webkit-calc(var(--max-width) / 37 * 17);
+    width: calc(var(--max-width) / 37 * 17); }
+    .front .block.contactform .salutation-2 {
+      display: inline-block;
+      float: right;
+      width: -webkit-calc(var(--max-width) / 37 * 17);
+      width: calc(var(--max-width) / 37 * 17); }
   .front .block.references .reference {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
