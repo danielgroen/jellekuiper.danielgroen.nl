@@ -1,6 +1,6 @@
 ---
 title: De Zuipkeet
-headerimage: /assets/img/theaterproducties/Theaterproducties-JelleKuiper-StefanoKeizers.jpg
+headerimage: /assets/img/theaterproducties/de_zuipkeet/Theaterproducties-dezuipkeet-Jelle-Kuiper.jpg
 teasertext: De Zuipkeet is een theatervoorstelling over de gevolgen van drankmisbruik in een klein Fries gezin.
 formimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'

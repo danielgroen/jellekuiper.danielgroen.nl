@@ -13815,65 +13815,6 @@ return jQuery;
 jQuery(function ($) {
 // this is the opening file
 
-removeAllFullscreen = function() {
-	$('.fullscreen').removeClass('fullscreen');
-	$('.transparent').removeClass('transparent');
-	$('.image-mobile-navigations').removeClass('visible');
-	$('.figure img').each(function() {
-		$(this).removeClass('slide-right');
-		$(this).removeClass('slide-left');
-	});
-}
-
-prevItem = function() {
-	$('.figure img').each(function() {
-		$(this).removeClass('slide-right');
-		$(this).addClass('slide-left');
-	})
-	if ( $('.fullscreen').prev().is('.figure') ) {
-    	$('.fullscreen').prev().addClass('fullscreen').next().removeClass('fullscreen');
-	}
-
-	if ($('.figure.visible.fullscreen').index() === 0 ) {
-		$('.image-mobile-navigations .arrow-left').addClass('transparent');
-	}
-	else {
-		$('.image-mobile-navigations .arrow-left').removeClass('transparent');
-	}
-
-	if ($('.figure.visible').last().hasClass('fullscreen') ) {
-		$('.image-mobile-navigations .arrow-right').addClass('transparent');
-	}
-	else {
-		$('.image-mobile-navigations .arrow-right').removeClass('transparent');
-	}
-}
-
-nextItem = function() {
-	$('.figure img').each(function() {
-		$(this).removeClass('slide-left');
-		$(this).addClass('slide-right');
-	})
-	if ( $('.fullscreen').next().is('.figure') ) {
-    	$('.fullscreen').next().addClass('fullscreen').prev().removeClass('fullscreen');
-	}
-
-	if ($('.figure.visible.fullscreen').index() === 0 ) {
-		$('.image-mobile-navigations .arrow-left').addClass('transparent');
-	}
-
-	else {
-		$('.image-mobile-navigations .arrow-left').removeClass('transparent');
-	}
-
-	if ($('.figure.visible').last().hasClass('fullscreen') ) {
-		$('.image-mobile-navigations .arrow-right').addClass('transparent');
-	}
-	else {
-		$('.image-mobile-navigations .arrow-right').removeClass('transparent');
-	}
-};
-
 $(window).on('load', function() {
 	//load in first item of page
 	$('main .block:first-child .usp:first-child .picture').addClass("fade-in");
@@ -13991,7 +13932,6 @@ function imageLoaded() {
 }
 
 $(window).on('load', function() {
-	console.log('window loaded')
     $('img').each(function() {
         if( this.complete ) {
             imageLoaded.call( this );
@@ -14001,8 +13941,8 @@ $(window).on('load', function() {
     });
 });
 
-var mobile  = '06 ';    var telephone  = '020 ';     var email = "groendaniel";    
-    mobile += '49 ';        telephone += '772 ';         email += "@live.nl";
+var mobile  = '06 ';    var telephone  = '020 ';     var email = "info";    
+    mobile += '49 ';        telephone += '772 ';         email += "@jellekuiper.nl";
     mobile += '84 ';        telephone += '45 ';
     mobile += '86 ';        telephone += '79';
     mobile += '01';

@@ -7,6 +7,7 @@
 		height: 100vh;
 		z-index: 10;
 		width: 100vw;
+		pointer-events: none;
 		top: 0;
 		left: 0;
 		transition: all 0.25s ease;
@@ -22,6 +23,7 @@
 			width: 100%;
 			text-align: center;
 			transition: all $speed/2;
+			pointer-events: all;
 
 			.menu-link {
 				position: relative;
@@ -64,7 +66,6 @@
 		.nav {
 			margin: $padding auto;
 			opacity: 1;
-			pointer-events: all;
 			position: static;
 			flex-direction: row;
 			transform: scale(1);
