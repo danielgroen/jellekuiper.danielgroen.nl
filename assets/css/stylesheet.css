@@ -1756,7 +1756,7 @@ main > .block {
 
 @media (min-width: 770px) {
   main > .block {
-    max-width: var(--max-width);
+    max-width: --max-width;
     width: -webkit-calc(var(--max-width) / 37 * 35);
     width: calc(var(--max-width) / 37 * 35); } }
 
@@ -1849,7 +1849,7 @@ main > .block {
     width: calc(var(--max-width) / 37 * 31); } }
 
 .block.usps .usp {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1898,7 +1898,7 @@ main > .block {
     -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: left;
-    margin-bottom: 25px; }
+    margin-bottom: 75px; }
     .block.usps .usp:nth-child(even) .picture {
       -webkit-box-ordinal-group: 3;
       -webkit-order: 2;
@@ -2117,6 +2117,7 @@ main > .block {
     height: 100vh;
     z-index: 10;
     width: 100vw;
+    pointer-events: none;
     top: 0;
     left: 0;
     -webkit-transition: all 0.25s ease;
@@ -2147,7 +2148,8 @@ main > .block {
       width: 100%;
       text-align: center;
       -webkit-transition: all 0.15s;
-      transition: all 0.15s; }
+      transition: all 0.15s;
+      pointer-events: all; }
       @media (min-width: 770px) {
         .main-menu .nav .menu-item {
           font-size: 18px; } }
@@ -2184,7 +2186,6 @@ main > .block {
   .main-menu .nav {
     margin: 1rem auto;
     opacity: 1;
-    pointer-events: all;
     position: static;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

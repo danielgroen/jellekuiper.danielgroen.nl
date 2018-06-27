@@ -1,5 +1,5 @@
-var mobile  = '06 ';    var telephone  = '020 ';     var email = "groendaniel";    
-    mobile += '49 ';        telephone += '772 ';         email += "@live.nl";
+var mobile  = '06 ';    var telephone  = '020 ';     var email = "info";    
+    mobile += '49 ';        telephone += '772 ';         email += "@jellekuiper.nl";
     mobile += '84 ';        telephone += '45 ';
     mobile += '86 ';        telephone += '79';
     mobile += '01';
