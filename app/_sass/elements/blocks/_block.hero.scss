@@ -1,16 +1,12 @@
 .hero-image {
 	display: block;
 	height: calc(100vh + 100px);
-	margin-top:-100px;
 	width: 100vw;
 	z-index: 1;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -5;
-	transform: 
-	  translateZ(-1px)
-	  scale(2);
 
 	&:after {
 		content: '';
@@ -68,6 +64,13 @@
 }
 
 @include breakpoint($desktop) {
+	.hero-image {
+		margin-top:-100px;		
+		transform: 
+		  translateZ(-1px)
+		  scale(2);
+	}
+
 	.block.hero {
 		justify-content: center;
 		height: calc(85vh);

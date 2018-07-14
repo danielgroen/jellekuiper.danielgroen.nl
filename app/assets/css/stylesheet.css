@@ -1492,15 +1492,12 @@ main {
   display: block;
   height: -webkit-calc(100vh + 100px);
   height: calc(100vh + 100px);
-  margin-top: -100px;
   width: 100vw;
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -5;
-  -webkit-transform: translateZ(-1px) scale(2);
-  transform: translateZ(-1px) scale(2); }
+  z-index: -5; }
   .hero-image:after {
     content: '';
     position: absolute;
@@ -1586,6 +1583,10 @@ main {
         background-color: #17a98c; }
 
 @media (min-width: 770px) {
+  .hero-image {
+    margin-top: -100px;
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2); }
   .block.hero {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
