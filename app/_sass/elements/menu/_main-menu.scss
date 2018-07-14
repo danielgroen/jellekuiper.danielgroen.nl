@@ -47,9 +47,10 @@
 				}
 			}
 
-			&:hover,
+			// &:hover,
 			&.active {
 				opacity: 1;
+				
 				.menu-link {
 					&:after {
 						width: 100%;
