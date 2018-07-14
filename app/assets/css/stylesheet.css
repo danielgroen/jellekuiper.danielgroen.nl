@@ -2177,9 +2177,9 @@ main > .block {
           z-index: -1;
           opacity: 1;
           position: absolute; }
-      .main-menu .nav .menu-item:hover, .main-menu .nav .menu-item.active {
+      .main-menu .nav .menu-item.active {
         opacity: 1; }
-        .main-menu .nav .menu-item:hover .menu-link:after, .main-menu .nav .menu-item.active .menu-link:after {
+        .main-menu .nav .menu-item.active .menu-link:after {
           width: 100%; }
 
 @media (min-width: 770px) {
