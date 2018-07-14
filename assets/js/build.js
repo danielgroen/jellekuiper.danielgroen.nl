@@ -13936,6 +13936,7 @@ $(window).on('load', function() {
         if( this.complete ) {
             imageLoaded.call( this );
         } else {
+        	alert('jo')
             $(this).one('load', imageLoaded);
         }
     });
@@ -14019,6 +14020,14 @@ $('.main-menu a[href$="#contact"]').on('click', function(e){
 	$('.menu-toggle').toggleClass('active');
 });
 
+// Close all menus when pressing ESC
+$(document).keyup(function (e) {
+  if (e.keyCode === 27 && $('.menu-toggle').hasClass('active')) {
+   $(this).removeClass('active');
+   $('body').removeClass('pinned');
+  };
+});
+
 
 (function() {
 	var owl = $('.owl-carousel');
@@ -14040,21 +14049,16 @@ $('.main-menu a[href$="#contact"]').on('click', function(e){
 	})
 })();
 
-// smooth scroll to an #id
-$(function($) {
-   $('a[href*=\\#]:not([href=\\#])').click(function() {
-       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-          || location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-             if (target.length) {
-               $('html,body').animate({
-                   scrollTop: target.offset().top - 50
-              }, 500);
-              return false;
-          }
-      }
-  });
-});
+// NOTE: niet mogelijk door body height van 100vh
+
+// var $root = $('main');
+
+// $('a[href^="#"]').click(function () {
+//     $root.animate({
+//         scrollTop: $( $.attr(this, 'href') ).offset().top
+//     }, 500);
+
+//     return false;
+// });
 // this is the closing file
 });

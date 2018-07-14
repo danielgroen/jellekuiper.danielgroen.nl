@@ -57,6 +57,7 @@ $(window).on('load', function() {
         if( this.complete ) {
             imageLoaded.call( this );
         } else {
+        	// alert('jo')
             $(this).one('load', imageLoaded);
         }
     });
