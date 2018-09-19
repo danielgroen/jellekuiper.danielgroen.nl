@@ -32,16 +32,14 @@ var images = {
 }
 
 function imageLoaded() {
-  
+
   $.each(focuspoint, function () {
     var width = $(this).find('img').width(),
     height = $(this).find('img').height(),
     src = $(this).find('img').attr('src');
-    
+
 		Object.keys(images).forEach(function (key) {
-      
       if (src.indexOf(key) !== -1) {
-        $('body').text($('.hero-image img').height() + ' ' + $('.hero-image img').width());
 
 				that.attr('data-image-w', width)
 					.attr('data-image-h', height)
@@ -56,11 +54,13 @@ function imageLoaded() {
 
 $(window).on('load', function () {
 	$('img').each(function () {
+    $('body').text($('.hero-image img').height() + ' ' + $('.hero-image img').width());
 
     if (this.complete) {
       imageLoaded.call(this);
+      
 		} else {
-			$(this).one('load', imageLoaded);
+      $(this).one('load', imageLoaded);
 		}
 	});
 });
