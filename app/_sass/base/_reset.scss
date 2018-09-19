@@ -34,6 +34,10 @@ time, mark, audio, video {
 .owl-stage {
 	max-width: initial;
 }
+.owl-stage-outer {
+	padding-bottom: 50px;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
