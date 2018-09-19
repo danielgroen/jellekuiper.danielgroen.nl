@@ -13932,13 +13932,16 @@ function imageLoaded() {
 }
 
 $(window).on('load', function () {
+  // $('body').text($('.hero-image img').height() + ' ' + $('.hero-image img').width());
+  $('body').text('test 123');
 	$('img').each(function () {
-    $('body').text($('.hero-image img').height() + ' ' + $('.hero-image img').width());
+    $('body').text('test 1234');
 
     if (this.complete) {
       imageLoaded.call(this);
-      
-		} else {
+
+    }
+    else {
       $(this).one('load', imageLoaded);
 		}
 	});
