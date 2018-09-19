@@ -22,13 +22,13 @@ var images = {
 	'Theaterproducties-judas-Jelle-Kuiper.jpg' : {x: 0.49 , y: -0.49 },
 	'Theaterproducties-JelleKuiper-StefanoKeizers.jpg' : {x: 0.25 , y: 0.41 },
 	'Trouwambtenaar-Jelle-Kuiper-hero.jpg' : {x: -0.33 , y: 0.52 },
-	'Trouwambtenaar-Jelle-Kuiper-ceremonieel-huwelijk.jpg' : {x: 0.30 , y: -0.02 },
-	'Trouwambtenaar-Jelle-Kuiper-bloemenmeisje.jpg' : {x: -0.15 , y: 0.55 },
+	'Trouwambtenaar-Jelle-Kuiper-ceremonieel-huwelijk.jpg' : {x: -0.15 , y: -0.02 },
+	'Trouwambtenaar-Jelle-Kuiper-kosten.jpg' : {x: -0.15 , y: 0.55 },
 	'Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg' : {x: 0.07 , y: 0.68 },
 	'Trouwambtenaar-Jelle-Kuiper-leuktrouwen-prijs.jpg' : {x: -0.31 , y: 0.49 },
 	'Trouwambtenaar-Jelle-Kuiper-leuktrouwen.jpg' : {x: 0.07 , y: 0.47 },
 	'Trouwambtenaar-Jelle-Kuiper-Persoonlijk.jpg' : {x: 0.25 , y: 0.48 },
-	'jellekuiper.jpg' : {x: 0.09 , y: 0.27 },
+	'jellekuiper.jpg' : {x: 0.29 , y: 0.2 },
 }
 
 function imageLoaded() {
