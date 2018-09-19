@@ -55,6 +55,8 @@ function imageLoaded() {
 	focuspoint.focusPoint();
 }
 
+// WTF:: $(window).on('load', function () {
+// werkt niet op mijn telefoon!!!
 $(document).ready(function () {
 
 	$('img').each(function () {
