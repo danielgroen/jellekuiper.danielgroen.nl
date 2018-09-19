@@ -13911,16 +13911,17 @@ var images = {
 }
 
 function imageLoaded() {
-  
+
   $.each(focuspoint, function () {
-    var width = $(this).find('img').width(),
-    height = $(this).find('img').height(),
-    src = $(this).find('img').attr('src');
-    
+		var that = $(this);
+
+    var width = that.find('img').width(),
+				height = that.find('img').height(),
+				src = that.find('img').attr('src');
+
 		Object.keys(images).forEach(function (key) {
-      
       if (src.indexOf(key) !== -1) {
-        $('body').text($('.hero-image img').height() + ' ' + $('.hero-image img').width());
+
 
 				that.attr('data-image-w', width)
 					.attr('data-image-h', height)
@@ -13933,18 +13934,22 @@ function imageLoaded() {
 	focuspoint.focusPoint();
 }
 
-$(window).on('load', function () {
+// WTF:: $(window).on('load', function () {
+// werkt niet op mijn telefoon!!!
+$(document).ready(function () {
+
 	$('img').each(function () {
 
     if (this.complete) {
       imageLoaded.call(this);
-		} else {
-			$(this).one('load', imageLoaded);
+    }
+    else {
+      $(this).one('load', imageLoaded);
 		}
 	});
 });
 
-var mobile  = '06 ';    var telephone  = '020 ';     var email = "info";    
+var mobile  = '06 ';    var telephone  = '020 ';     var email = "info";
     mobile += '49 ';        telephone += '772 ';         email += "@jellekuiper.nl";
     mobile += '84 ';        telephone += '45 ';
     mobile += '86 ';        telephone += '79';

@@ -1,9 +1,9 @@
 ---
 title: André het astronautje
 button: André het astronautje
-headerimage: /assets/thumb/theaterproducties/andre_het_astronautje/Theaterproducties-andrehetastronautje-Jelle-Kuiper.jpg
+headerimage: /assets/img/theaterproducties/andre_het_astronautje/Theaterproducties-andrehetastronautje-Jelle-Kuiper.jpg
 teasertext: Een muzikale familievoorstelling naar het boek van Andre Kuipers en met liedjes van Claudia de Breij.
-formimage: /assets/thumb/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
+formimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
 externalUrl: https://astronautje.nl/
