@@ -6,4 +6,4 @@ gulp.task('jekyll-build', () => {
   return child.spawn('jekyll', ['build']);
 });
 
-gulp.task('build',  gulp.series('jekyll-build'));
+gulp.task('build',  gulp.series('img','jekyll-build'));
