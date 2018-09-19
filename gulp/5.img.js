@@ -31,7 +31,7 @@ gulp.task("images:compress", function () {
 })
 
 gulp.task("images:thumb", function () {
-    return gulp.src(global.paths.app + global.paths.imagespath + '**/*')
+    return gulp.src(global.paths.app + 'assets/original-img/**/*.{png,jpg,jpeg}')
       .pipe(image({
         jpegRecompress: true,
         mozjpeg: true,
@@ -43,6 +43,7 @@ gulp.task("images:thumb", function () {
         upscale : false,
         imageMagick: true
       })))
+      .pipe(gulp.dest(global.paths.app + 'assets/thumb'))
       .pipe(gulp.dest(global.paths.dist + 'assets/thumb'));
 })
 
