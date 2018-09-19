@@ -34,12 +34,15 @@ var images = {
 function imageLoaded() {
 
   $.each(focuspoint, function () {
-    var width = $(this).find('img').width(),
-    height = $(this).find('img').height(),
-    src = $(this).find('img').attr('src');
+		var that = $(this);
+
+    var width = that.find('img').width(),
+				height = that.find('img').height(),
+				src = that.find('img').attr('src');
 
 		Object.keys(images).forEach(function (key) {
       if (src.indexOf(key) !== -1) {
+
 
 				that.attr('data-image-w', width)
 					.attr('data-image-h', height)
@@ -54,13 +57,12 @@ function imageLoaded() {
 
 $(window).on('load', function () {
   // $('body').text($('.hero-image img').height() + ' ' + $('.hero-image img').width());
-  $('body').text('test 123');
+  // $('body').text('test 123');
+
 	$('img').each(function () {
-    $('body').text('test 1234');
 
     if (this.complete) {
       imageLoaded.call(this);
-
     }
     else {
       $(this).one('load', imageLoaded);
