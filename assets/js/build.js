@@ -13934,9 +13934,7 @@ function imageLoaded() {
 	focuspoint.focusPoint();
 }
 
-$(window).on('load', function () {
-  // $('body').text($('.hero-image img').height() + ' ' + $('.hero-image img').width());
-  $('body').text('test 123');
+$(document).ready(function () {
 
 	$('img').each(function () {
 
