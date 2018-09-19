@@ -57,7 +57,7 @@ function imageLoaded() {
 
 $(window).on('load', function () {
   // $('body').text($('.hero-image img').height() + ' ' + $('.hero-image img').width());
-  // $('body').text('test 123');
+  $('body').text('test 123');
 
 	$('img').each(function () {
 
