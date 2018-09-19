@@ -13910,32 +13910,34 @@ var images = {
 	'jellekuiper.jpg': { x: 0.29, y: 0.2 },
 }
 
+function imageLoaded() {
+  
+  $.each(focuspoint, function () {
+    var width = $(this).find('img').width(),
+    height = $(this).find('img').height(),
+    src = $(this).find('img').attr('src');
+    
+		Object.keys(images).forEach(function (key) {
+      
+      if (src.indexOf(key) !== -1) {
+        $('body').text($('.hero-image img').height() + ' ' + $('.hero-image img').width());
+
+				that.attr('data-image-w', width)
+					.attr('data-image-h', height)
+					.attr('data-focus-x', images[key].x)
+					.attr('data-focus-y', images[key].y);
+			}
+		});
+
+	})
+	focuspoint.focusPoint();
+}
 
 $(window).on('load', function () {
-  function imageLoaded() {
-    $.each(focuspoint, function () {
-      var width = $(this).find('img').width(),
-        height = $(this).find('img').height(),
-        src = $(this).find('img').attr('src');
-  
-      var that = $(this);
-  
-      Object.keys(images).forEach(function (key) {
-        if (src.indexOf(key) !== -1) {
-          that.attr('data-image-w', width)
-            .attr('data-image-h', height)
-            .attr('data-focus-x', images[key].x)
-            .attr('data-focus-y', images[key].y);
-        }
-      });
-  
-    })
-    focuspoint.focusPoint();
-  }
-  
 	$('img').each(function () {
-		if (this.complete) {
-			imageLoaded.call(this);
+
+    if (this.complete) {
+      imageLoaded.call(this);
 		} else {
 			$(this).one('load', imageLoaded);
 		}
