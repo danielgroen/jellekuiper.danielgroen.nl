@@ -43,7 +43,13 @@
     	}
     }
 
-    .social-media {
+    .icons {
+      display: flex;
+      justify-content: center;
+
+      a {
+        display: inline-block;
+        overflow: visible;
         fill: $white;
         height: 36px;
         width: 36px;
@@ -51,17 +57,12 @@
         border-radius: 50%;
         padding: .5em;
         margin: $gutter 5px;
-        box-sizing: border-box;
+      }
     }
 
     .address {
     	font-style: normal;
     	line-height: 2;
-    }
-    .icons a {
-        height: 70px;
-        display: inline-block;
-        overflow: visible;
     }
 }
 
@@ -86,6 +87,11 @@
 
             .icons {
                 order: 3;
+                justify-content: flex-start;
+
+                a {
+                  padding-top: .34em;
+                }
             }
         }
     }
