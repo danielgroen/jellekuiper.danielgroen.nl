@@ -57,7 +57,7 @@ function imageLoaded() {
 
 // WTF:: $(window).on('load', function () {
 // werkt niet op mijn telefoon!!!
-$(document).ready(function () {
+$(window).onload(function () {
 
 	$('img').each(function () {
 
