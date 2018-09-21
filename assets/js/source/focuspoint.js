@@ -11,24 +11,24 @@
 // https://jonom.github.io/jquery-focuspoint/demos/helper/index.html
 var focuspoint = $('.focuspoint');
 var images = {
-	'Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg': { x: -0.15, y: 0.53 },
-	'Bedrijfsoptredens-Jelle-Kuiper-hero.jpg': { x: -0.40, y: 0.47 },
-	'Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-2.jpg': { x: -0.72, y: 0.63 },
-	'Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-3.jpg': { x: -0.23, y: -0.30 },
-	'Bedrijfsoptreden-Jelle-Kuiper-contact.jpg': { x: 0.15, y: -0.36 },
-	'Bedrijfsoptreden-Jelle-Kuiper-presentatie-maxima.jpg': { x: 0.28, y: 0.54 },
-	'Bedrijfsoptreden-Jelle-Kuiper-quiz.jpg': { x: 0.35, y: 0.41 },
-	'Theaterproducties-Jelle-Kuiper-introductie.jpeg': { x: -0.06, y: 0.24 },
-	'Theaterproducties-judas-Jelle-Kuiper.jpg': { x: 0.49, y: -0.49 },
-	'Theaterproducties-JelleKuiper-StefanoKeizers.jpg': { x: 0.25, y: 0.41 },
-	'Trouwambtenaar-Jelle-Kuiper-hero.jpg': { x: -0.33, y: 0.52 },
-	'Trouwambtenaar-Jelle-Kuiper-ceremonieel-huwelijk.jpg': { x: -0.15, y: -0.02 },
-	'Trouwambtenaar-Jelle-Kuiper-kosten.jpg': { x: -0.15, y: 0.55 },
-	'Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg': { x: 0.07, y: 0.68 },
-	'Trouwambtenaar-Jelle-Kuiper-leuktrouwen-prijs.jpg': { x: -0.31, y: 0.49 },
-	'Trouwambtenaar-Jelle-Kuiper-leuktrouwen.jpg': { x: 0.07, y: 0.47 },
-	'Trouwambtenaar-Jelle-Kuiper-Persoonlijk.jpg': { x: 0.25, y: 0.48 },
-	'jellekuiper.jpg': { x: 0.29, y: 0.2 },
+	'Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg': { x: -0.15, y: 0.53, width: 1240, height: 720 },
+	'Bedrijfsoptredens-Jelle-Kuiper-hero.jpg': { x: -0.40, y: 0.47, width: 1240, height: 720 },
+	'Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-2.jpg': { x: -0.72, y: 0.63, width: 1240, height: 720 },
+	'Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-3.jpg': { x: -0.23, y: -0.30, width: 1240, height: 720 },
+	'Bedrijfsoptreden-Jelle-Kuiper-contact.jpg': { x: 0.15, y: -0.36, width: 1240, height: 720 },
+	'Bedrijfsoptreden-Jelle-Kuiper-presentatie-maxima.jpg': { x: 0.28, y: 0.54, width: 1240, height: 720 },
+	'Bedrijfsoptreden-Jelle-Kuiper-quiz.jpg': { x: 0.35, y: 0.41, width: 1240, height: 720 },
+	'Theaterproducties-Jelle-Kuiper-introductie.jpeg': { x: -0.06, y: 0.24, width: 1240, height: 720 },
+	'Theaterproducties-judas-Jelle-Kuiper.jpg': { x: 0.49, y: -0.49, width: 1240, height: 720 },
+	'Theaterproducties-JelleKuiper-StefanoKeizers.jpg': { x: 0.25, y: 0.41, width: 1240, height: 720 },
+	'Trouwambtenaar-Jelle-Kuiper-hero.jpg': { x: -0.33, y: 0.52, width: 1240, height: 720 },
+	'Trouwambtenaar-Jelle-Kuiper-ceremonieel-huwelijk.jpg': { x: -0.15, y: -0.02, width: 1240, height: 720 },
+	'Trouwambtenaar-Jelle-Kuiper-kosten.jpg': { x: -0.15, y: 0.55, width: 1240, height: 720 },
+	'Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg': { x: 0.07, y: 0.68, width: 1240, height: 720 },
+	'Trouwambtenaar-Jelle-Kuiper-leuktrouwen-prijs.jpg': { x: -0.31, y: 0.49, width: 1240, height: 720 },
+	'Trouwambtenaar-Jelle-Kuiper-leuktrouwen.jpg': { x: 0.07, y: 0.47, width: 1240, height: 720 },
+	'Trouwambtenaar-Jelle-Kuiper-Persoonlijk.jpg': { x: 0.25, y: 0.48, width: 1240, height: 720 },
+	'jellekuiper.jpg': { x: 0.29, y: 0.2, width: 1240, height: 720 },
 }
 
 function imageLoaded() {
@@ -36,19 +36,12 @@ function imageLoaded() {
   $.each(focuspoint, function () {
 		var that = $(this);
 
-    var width = that.find('img').width(),
-				height = that.find('img').height(),
-				src = that.find('img').attr('src');
-
 		Object.keys(images).forEach(function (key) {
-      if (src.indexOf(key) !== -1) {
 
-
-				that.attr('data-image-w', width)
-					.attr('data-image-h', height)
-					.attr('data-focus-x', images[key].x)
-					.attr('data-focus-y', images[key].y);
-			}
+		that.attr('data-image-w', images[key].width)
+			.attr('data-image-h', images[key].height)
+			.attr('data-focus-x', images[key].x)
+			.attr('data-focus-y', images[key].y);
 		});
 
 	})
