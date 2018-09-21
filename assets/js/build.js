@@ -13913,14 +13913,17 @@ var images = {
 function imageLoaded() {
 
   $.each(focuspoint, function () {
-		var that = $(this);
+		var that = $(this),
+				src = that.find('img').attr('src');
 
 		Object.keys(images).forEach(function (key) {
+			if (src.indexOf(key) !== -1) {
 
 		that.attr('data-image-w', images[key].width)
 			.attr('data-image-h', images[key].height)
 			.attr('data-focus-x', images[key].x)
 			.attr('data-focus-y', images[key].y);
+			}
 		});
 
 	})
