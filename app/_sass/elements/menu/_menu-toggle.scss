@@ -55,7 +55,7 @@
 
 	~ .nav {
 		pointer-events: all;
-		opacity: 1;
+		opacity: 1 !important;
 		transform: scale(1);
 		background-color: $white;
 	}

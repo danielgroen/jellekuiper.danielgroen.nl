@@ -42,15 +42,15 @@
 					left: 0;
 					bottom: -5px;
 					z-index: -1;
-					opacity: 1;
+					opacity: 1 !important;
 					position: absolute;
 				}
 			}
 
 			// &:hover,
 			&.active {
-				opacity: 1;
-				
+				opacity: 1 !important;
+
 				.menu-link {
 					&:after {
 						width: 100%;
@@ -66,7 +66,7 @@
 	.main-menu {
 		.nav {
 			margin: $padding auto;
-			opacity: 1;
+			opacity: 1 !important;
 			position: static;
 			flex-direction: row;
 			transform: scale(1);
