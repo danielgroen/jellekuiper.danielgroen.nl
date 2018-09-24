@@ -2192,17 +2192,17 @@ main > .block {
           left: 0;
           bottom: -5px;
           z-index: -1;
-          opacity: 1;
+          opacity: 1 !important;
           position: absolute; }
       .main-menu .nav .menu-item.active {
-        opacity: 1; }
+        opacity: 1 !important; }
         .main-menu .nav .menu-item.active .menu-link:after {
           width: 100%; }
 
 @media (min-width: 770px) {
   .main-menu .nav {
     margin: 1rem auto;
-    opacity: 1;
+    opacity: 1 !important;
     position: static;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2315,7 +2315,7 @@ main > .block {
   z-index: 20; }
   .menu-toggle.active ~ .nav {
     pointer-events: all;
-    opacity: 1;
+    opacity: 1 !important;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
