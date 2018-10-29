@@ -1,5 +1,3 @@
-'use strict';
-
 const   gulp = require('gulp'),
         reload = global.browserSync.reload;
 
@@ -16,4 +14,4 @@ gulp.task('browsersync', () => {
     gulp.watch(global.paths.app + global.paths.fonts, gulp.series('fonts'));
 });
 
-gulp.task('serve', gulp.parallel('browsersync', 'jekyll-serve', 'sass'));
+gulp.task('serve', gulp.series('sass','fonts', 'js', 'jekyll-serve', 'browsersync'));

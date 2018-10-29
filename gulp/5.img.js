@@ -1,11 +1,5 @@
-'use strict';
-
 const gulp      = require('gulp'),
       image       = require("gulp-image"),
-      jpegRecompress  = require("imagemin-jpeg-recompress"),
-      mozjpeg     = require("imagemin-mozjpeg"),
-      jpegoptim     = require('jpegoptim-bin'),
-      gm        = require('gulp-gm'),
       imageResize = require('gulp-image-resize');
 
 gulp.task('images:resize', function () {

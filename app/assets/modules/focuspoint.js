@@ -1,3 +1,4 @@
+	
 /**
  * jQuery FocusPoint; version: 1.1.3
  * Author: http://jonathonmenz.com
@@ -26,7 +27,7 @@ var images = {
 	'Trouwambtenaar-Jelle-Kuiper-hero.jpg': { x: -0.33, y: 0.52, width: 1920, height: 1280 },
 	'Trouwambtenaar-Jelle-Kuiper-ceremonieel-huwelijk.jpg': { x: -0.15, y: -0.02, width: 900, height: 601 },
 	'Trouwambtenaar-Jelle-Kuiper-kosten.jpg': { x: -0.15, y: 0.55, width: 900, height: 601 },
-	'Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg': { x: 0.07, y: 0.68, width: 720, height: 118 },
+	'Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg': { x: 0.07, y: 0.68, width: 720, height: 1080 },
 	'Trouwambtenaar-Jelle-Kuiper-leuktrouwen-prijs.jpg': { x: -0.31, y: 0.49, width: 960, height: 370 },
 	'Trouwambtenaar-Jelle-Kuiper-leuktrouwen.jpg': { x: 0.07, y: 0.47, width: 500, height: 426 },
 	'Trouwambtenaar-Jelle-Kuiper-Persoonlijk.jpg': { x: 0.25, y: 0.48, width: 640, height: 427 },
