@@ -2,64 +2,64 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
 	<url>
-		<loc>https://webnozems.nl/bedrijfsoptredens/</loc>
-		<lastmod>2018-09-24T19:26:51+02:00</lastmod>
+		<loc>https://localhost:4000/bedrijfsoptredens/</loc>
+		<lastmod>2018-10-29T22:04:59+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://webnozems.nl/theaterproducties/andre-het-astronautje/</loc>
-		<lastmod>2018-09-24T19:26:51+02:00</lastmod>
+		<loc>https://localhost:4000/theaterproducties/andre-het-astronautje/</loc>
+		<lastmod>2018-10-29T22:04:59+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://webnozems.nl/theaterproducties/buurman-en-buurman-xl/</loc>
-		<lastmod>2018-09-24T19:26:51+02:00</lastmod>
+		<loc>https://localhost:4000/theaterproducties/buurman-en-buurman-xl/</loc>
+		<lastmod>2018-10-29T22:04:59+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://webnozems.nl/theaterproducties/buurman-en-buurman/</loc>
-		<lastmod>2018-09-24T19:26:51+02:00</lastmod>
+		<loc>https://localhost:4000/theaterproducties/buurman-en-buurman/</loc>
+		<lastmod>2018-10-29T22:04:59+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://webnozems.nl/theaterproducties/de-zuipkeet/</loc>
-		<lastmod>2018-09-24T19:26:51+02:00</lastmod>
+		<loc>https://localhost:4000/theaterproducties/de-zuipkeet/</loc>
+		<lastmod>2018-10-29T22:04:59+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://webnozems.nl/theaterproducties/</loc>
-		<lastmod>2018-09-24T19:26:51+02:00</lastmod>
+		<loc>https://localhost:4000/theaterproducties/</loc>
+		<lastmod>2018-10-29T22:04:59+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://webnozems.nl/theaterproducties/judas/</loc>
-		<lastmod>2018-09-24T19:26:51+02:00</lastmod>
+		<loc>https://localhost:4000/theaterproducties/judas/</loc>
+		<lastmod>2018-10-29T22:04:59+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://webnozems.nl/theaterproducties/stefano-keizers/</loc>
-		<lastmod>2018-09-24T19:26:51+02:00</lastmod>
+		<loc>https://localhost:4000/theaterproducties/stefano-keizers/</loc>
+		<lastmod>2018-10-29T22:04:59+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://webnozems.nl/trouwambtenaar/</loc>
-		<lastmod>2018-09-24T19:26:51+02:00</lastmod>
+		<loc>https://localhost:4000/trouwambtenaar/</loc>
+		<lastmod>2018-10-29T22:04:59+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>

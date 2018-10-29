@@ -1,4 +1,4 @@
-var triggered = false;
+    var triggered = false;
 
     $('.body').on('scroll', function() {
         if (triggered === false) {
@@ -11,7 +11,7 @@ var triggered = false;
 
                 if( bottom_of_window > bottom_of_object ) {
                     triggered = true;
-                    
+
                     if (counterValue) {
                         $(this).text('0');
                     }
