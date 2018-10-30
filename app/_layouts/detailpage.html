@@ -25,7 +25,7 @@
 
 	{% include _blocks/contactform.html %}
 
-	<section class="block references"> 
+	<section class="block references">
 	<strong class="subtitle">Andere producties</strong>
 		{% assign sortedPages = site.pages | sort: 'order' %}
 		{% assign currentPage = page.path %}
@@ -34,7 +34,6 @@
 		<article class="reference">
 			<div class="introduction">
 				<h3 class="title">{{page.title}}</h3>
-				<p class="keywords">Bijzonder, spannend, krachtig.</p>
 				<p class="description">{{page.teasertext}}</p>
 				<a href="{{page.url}}" class="button">Lees meer</a>
 			</div>

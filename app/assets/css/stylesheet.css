@@ -900,6 +900,16 @@ button::-moz-focus-inner {
     border: 1px solid #eaeaea; }
   .detailpage main .block.references .subtitle {
     display: none; }
+  .detailpage main .block.references .introduction {
+    height: 55%; }
+    .detailpage main .block.references .introduction .description {
+      font-weight: 700;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+      font-size: 16px;
+      line-height: 1.4;
+      display: block;
+      text-align: center;
+      padding: 0 20px; }
 
 @media (min-width: 770px) {
   .detailpage .header {
@@ -949,7 +959,14 @@ button::-moz-focus-inner {
     display: inline-block;
     width: auto; }
   .detailpage main .block.references {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+    .detailpage main .block.references .introduction {
+      margin: 10px 0;
+      height: 80%; }
+      .detailpage main .block.references .introduction .description {
+        display: block;
+        text-align: center;
+        padding: 0 20px; } }
 
 .front .block.contactform {
   margin-top: 100px;

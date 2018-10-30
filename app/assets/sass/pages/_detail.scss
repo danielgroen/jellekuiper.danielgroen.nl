@@ -1,5 +1,4 @@
 .detailpage {
-
 	&.pinned {
 		.heading {
 			.back {
@@ -13,7 +12,7 @@
 			$menuHeight: 20px;
 			$barWidth: 24px;
 			$barHeight: 3px;
-			border-top: $barHeight solid $black; 
+			border-top: $barHeight solid $black;
 			border-bottom: $barHeight solid $black;
 			&:before, &:after {
 				background-color: $black;
@@ -90,6 +89,21 @@
 			@include background;
 			.subtitle {
 				display: none;
+			}
+
+			.introduction {
+				height: 55%;
+
+				.description {
+					font-weight: 700;
+					text-shadow: $text-shadow;
+					font-size: 16px;
+					line-height: 1.4;
+					
+					display: block;
+					text-align: center;
+					padding: 0 20px;
+				}
 			}
 		}
 	}
@@ -177,6 +191,17 @@
 
 			.block.references {
 				margin-bottom: $gutter*2;
+
+				.introduction {
+					margin: 10px 0;
+					height: 80%;
+
+					.description {
+						display: block;
+						text-align: center;
+						padding: 0 20px;
+					}
+				}
 			}
 		}
 	}
