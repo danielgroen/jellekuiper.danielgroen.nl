@@ -2,6 +2,11 @@ const	gulp = require('gulp'),
       child = require('child_process'),
       gutil = require('gulp-util');
 
+
+gulp.task('jekyll-build', () => {
+  return child.spawn('jekyll', ['build']);
+});
+
 gulp.task('jekyll-serve', done => {
   let taskFinalized = false;
 

@@ -1,9 +1,12 @@
-'use strict';
+const gulp = require('gulp'),
+      ghPages = require('gulp-gh-pages');
 
-let gulp = require('gulp');
-let ghPages = require('gulp-gh-pages');
-
-gulp.task('deploy', function() {
+gulp.task('deployment', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages(global.ghpagesOptions));
+             .pipe(ghPages({
+                'force': true,
+                'branch': 'gh-pages'
+             }))
 });
+
+gulp.task('deploy', gulp.series('build', 'deployment'));

@@ -1,6 +1,7 @@
 const gulp = require('gulp'),
 			mainBowerFiles = require('main-bower-files'),
-			concat = require('gulp-concat');
+			concat = require('gulp-concat'),
+			remove = require('gulp-remove-files');
 
 // NOTE:: if the bower task exits without generating any bower module while it should. please check if you installed the component with the parameter --save
 // NOTE:: be sure to not give the parameter: --save-dev.
@@ -27,7 +28,8 @@ gulp.task('concatJs', function() {
 	return gulp.src(`${global.paths.app}/assets/modules/*.js`)
 				.pipe(concat('build.js'))
 				.pipe(gulp.dest(`${global.paths.app}/assets/js/`))
+        .pipe(gulp.dest(`${global.paths.dist}/assets/js/`))
 				.pipe(global.browserSync.stream());
 });
 
-gulp.task('js', gulp.series('bower', 'concatJs'));
+gulp.task('js', gulp.series('concatJs'));

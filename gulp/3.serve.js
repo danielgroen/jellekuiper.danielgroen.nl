@@ -8,10 +8,11 @@ gulp.task('browsersync', () => {
         ghostMode: false
     });
 
-    gulp.watch(global.paths.app + global.paths.htmlFiles).on('change', reload);
-    gulp.watch(global.paths.app + global.paths.jsFiles, gulp.series('js'));
-    gulp.watch(global.paths.app + global.paths.sassFiles, gulp.series('sass'));
-    gulp.watch(global.paths.app + global.paths.fonts, gulp.series('fonts'));
+    gulp.watch(`${global.paths.app}/**/*.{html, md}`).on('change', reload);
+    gulp.watch(`${global.paths.app}/**/*.{yml, json}`, gulp.series('jekyll-build', reload));
+    gulp.watch(`${global.paths.app}/assets/modules/**/*.js`, gulp.series('js'));
+    gulp.watch([`!${global.paths.app}/assets/sass/fonts/*.scss`, `${global.paths.app}/assets/**/*.scss`], gulp.series('sass'));
+    gulp.watch([`${global.paths.app}/assets/sass/fonts/*.scss`], gulp.series('fonts'));
 });
 
 gulp.task('serve', gulp.series('sass','fonts', 'js', 'jekyll-serve', 'browsersync'));
