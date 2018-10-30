@@ -2,5 +2,5 @@
 layout: null
 ---
 User-Agent: *
-Disallow: 
+Disallow:
 Sitemap: {{ site.url | replace: 'http:', 'https:' }}/sitemap.xml

@@ -1,0 +1,4 @@
+@function bpmax($breakpoint) {
+  $max-breakpoint: $breakpoint - 1px;
+  @return $max-breakpoint;
+}

@@ -6,7 +6,7 @@
 name: "Jelle Kuiper | Trouwambtenaar"
 description: "Voor een leuke trouwdag"
 url: https://webnozems.nl
-keywords: "trouwen jellekuiper jelle kuiper amsterdam" 
+keywords: "trouwen jellekuiper jelle kuiper amsterdam"
 author:
   name: jellekuiper
   email: info@jellekuiper.nl
@@ -23,21 +23,20 @@ assets:
   compress:
     css: true
     js: true
-
-sass:
-  sass_dir: assets/css
-  style: compressed
-
-# exclude: ['img', 'pdf', 'css', 'js', 'fonts', 'bower_components', 'node_modules', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+exclude: [
+          'assets/modules',
+          'assets/scss',
+          'assets/original-img'
+          ]
+include: []
 keep_files: ['img', 'pdf']
-include: ['.htaccess']
 
 # _config.build.yml sets future and show_drafts to false on `gulp build`
 future: true
 show_drafts: true
 
 disqus:
-    shortname: 'jellekuiper'
+  shortname: 'jellekuiper'
 
 # Markdown library
 markdown: redcarpet

@@ -1,0 +1,61 @@
+.block.usps {
+	.usp {
+		margin-bottom: $gutter*4;
+		display: flex;
+		flex-direction: column;
+
+		.subtitle {
+			padding: $padding 0;
+		}
+
+		.quote {
+			@include font('quote');
+			margin-bottom: $gutter;
+		}
+
+		.button {
+			text-transform: uppercase;
+			text-align: center;
+			width: calc(#{$max-width} / 24 * 22);
+			left: calc(#{$max-width} / 24 * 1);
+		}
+	}
+}
+
+@include breakpoint($desktop) {
+	.block.usps {
+		.usp {
+			flex-direction: row;
+			justify-content: space-between;
+			text-align: left;
+			margin-bottom: $gutter*3;
+
+			&:nth-child(even) {
+				.picture {
+					order: 2;
+				}
+			}
+
+			.article {
+				flex: 0 0 calc(#{$max-width} / 37 * 17);
+				padding: calc(#{$max-width} / 37 * 1);
+
+				.subtitle {
+					padding-top: 0;
+				}
+			}
+
+			.button {
+				text-transform: uppercase;
+				width: calc(#{$max-width} / 37 * 15);
+				left: calc(#{$max-width} / 37 * 1);
+				bottom: calc(#{$max-width} / 37 * 1);
+			}
+
+			.picture {
+				flex: 0 0 calc(#{$max-width} / 37 * 17);
+				position: relative;
+			}		
+		}
+	}
+}

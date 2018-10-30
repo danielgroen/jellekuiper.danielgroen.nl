@@ -32,7 +32,6 @@
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-remove-files": "0.0.3",
-    "gulp-replace": "^1.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8",
     "main-bower-files": "^2.13.1",

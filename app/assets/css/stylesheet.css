@@ -671,10 +671,9 @@ main .block .reference {
 /* Gutters */
 :root {
   --max-width: 100vw; }
-
-@media only screen and (min-width: 960px) {
-  :root {
-    --max-width: 960px !important; } }
+  @media (min-width: 960px) {
+    :root {
+      --max-width: 960px; } }
 
 body:after {
   content: '';
@@ -695,7 +694,24 @@ body:after {
     body:after {
       background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%222%2E7027%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%222%2E7027%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%225%2E40541%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%225%2E40541%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%228%2E10811%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%228%2E10811%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2210%2E81081%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2210%2E81081%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2213%2E51351%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2213%2E51351%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2216%2E21622%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2216%2E21622%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2218%2E91892%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2218%2E91892%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2221%2E62162%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2221%2E62162%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2224%2E32432%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2224%2E32432%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2227%2E02703%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2227%2E02703%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2229%2E72973%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2229%2E72973%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2232%2E43243%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2232%2E43243%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2235%2E13514%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2235%2E13514%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2237%2E83784%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2237%2E83784%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2240%2E54054%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2240%2E54054%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2243%2E24324%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2243%2E24324%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2245%2E94595%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2245%2E94595%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2248%2E64865%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2248%2E64865%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2251%2E35135%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2251%2E35135%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2254%2E05405%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2254%2E05405%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2256%2E75676%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2256%2E75676%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2259%2E45946%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2259%2E45946%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2262%2E16216%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2262%2E16216%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2264%2E86486%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2264%2E86486%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2267%2E56757%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2267%2E56757%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2270%2E27027%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2270%2E27027%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2272%2E97297%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2272%2E97297%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2275%2E67568%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2275%2E67568%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2278%2E37838%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2278%2E37838%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2281%2E08108%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2281%2E08108%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2283%2E78378%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2283%2E78378%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2286%2E48649%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2286%2E48649%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2289%2E18919%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2289%2E18919%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2291%2E89189%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2291%2E89189%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2294%2E59459%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2294%2E59459%25%22%20fill%3D%22%23d90000%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2297%2E2973%25%22%20fill%3D%22%23ff4040%22%20width%3D%220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2297%2E2973%25%22%20fill%3D%22red%22%20width%3D%222%2E7027%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); } }
 
-body[grid="visible"]:after {
+body:before {
+  content: '24 Mobile, 0px ~ 769px';
+  z-index: 10001;
+  display: none;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  right: 10px;
+  opacity: .3;
+  background-color: #1abc9c;
+  padding: 10px;
+  border-radius: 5px 0 0 0;
+  color: white; }
+  @media (min-width: 770px) {
+    body:before {
+      content: '37 Desktop, 770px ~ 960px'; } }
+
+body[grid="visible"]:before, body[grid="visible"]:after {
   display: block; }
 
 body,
@@ -1250,21 +1266,20 @@ main {
   position: relative;
   /*Any position but static should work*/
   overflow: hidden;
-  width: calc(var(--max-width) / 24 * 22);
+  width: calc($max-width / 24 * 22);
   height: 375px; }
-
-.focuspoint img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0;
-  display: block;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  max-height: none;
-  max-width: none; }
+  .focuspoint img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: none;
+    max-width: none; }
 
 @media (min-width: 770px) {
   .focuspoint {
@@ -1406,7 +1421,6 @@ main {
     .block.hero .subtitle {
       font-size: 20px !important; }
     .block.hero .introduction {
-      max-width: calc(var(--max-width) / 37 * 22);
       line-height: 1.7;
       margin-bottom: 1rem; }
     .block.hero .button {
@@ -1543,7 +1557,7 @@ main > .block {
 
 @media (min-width: 770px) {
   main > .block {
-    max-width: --max-width;
+    max-width: var(--max-width);
     width: calc(var(--max-width) / 37 * 35); } }
 
 .block.testimonials {

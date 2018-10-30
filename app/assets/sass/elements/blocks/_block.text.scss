@@ -1,0 +1,11 @@
+.block.text {
+	margin: 0 auto;
+	margin-bottom: $gutter*2;
+}
+
+@include breakpoint($desktop) {
+	.block.text {
+		width: calc(#{$max-width} / 37 * 31);
+		// margin-left: calc(#{$max-width} / 37 * 1);
+	}
+}

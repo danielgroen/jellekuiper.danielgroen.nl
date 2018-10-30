@@ -1,0 +1,27 @@
+.header {
+	position: absolute;
+	width: #{$max-width};
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 5;
+
+    .logo {
+		@include font('title');
+		position: absolute;
+		font-size: 20px;
+		line-height: $padding;
+		left: #{100vw / 24 * 1};
+		top: $padding;
+		color: white;
+    }
+}
+
+@include breakpoint ($desktop) {
+	.header {
+		margin-top: $gutter;
+
+		.logo {
+			font-size: 1.5rem;
+		}
+	}
+}

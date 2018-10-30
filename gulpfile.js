@@ -1,20 +1,14 @@
 'use strict';
 
-var gulp = require('gulp');
-var requireDir = require('require-dir');
-var browserSync = require('browser-sync').create();
-process.setMaxListeners(0);
+var gulp = require('gulp'),
+		requireDir = require('require-dir'),
+		browserSync = require('browser-sync').create();
 
+process.setMaxListeners(0);
+global.browserSync = browserSync;
 global.paths = {
-	'app': './app/',
-	'dist': './dist/',
-	'jsFiles': 'assets/js/source/*.js',
-	'imagespath': 'assets/img/',
-	'sassFiles': '_sass/**/*.scss',
-	'fonts': 'assets/font/*.scss',
-	'htmlFiles': '*.{html, md}',
-	'cssFiles': 'css/*.css',
-	'cname': 'CNAME',
+	'app': './app',
+	'dist': './dist',
 };
 
 global.ghpagesOptions = {
@@ -22,6 +16,5 @@ global.ghpagesOptions = {
 	'branch': 'gh-pages'
 }
 
-global.browserSync = browserSync;
 requireDir('./gulp', { recurse: false });
 gulp.task('default', gulp.series('serve'));

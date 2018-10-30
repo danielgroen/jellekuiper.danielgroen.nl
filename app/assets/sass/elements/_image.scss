@@ -1,0 +1,28 @@
+/* !FOCUSED IMAGES */
+/*-----------------------------------------*/
+.focuspoint {
+	position: relative; /*Any position but static should work*/
+	overflow: hidden;
+	width: calc($max-width / 24 * 22);
+	height: $gutter * 15;
+
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin: 0;
+		display: block;
+		width: auto;
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+		max-height: none;
+		max-width: none;
+	}
+}
+
+@include breakpoint ($desktop) {
+	.focuspoint {
+		height: auto;
+	}
+}
