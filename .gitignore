@@ -2,8 +2,9 @@ node_modules
 bower_components
 environment
 dist
-app/css/
-app/js/*.js
+css/
+app/js
 .idea
 .publish
 .sass-cache
+.jekyll-metadata
