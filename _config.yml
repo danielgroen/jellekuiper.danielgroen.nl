@@ -25,7 +25,7 @@ assets:
     js: true
 exclude: [
           'assets/modules',
-          'assets/scss',
+          'assets/sass',
           'assets/original-img'
           ]
 include: []
