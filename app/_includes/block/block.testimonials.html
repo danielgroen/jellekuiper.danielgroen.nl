@@ -1,25 +1,22 @@
 {% capture block %}
+<strong class="subtitle">Reacties</strong>
+<div class="owl-carousel owl-theme">
 {% if page.path contains 'trouwambtenaar' %}
-	<strong class="subtitle">Reacties</strong>
-	<div class="owl-carousel owl-theme">
-		{% for testimonial in site.data.trouwambtenaar %}
-			<article>
-				<blockquote class="quote">{{ testimonial.text }}"</blockquote>
-				<p class="name">{{ testimonial.name }}</p>
-			</article>
-		{% endfor %}
-	</div>
+	{% for testimonial in site.data.testimonials.trouwambtenaar %}
+		<article>
+			<blockquote class="quote">{{ testimonial.text }}"</blockquote>
+			<p class="name">{{ testimonial.name }}</p>
+		</article>
+	{% endfor %}
 {% elsif page.path contains 'bedrijfsoptredens' %}
-	<strong class="subtitle">Reacties</strong>
-	<div class="owl-carousel owl-theme">
-		{% for testimonial in site.data.bedrijfsoptredens %}
-			<article>
-				<blockquote class="quote">{{ testimonial.text }}"</blockquote>
-				<p class="name">{{ testimonial.name }}</p>
-			</article>
-		{% endfor %}
-	</div>
+	{% for testimonial in site.data.testimonials.bedrijfsoptredens %}
+		<article>
+			<blockquote class="quote">{{ testimonial.text }}"</blockquote>
+			<p class="name">{{ testimonial.name }}</p>
+		</article>
+	{% endfor %}
 {% endif %}
+</div>
 {% endcapture %}
 
 {% include block/block.html classes="testimonials" %}
