@@ -1,8 +1,8 @@
-{% include _sections/head.html %}
+{% include section/section.head.html %}
 
-{% include _blocks/header.html %}
+{% include section/section.header.html %}
 
-{% include _blocks/hero.html %}
+{% include block/block.hero.html %}
 
 <main>
 	{{ content }}
@@ -29,4 +29,4 @@
 		{% endunless %}{% endif %}{% endfor %}
 	</section>
 </main>
-{% include _sections/footer.html %}
+{% include section/section.footer.html %}

@@ -6,6 +6,7 @@ $desktop: 770px;
 $gutter: 25px;
 $padding: 1rem;
 $offset: 50px;
+
 /* Grids */
 @include add-grid(24);
 @include add-grid(37 at $desktop);

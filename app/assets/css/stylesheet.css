@@ -1089,19 +1089,19 @@ button::-moz-focus-inner {
         width: calc(var(--max-width) / 37 * 15);
         left: calc(var(--max-width) / 37 * 1);
         bottom: calc(var(--max-width) / 37 * 1); }
-  .page .block.contactform,
-  .detailpage .block.contactform {
+  .page .block.contactform .inner,
+  .detailpage .block.contactform .inner {
+    height: 700px;
     display: flex;
-    justify-content: space-between;
-    height: 700px; }
-    .page .block.contactform .form,
-    .detailpage .block.contactform .form {
+    justify-content: space-between; }
+    .page .block.contactform .inner .form,
+    .detailpage .block.contactform .inner .form {
       padding: 0 calc(var(--max-width) / 37 * 1); }
-    .page .block.contactform > *,
-    .detailpage .block.contactform > * {
+    .page .block.contactform .inner > *,
+    .detailpage .block.contactform .inner > * {
       flex: 0 0 calc(var(--max-width) / 37 * 17); }
-    .page .block.contactform .picture,
-    .detailpage .block.contactform .picture {
+    .page .block.contactform .inner .picture,
+    .detailpage .block.contactform .inner .picture {
       display: block;
       height: 100%; } }
 
@@ -1325,9 +1325,7 @@ main {
 .block.counter {
   margin-top: 100px;
   margin-bottom: 100px;
-  position: relative;
-  display: flex;
-  justify-content: space-around; }
+  position: relative; }
   .block.counter:after {
     content: '';
     position: absolute;
@@ -1338,19 +1336,22 @@ main {
     z-index: -3;
     background-color: #fafafa;
     border: 1px solid #eaeaea; }
-  .block.counter > div {
+  .block.counter .inner {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column; }
-    .block.counter > div .counter {
-      color: #1abc9c;
-      font-size: 2em; }
+    justify-content: space-around; }
+    .block.counter .inner > div {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column; }
+      .block.counter .inner > div .counter {
+        color: #1abc9c;
+        font-size: 2em; }
 
 @media (min-width: 770px) {
-  .block.counter > div {
+  .block.counter .inner > div {
     font-size: 1.5rem; }
-    .block.counter > div .counter {
+    .block.counter .inner > div .counter {
       font-weight: light;
       font-size: 2.5rem; } }
 

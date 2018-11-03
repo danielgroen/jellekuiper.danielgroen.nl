@@ -4,11 +4,12 @@
 	</picture>
 </div>
 
-<div class="block hero">
+{% capture block %}
 	<div class="introduction">
 		<h1 class="title">{{ page.title }}</h1>
 		<h2 class="subtitle">{{ page.keywords }}</h2>
 		<p class="introduction">{{ page.summary }}</p>
-		<!-- <a href="#contact" class="button">Contact</a> -->
 	</div>
-</div>
+{% endcapture %}
+
+{% include block/block.html classes="hero" %}

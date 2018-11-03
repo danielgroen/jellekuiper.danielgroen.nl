@@ -1,4 +1,4 @@
-<section class="block optredens">
+{% capture block %}
 	<strong class="subtitle">Jelle heeft o.a. opgetreden voor</strong>
 	<ul>
 		<li>Achmea</li>
@@ -57,3 +57,6 @@
 		<li>VVV</li>
 	</ul>
 </section>
+{% endcapture %}
+
+{% include block/block.html classes="optredens" %}
