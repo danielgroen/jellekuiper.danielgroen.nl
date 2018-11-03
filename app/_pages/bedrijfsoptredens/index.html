@@ -7,15 +7,9 @@ headerimage: /assets/img/bedrijfsoptredens/Bedrijfsoptredens-Jelle-Kuiper-hero.j
 formimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-contact.jpg
 subject: 'Bv. Fakespeech Amsterdam'
 message: 'Bv. Hoi Jelle, ik ga wil je graag inhuren voor een fakespeech bij mijn bedrijf. Zullen we een keer koffie drinken?  Groetjes, Laura'
-videourl: https://www.youtube.com/embed/bSUdYbj6aJk
 layout: page
 order: 2
-firstTimer: 307
-firstTitle: 'Bedrijfsoptredens'
-secondTimer: 95
-secondTitle: 'Fakespeeches'
 permalink: "/bedrijfsoptredens/"
-
 ---
 <!-- block usp -->
 <section class="block usps">
@@ -30,7 +24,7 @@ permalink: "/bedrijfsoptredens/"
 	</article>
 </section>
 
-{% include block/block.video.html %}
+{% include block/block.video.html src="https://www.youtube.com/embed/bSUdYbj6aJk" %}
 
 
 <!-- block usp -->
@@ -55,7 +49,7 @@ permalink: "/bedrijfsoptredens/"
 	</article>
 </section>
 
-{% include block/block.testimonials.html %}
+{% include block/block.testimonials.html type="bedrijfsoptredens" %}
 
 {% include block/block.optredens.html %}
 
@@ -73,6 +67,6 @@ permalink: "/bedrijfsoptredens/"
 	</article>
 </section>
 
-{% include block/block.counter.html %}
+{% include block/block.counter.html firstTimer="307" firstTitle="Bedrijfsoptredens" secondTimer="95" secondTitle="Fakespeeches" %}
 
 {% include block/block.contactform.html %}

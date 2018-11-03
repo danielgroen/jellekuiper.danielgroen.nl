@@ -1,5 +1,5 @@
 {% capture block %}
-	<iframe class="iframe" width="100%" height="100%" src="{{page.videourl}}?vq=hd720&modestbranding=1&showinfo=0&controls=0&autoplay=0&rel=0&theme=light" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<iframe class="iframe" width="100%" height="100%" src="{{ include.src }}?vq=hd720&modestbranding=1&showinfo=0&controls=0&autoplay=0&rel=0&theme=light" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 {% endcapture %}
 
 {% include block/block.html classes="video" %}

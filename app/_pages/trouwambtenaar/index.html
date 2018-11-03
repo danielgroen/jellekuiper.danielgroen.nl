@@ -8,14 +8,8 @@ formimage: /assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-knuffel-contac
 subject: 'Bv. Trouwambtenaar Amsterdam'
 message: 'Bv. Hoi Jelle, ik ga trouwen op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Laura'
 layout: page
-videourl: https://www.youtube.com/embed/sQZcXToH1CU
 order: 1
-firstTimer: 627
-firstTitle: 'Huwelijk gesloten'
-secondTimer: 10
-secondTitle: 'Jaar ervaring'
 permalink: "/trouwambtenaar/"
-
 ---
 <!-- block usp -->
 <section class="block usps">
@@ -39,7 +33,7 @@ permalink: "/trouwambtenaar/"
 	</article>
 </section>
 
-{% include block/block.video.html %}
+{% include block/block.video.html src="https://www.youtube.com/embed/sQZcXToH1CU" %}
 
 <!-- block usp -->
 <section class="block usps">
@@ -61,10 +55,9 @@ permalink: "/trouwambtenaar/"
 			<p class="paragraph">Soms is het zo dat je wil trouwen op een speciale locatie, maar dat het geen officiële trouwlocatie is. Of op een tijdstip dat bij de gemeente niet is toegestaan. Dan kun je kiezen voor een ceremonieel huwelijk. Jullie zetten dan je handtekening bij de gemeente op de officiële huwelijksakte (een korte handeling, die ook op maandagochtend gratis kan!). De ceremonie laten jullie vervolgens door Jelle voltrekken. Er kan dan ook een akte ondertekend worden (deze is alleen niet rechtsgeldig) en Jelle zorgt voor het trouwboekje. Op deze manier kun je trouwen wanneer en waar je maar wilt, ook buiten, in de lucht, onder water of bij je schoonmoeder in de tuin! </p>
 		</div>
 	</article>
-</section>			
+</section>
 
-{% include block/block.testimonials.html %}
-
+{% include block/block.testimonials.html type="trouwambtenaar" %}
 
 <!-- block usp -->
 <section class="block usps">
@@ -83,6 +76,5 @@ permalink: "/trouwambtenaar/"
 </section>
 
 
-{% include block/block.counter.html %}
-
+{% include block/block.counter.html firstTimer="627" firstTitle="Huwelijk gesloten" secondTimer="10" secondTitle="Jaar ervaring" %}
 {% include block/block.contactform.html %}

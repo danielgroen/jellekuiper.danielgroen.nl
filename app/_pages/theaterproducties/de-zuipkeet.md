@@ -7,7 +7,6 @@ subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
 layout: detailpage
 order: 6
-videourl: https://www.youtube.com/embed/QwB8lyaD5Io
 ---
 
 De Zuipkeet is een theatervoorstelling over de gevolgen van drankmisbruik in een klein Fries gezin.
@@ -23,3 +22,5 @@ Spel: Joop Wittermans (Van God los), Mads Wittermans (Phileine zegt sorry) en Ma
 Tekst: Marc Linssen
 
 Regie: Anny van Hoof​
+
+{% include block/block.video.html src="https://www.youtube.com/embed/QwB8lyaD5Io" %}

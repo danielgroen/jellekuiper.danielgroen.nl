@@ -8,7 +8,7 @@
 	{{ content }}
 
 	<!-- block reference -->
-	<section class="block references"> 
+	<section class="block references">
 		<strong class="subtitle">Jelle doet ook</strong>
 
 		{% assign sortedPages = site.pages | sort: 'order' %}
@@ -17,9 +17,9 @@
 		{% unless page.path contains currentPage %}
 		<article class="reference">
 			<div class="introduction">
-				<h3 class="title">{{page.title}}</h3>
-				<p class="keywords">{{page.keywords}}</p>
-				<p class="description">{{page.teaserText}}</p>
+				<h3 class="title">{{ page.title }}</h3>
+				<p class="keywords">{{ page.keywords }}</p>
+				<p class="description">{{ page.teaserText }}</p>
 				<a href="/{{page.title | downcase}}" class="button">Lees meer</a>
 			</div>
 			<picture class="focuspoint reference-image">

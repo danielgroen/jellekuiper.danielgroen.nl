@@ -9,7 +9,6 @@ message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstellin
 externalUrl: https://judasintheater.nl/
 layout: detailpage
 order: 1
-videourl: https://www.youtube.com/embed/L7urQeg7KZ4
 ---
 
 Dertig jaar lang terroriseert crimineel Willem Holleeder zijn familie. Om dit te stoppen verraden zijn zussen Astrid en Sonja hem en leggen belastende verklaringen tegen hem af. Het komt hen duur te staan. Vanuit de gevangenis regelt hun broer hun liquidatie. In 2016 schrijft Astrid Holleeder haar verhaal op. Als testament, omdat ze niet weet of ze er morgen nog is. In 'Judas' schetst ze een portret van het gezin waarin ze opgroeit, de dagelijkse angst waarmee ze leven, en hoe ze zich uiteindelijk verzet en haar eigen broer verraad.
@@ -25,3 +24,5 @@ Holleeder is?
 
 De regie ligt in handen van Johan Doesburg, Sophie Kassies is verantwoordelijk voor het script.
 Eerder werkten zij beiden aan onder meer 'De Prooi' en 'Tirza'. 'Judas' is een coproductie van Senf Theaterpartners, Kik Productions en Jelle Kuiper Producties.
+
+{% include block/block.video.html src="https://www.youtube.com/embed/L7urQeg7KZ4" %}

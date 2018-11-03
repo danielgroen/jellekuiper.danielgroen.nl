@@ -9,14 +9,9 @@ subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
 layout: page
 order: 3
-videourl: https://player.vimeo.com/video/236546630?title=0&byline=0&portrait=0&transparent=0&autoplay=0&color=fff
-firstTimer: 12
-firstTitle: 'Theaterproducties'
-secondTimer: 9
-secondTitle: 'Jaar ervaring'
 permalink: "/theaterproducties/"
-
 ---
+
 <!-- block usp -->
 <section class="block usps">
 	<article class="usp">
@@ -30,7 +25,7 @@ permalink: "/theaterproducties/"
 	</article>
 </section>
 
-{% include block/block.video.html %}
+{% include block/block.video.html src="https://player.vimeo.com/video/236546630?title=0&byline=0&portrait=0&transparent=0&autoplay=0&color=fff" %}
 
 <!-- block usp -->
 <section class="block usps">
@@ -49,7 +44,6 @@ permalink: "/theaterproducties/"
 	{% endif %}{% endfor %}
 </section>
 
-
-{% include block/block.counter.html %}
+{% include block/block.counter.html firstTimer="12" firstTitle="Theaterproducties" secondTimer="9" secondTitle="Jaar ervaring" %}
 
 {% include block/block.contactform.html %}

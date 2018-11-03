@@ -1,11 +1,11 @@
 {% capture block %}
 	<div class="wedding-counter">
-		<span class="counter">{{ page.firstTimer }}</span>
-		<span class="text">{{ page.firstTitle }}</span>
+		<span class="counter">{{ include.firstTimer }}</span>
+		<span class="text">{{ include.firstTitle }}</span>
 	</div>
 	<div class="experience-counter">
-		<span class="counter">{{ page.secondTimer }}</span>
-		<span class="text">{{ page.secondTitle }}</span>
+		<span class="counter">{{ include.secondTimer }}</span>
+		<span class="text">{{ include.secondTitle }}</span>
 	</div>
 {% endcapture %}
 
