@@ -1,6 +1,6 @@
-
-{% include section/section.head.html %}
-
+---
+layout: master
+---
 {% include section/section.header.html %}
 
 <div class="heading">
@@ -22,25 +22,8 @@
 	{% endif %}
 
 	{% include block/block.contactform.html %}
+	{% include entities/theaterproducties/theaterproductie.teaser.html %}
 
-	<section class="block references">
-	<strong class="subtitle">Andere producties</strong>
-		{% assign sortedPages = site.pages | sort: 'order' %}
-		{% assign currentPage = page.path %}
-		{% for page in sortedPages %}{% if page.path contains '.md' %}
-		{% unless page.path contains currentPage %}
-		<article class="reference">
-			<div class="introduction">
-				<h3 class="title">{{page.title}}</h3>
-				<p class="description">{{page.teasertext}}</p>
-				<a href="{{page.url}}" class="button">Lees meer</a>
-			</div>
-			<picture class="focuspoint reference-image">
-				<img class="img" src="{{page.headerimage}}" alt="{{page.title}}">
-			</picture>
-		</article>
-		{% endunless %}{% endif %}{% endfor %}
-	</section>
 </main>
 
 {% include section/section.footer.html %}

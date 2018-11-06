@@ -19,6 +19,7 @@
 			}
 		}
 	}
+
 	.header {
 		height: 40px;
 		&:after {
@@ -87,22 +88,24 @@
 
 		.block.references {
 			@include background;
-			.subtitle {
-				display: none;
-			}
 
-			.introduction {
-				height: 55%;
+			.inner {
+				.subtitle {
+					display: none;
+				}
 
-				.description {
-					font-weight: 700;
-					text-shadow: $text-shadow;
-					font-size: 16px;
-					line-height: 1.4;
-					
-					display: block;
-					text-align: center;
-					padding: 0 20px;
+				.introduction {
+					height: 55%;
+
+					.description {
+						font-weight: 700;
+						text-shadow: $text-shadow;
+						font-size: 16px;
+						line-height: 1.4;
+						display: block;
+						text-align: center;
+						padding: 0 20px;
+					}
 				}
 			}
 		}
@@ -111,7 +114,7 @@
 
 
 @include breakpoint($desktop) {
-	.detailpage {
+	body.detailpage {
 		.header {
 			height: auto;
 
@@ -158,7 +161,7 @@
 					fill: $placeholder;
 					width: 10px;
 				}
-				
+
 				&:hover {
 					color: $black;
 
@@ -189,16 +192,18 @@
 			}
 
 			.block.references {
-				margin-bottom: $gutter*2;
+				.inner {
+					margin-bottom: $gutter*2;
 
-				.introduction {
-					margin: 10px 0;
-					height: 80%;
+					.introduction {
+						margin: 10px 0;
+						height: 80%;
 
-					.description {
-						display: block;
-						text-align: center;
-						padding: 0 20px;
+						.description {
+							display: block;
+							text-align: center;
+							padding: 0 20px;
+						}
 					}
 				}
 			}

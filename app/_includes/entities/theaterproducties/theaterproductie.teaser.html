@@ -1,0 +1,18 @@
+{% capture block %}
+	<strong class="subtitle">Andere producties</strong>
+  {% assign theaterproducties = site.theaterproducties | sort: 'weight' %}
+  {% for theaterproductie in theaterproducties %}
+    <article class="reference">
+      <div class="introduction">
+        <h3 class="title">{{theaterproductie.title}}</h3>
+        <p class="description">{{theaterproductie.teasertext}}</p>
+        <a href="{{theaterproductie.url}}" class="button">Lees meer</a>
+      </div>
+      <picture class="focuspoint reference-image">
+        <img class="img" src="{{theaterproductie.headerimage}}" alt="{{page.title}}">
+      </picture>
+    </article>
+  {% endfor %}
+{% endcapture %}
+
+{% include block/block.html classes="references" %}

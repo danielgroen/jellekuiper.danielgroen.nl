@@ -1,32 +1,12 @@
-{% include section/section.head.html %}
-
+---
+layout: master
+---
 {% include section/section.header.html %}
 
 {% include block/block.hero.html %}
 
 <main>
 	{{ content }}
-
-	<!-- block reference -->
-	<section class="block references">
-		<strong class="subtitle">Jelle doet ook</strong>
-
-		{% assign sortedPages = site.pages | sort: 'order' %}
-		{% assign currentPage = page.path %}
-		{% for page in sortedPages %}{% if page.path contains '.html' %}
-		{% unless page.path contains currentPage %}
-		<article class="reference">
-			<div class="introduction">
-				<h3 class="title">{{ page.title }}</h3>
-				<p class="keywords">{{ page.keywords }}</p>
-				<p class="description">{{ page.teaserText }}</p>
-				<a href="/{{page.title | downcase}}" class="button">Lees meer</a>
-			</div>
-			<picture class="focuspoint reference-image">
-				<img class="img" src="{{page.headerimage}}" alt="Jelle Kuiper">
-			</picture>
-		</article>
-		{% endunless %}{% endif %}{% endfor %}
-	</section>
 </main>
+
 {% include section/section.footer.html %}

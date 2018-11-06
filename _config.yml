@@ -5,7 +5,8 @@
 
 name: "Jelle Kuiper | Trouwambtenaar"
 description: "Voor een leuke trouwdag"
-url: https://webnozems.nl
+language: 'nl/nl'
+url: https://jellekuiper.nl
 keywords: "trouwen jellekuiper jelle kuiper amsterdam"
 author:
   name: jellekuiper
@@ -16,7 +17,7 @@ encoding: utf-8
 timezone: Europe/Amsterdam
 
 # folders
-baseurl: 
+baseurl:
 source: ./app/
 destination: ./dist
 assets:
@@ -28,7 +29,6 @@ exclude: [
           'assets/sass',
           'assets/original-img'
           ]
-include: []
 keep_files: ['img', 'pdf']
 
 # _config.build.yml sets future and show_drafts to false on `gulp build`
@@ -38,18 +38,10 @@ show_drafts: true
 disqus:
   shortname: 'jellekuiper'
 
-# Markdown library
-markdown: redcarpet
-#   extensions: ['fenced_code_blocks', 'smart']
-
-permalink: /:path/
-
+permalink: /:path
 collections:
-  pages:
-    permalink: /:path/
-    output: true
-  posts:
-    permalink: /theaterproducties/:path/
+  theaterproducties:
+    permalink: /theaterproducties/:path
     output: true
 
 defaults:

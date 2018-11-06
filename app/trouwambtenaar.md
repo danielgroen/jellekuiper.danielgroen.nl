@@ -9,7 +9,6 @@ subject: 'Bv. Trouwambtenaar Amsterdam'
 message: 'Bv. Hoi Jelle, ik ga trouwen op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Laura'
 layout: page
 order: 1
-permalink: "/trouwambtenaar/"
 ---
 <!-- block usp -->
 <section class="block usps">
@@ -67,7 +66,7 @@ permalink: "/trouwambtenaar/"
 		</picture>
 		<div class="article">
 			<strong class="subtitle">Kosten</strong>
-			<p class="paragraph">Leuktrouwen doe je al vanaf <strong>750,-</strong> 
+			<p class="paragraph">Leuktrouwen doe je al vanaf <strong>750,-</strong>
 				<br><br>
 				Heb je vragen of wil je meer informatie over werkwijze en bijvoorbeeld de exacte kosten?  Vul onderaan deze pagina het <a href="#contact">contactformulier</a> in en je ontvangt zo spoedig mogelijk alle info.​
 			</p>
@@ -75,6 +74,6 @@ permalink: "/trouwambtenaar/"
 	</article>
 </section>
 
-
 {% include block/block.counter.html firstTimer="627" firstTitle="Huwelijk gesloten" secondTimer="10" secondTitle="Jaar ervaring" %}
 {% include block/block.contactform.html %}
+{% include entities/page/page.teaser.html teasers="bedrijfsoptredens, theaterproducties"%}

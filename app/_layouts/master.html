@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="{{ site.language }}">
+  {% include section/section.head.html %}
+  <body class="body {% if page.url == '/' %}front {%else %}{{ page.layout }}{% endif %}">
+    {{ content }}
+  </body>
+</html>

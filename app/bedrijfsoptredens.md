@@ -9,7 +9,6 @@ subject: 'Bv. Fakespeech Amsterdam'
 message: 'Bv. Hoi Jelle, ik ga wil je graag inhuren voor een fakespeech bij mijn bedrijf. Zullen we een keer koffie drinken?  Groetjes, Laura'
 layout: page
 order: 2
-permalink: "/bedrijfsoptredens/"
 ---
 <!-- block usp -->
 <section class="block usps">
@@ -68,5 +67,5 @@ permalink: "/bedrijfsoptredens/"
 </section>
 
 {% include block/block.counter.html firstTimer="307" firstTitle="Bedrijfsoptredens" secondTimer="95" secondTitle="Fakespeeches" %}
-
 {% include block/block.contactform.html %}
+{% include entities/page/page.teaser.html teasers="trouwambtenaar, theaterproducties"%}

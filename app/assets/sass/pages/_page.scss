@@ -13,43 +13,45 @@
 	.block {
 
 		&.references {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			min-height: 350px;
-			padding-top: $gutter;
+			.inner {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				min-height: 350px;
+				padding-top: $gutter;
 
-			.subtitle {
-				position: absolute;
-				left: 0;
-				top: -$gutter/2;
-			}
+				.subtitle {
+					position: absolute;
+					left: 0;
+					top: -$gutter/2;
+				}
 
-			.title {
-				font-size: 2rem !important;
-			}
+				.title {
+					font-size: 2rem !important;
+				}
 
-			.keywords {
-				font-size: 16px !important;
-			}
+				.keywords {
+					font-size: 16px !important;
+				}
 
-			.reference-image {
-				height: 100%;
-				width: calc(#{$max-width} / 37 * 17) !important;
-			}
+				.reference-image {
+					height: 100%;
+					width: calc(#{$max-width} / 37 * 17) !important;
+				}
 
-			.reference {
-				margin-top: $gutter;
-				width: calc(#{$max-width} / 37 * 17);
-				margin-bottom: 0;
+				.reference {
+					margin-top: $gutter;
+					width: calc(#{$max-width} / 37 * 17);
+					margin-bottom: 0;
 
-				.introduction {
-					.button {
-						text-transform: uppercase;
-						width: calc(#{$max-width} / 37 * 15);
-						left: calc(#{$max-width} / 37 * 1);
-						bottom: calc(#{$max-width} / 37 * 1);
+					.introduction {
+						.button {
+							text-transform: uppercase;
+							width: calc(#{$max-width} / 37 * 15);
+							left: calc(#{$max-width} / 37 * 1);
+							bottom: calc(#{$max-width} / 37 * 1);
+						}
 					}
 				}
 			}

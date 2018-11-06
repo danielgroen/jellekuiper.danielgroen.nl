@@ -5,5 +5,8 @@ summary: Jelle kan met recht een creatieve duizendpoot worden genoemd. Hij is ca
 headerimage: /assets/img/jellekuiper.jpg
 subject: 'Bv. Trouwambtenaar Amsterdam'
 message: 'Bv. Hoi Jelle, ik ga trouwen op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Laura'
-layout: front
+layout: page
 ---
+
+{% include entities/page/page.teaser.html teasers="trouwambtenaar, bedrijfsoptredens, theaterproducties"%}
+{% include block/block.contactform.html %}

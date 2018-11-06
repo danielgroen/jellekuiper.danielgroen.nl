@@ -9,7 +9,6 @@ subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
 layout: page
 order: 3
-permalink: "/theaterproducties/"
 ---
 
 <!-- block usp -->
@@ -29,21 +28,20 @@ permalink: "/theaterproducties/"
 
 <!-- block usp -->
 <section class="block usps">
-	{% assign sortedPages = site.pages | sort: 'order' %}
-	{% for page in sortedPages %}{% if page.path contains '.md' and page.path contains '_pages/theaterproducties/' %}
+	{% for theaterproductie in site.theaterproducties %}
 	<article class="usp">
 		<picture class="focuspoint picture">
-			<img class="img" src="{{page.headerimage}}" alt="{{page.title}}">
+			<img class="img" src="{{theaterproductie.headerimage}}" alt="{{theaterproductie.title}}">
 		</picture>
 		<div class="article">
-			<strong class="subtitle">{{page.title}}</strong>
-			<p class="paragraph">{{page.teasertext}}</p>
-			<a href="{{page.url}}" class="button">Lees meer</a>
+			<strong class="subtitle">{{theaterproductie.title}}</strong>
+			<p class="paragraph">{{theaterproductie.teasertext}}</p>
+			<a href="{{theaterproductie.url}}" class="button">Lees meer</a>
 		</div>
 	</article>
-	{% endif %}{% endfor %}
+	{% endfor %}
 </section>
 
 {% include block/block.counter.html firstTimer="12" firstTitle="Theaterproducties" secondTimer="9" secondTitle="Jaar ervaring" %}
-
 {% include block/block.contactform.html %}
+{% include entities/page/page.teaser.html teasers="trouwambtenaar, bedrijfsoptredens"%}

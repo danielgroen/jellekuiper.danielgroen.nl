@@ -1,4 +1,4 @@
-.front {
+body.front {
 	.block {
 		&.contactform {
 			@include background();
@@ -8,14 +8,14 @@
 }
 
 @include breakpoint($desktop) {
-	.front {
+	body.front {
 		.block {
 
 			&.contactform {
 				.salutation {
 					display: inline-block;
 					width: calc(#{$max-width} / 37 * 17);
-					
+
 					&-2 {
 						display: inline-block;
 						float: right;
@@ -23,8 +23,12 @@
 					}
 				}
 			}
-			
+
 			&.references {
+				.subtitle {
+					display: none;
+				}
+				
 				.reference {
 					flex-direction: row;
 					justify-content: space-between;
@@ -80,7 +84,6 @@
 							width: 100%;
 							text-align: center;
 						}
-							
 					}
 
 					.reference-image {
@@ -92,11 +95,7 @@
 							width: 100%;
 							overflow: hidden;
 						}
-
-						.img {
-
-						}
-					}		
+					}
 				}
 			}
 		}
