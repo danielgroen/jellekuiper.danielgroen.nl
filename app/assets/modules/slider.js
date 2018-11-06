@@ -1,5 +1,6 @@
 
-(function() {
+$(window).ready( function() {
+
 	var owl = $('.owl-carousel');
 
 	owl.owlCarousel({

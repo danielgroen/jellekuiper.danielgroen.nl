@@ -8,20 +8,6 @@
 		}
 	}
 
-	input:required {
-	    box-shadow:none;
-			border: 1px solid #d0d0d0;
-	    background: transparent;
-	}
-
-	input:not(:placeholder-shown) {
-		&:invalid {
-			box-shadow:0 0 0px blue;
-			border: 1px solid #f99;
-			background: #fff9f9;
-		}
-	}
-
 	::-webkit-input-placeholder {
 	  color: $placeholder;
 	}
@@ -74,6 +60,20 @@
 	}
 
 	input {
+		&:required {
+	    box-shadow:none;
+			border: 1px solid #d0d0d0;
+	    background: transparent;
+		}
+
+		&:not(:placeholder-shown) {
+			&:invalid {
+				box-shadow:0 0 0px blue;
+				border: 1px solid #f99;
+				background: #fff9f9;
+			}
+		}
+
 		&.to {
 			display: none !important;
 		}
@@ -111,7 +111,7 @@
 					display: block;
 				}
 			}
-	}
+		}
 	}
 }
 
@@ -125,26 +125,21 @@
 
 		input[type='submit'],
 		.send {
+			width: calc(#{$max-width} / 37 * 15);
 
 			+ .checkmark {
 				margin-left: 30px;
 			}
 		}
-		
+
 		.email {
 			width: calc(#{$max-width} / 37 * 17);
 			display: inline;
 			position: absolute;
 		}
-		
+
 		label.email {
 			margin-top: -30px;
-		}
-
-		input[type='submit'],
-		.send {
-			width: calc(#{$max-width} / 37 * 15);
-			// margin-left: calc(#{$max-width} / 37 * 1);
 		}
 	}
 }
