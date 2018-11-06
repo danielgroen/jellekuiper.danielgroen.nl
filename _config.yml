@@ -1,12 +1,8 @@
-# Jekyll configuration precedence:
-# 1. gulp task
-# 2. config.build.yml
-# 3. config.yml
-
+# cname veranderd mee met de url
+url: https://webnozems.nl
 name: "Jelle Kuiper | Trouwambtenaar"
 description: "Voor een leuke trouwdag"
 language: 'nl/nl'
-url: https://jellekuiper.nl
 keywords: "trouwen jellekuiper jelle kuiper amsterdam"
 author:
   name: jellekuiper
