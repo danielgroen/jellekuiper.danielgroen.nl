@@ -19,4 +19,4 @@ $(window).ready( function() {
 		var activeItem = Math.floor( (owlDots.find('.active').index()) / 10 );
 		owlDots.attr('data-item',activeItem)
 	})
-})();
+});

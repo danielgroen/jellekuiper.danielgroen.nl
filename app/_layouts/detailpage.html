@@ -17,10 +17,6 @@ layout: master
 		<p class="paragraph">{{ content }}</p>
 	</section>
 
-	{% if page.button %}
-		<a href="{{ page.externalUrl }}" target="blank" class="button">{{ page.button }}</a>
-	{% endif %}
-
 	{% include block/block.contactform.html %}
 	{% include entities/theaterproducties/theaterproductie.teaser.html %}
 

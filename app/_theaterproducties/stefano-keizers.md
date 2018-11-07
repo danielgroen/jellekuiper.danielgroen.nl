@@ -5,7 +5,6 @@ teasertext: De eerste avondvullende voorstelling van cabarettalent Stefano Keize
 formimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
-externalUrl: http://www.stefanokeizers.nl/
 layout: detailpage
 order: 2
 ---
@@ -15,3 +14,4 @@ Tijdens het Amsterdams Kleinkunstfestival liet deze jonge cabaretier complete za
 NRC over Stefano Keizers: 'Een sensationeel optreden. Wie zich wel eens afvraagt of er nog een nieuwe Hans Teeuwen gaat opstaan, zag bij Keizers hoe dat eruit zou kunnen zien: een eerste proeve van een vergelijkbare dosis experiment, tegendraadsheid en vormgevoel. Keizers is wat je noemt een gevaarlijke cabaretier.'
 
 {% include block/block.video.html src="https://www.youtube.com/embed/8K2t1XctMdo" %}
+{% include elements/button.html text="Stefano Keizers" href="http://www.stefanokeizers.nl/" %}

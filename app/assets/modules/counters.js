@@ -1,6 +1,6 @@
     var triggered = false;
 
-    $('.body').on('scroll', function() {
+    $(window).on('scroll', function() {
         if (triggered === false) {
             $('.block .counter').each(function (index) {
                 var that = $(this),

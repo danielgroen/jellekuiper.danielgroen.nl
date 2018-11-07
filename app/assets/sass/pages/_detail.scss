@@ -71,7 +71,7 @@
 	}
 
 	main {
-		.block.text + .button {
+		.element .button {
 			text-align: center;
 			text-transform: uppercase;
 			width: #{100vw / 24 * 22};
@@ -184,7 +184,7 @@
 				height: 500px;
 			}
 
-			.block.text + .button {
+			.element .button {
 				margin-left: 50%;
 				transform: translate(-50%);
 				display: inline-block;

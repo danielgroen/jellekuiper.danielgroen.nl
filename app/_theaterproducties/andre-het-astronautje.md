@@ -1,12 +1,10 @@
 ---
 title: André het astronautje
-button: André het astronautje
 headerimage: /assets/img/theaterproducties/andre_het_astronautje/Theaterproducties-andrehetastronautje-Jelle-Kuiper.jpg
 teasertext: Een muzikale familievoorstelling naar het boek van Andre Kuipers en met liedjes van Claudia de Breij.
 formimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
-externalUrl: https://astronautje.nl/
 layout: detailpage
 order: 4
 ---
@@ -19,3 +17,4 @@ André het astronautje is een voorstelling voor alle ruimtereizigers vanaf 3 jaa
 Ready for take-off!
 
 {% include block/block.video.html src="https://www.youtube.com/embed/QwB8lyaD5Io" %}
+{% include elements/button.html text="André het astronautje" href="https://astronautje.nl/" %}

@@ -2,9 +2,18 @@ $(window).on('load', function() {
 	//load in first item of page
 	$('main .block:first-child .usp:first-child .picture').addClass("fade-in");
 	$('main .block:first-child .reference:first-child').addClass("fade-in");
+
+	new Rellax('.hero-image img', {
+    speed: -7,
+    center: false,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+	});
 });
 
-$('.body').on('scroll', function() {
+$(window).on('scroll', function() {
 
 	$('main .block > .usp').each( function(i){
 	  var bottom_of_object = $(this).offset().top + 20,

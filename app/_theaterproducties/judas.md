@@ -1,12 +1,10 @@
 ---
 title: Judas
-button: Judas in theater
 headerimage: /assets/img/theaterproducties/judas/Theaterproducties-judas-Jelle-Kuiper.jpg
 teasertext: De Holleeders dichtbij. Avondvullende belevenis waarin we de Holleeders van dichtbij volgen.
 formimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
-externalUrl: https://judasintheater.nl/
 layout: detailpage
 order: 1
 ---
@@ -26,3 +24,4 @@ De regie ligt in handen van Johan Doesburg, Sophie Kassies is verantwoordelijk v
 Eerder werkten zij beiden aan onder meer 'De Prooi' en 'Tirza'. 'Judas' is een coproductie van Senf Theaterpartners, Kik Productions en Jelle Kuiper Producties.
 
 {% include block/block.video.html src="https://www.youtube.com/embed/L7urQeg7KZ4" %}
+{% include elements/button.html text="Judas in theater" href="https://judasintheater.nl/" %}
