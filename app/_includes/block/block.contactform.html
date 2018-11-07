@@ -14,19 +14,21 @@
 		</div>
 
 		<label for="subject">Onderwerp</label>
-	  <input class="form-field" type="text" name="subject" placeholder="{{page.subject}}" required>
+	  <input class="form-field" type="text" name="subject" placeholder="{{include.subject}}" required>
 
 		<label for="message">Bericht</label>
-	  <textarea class="form-field" name="message" rows="5" placeholder="{{page.message}}" required></textarea>
+	  <textarea class="form-field" name="message" rows="5" placeholder="{{include.message}}" required></textarea>
 
 	  <input type="hidden" id="honeypot" type="text" name="honeypot" value="" />
 	  <input type="hidden" class="to" type="text" name="to" value="" />
 	  <input class="send button" type="submit" value="Verstuur bericht" >
 	  <span class="checkmark">{% include svg/checkmark.svg %}</span>
 	</form>
+	{% if include.image%}
 	<picture class="focuspoint picture">
-			<img class="img" src="{{ page.formimage }}" alt="Jelle Kuiper">
+			<img class="img" src="/assets/img/{{ include.image }}" alt="Jelle Kuiper">
 	</picture>
+	{% endif %}
 {% endcapture %}
 
 {% include block/block.html classes="contactform" id="contact" %}

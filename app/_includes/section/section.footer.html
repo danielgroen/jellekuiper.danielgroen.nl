@@ -1,17 +1,11 @@
 		<footer class="footer">
 			<ul class="nav">
-				<li class="menu-item">
-					<a href="/" class="menu-link">Home</a>
-				</li>
-				<li class="menu-item">
-					<a href="/trouwambtenaar" class="menu-link">Trouwambtenaar</a>
-				</li>
-				<li class="menu-item">
-					<a href="/bedrijfsoptredens" class="menu-link">Bedrijfsoptredens</a>
-				</li>
-				<li class="menu-item">
-					<a href="/theaterproducties" class="menu-link">Theaterproducties</a>
-				</li>
+				{% assign page = site.pages | sort: 'order' %}
+				{% for page in page %}
+					{% if page.menu %}
+					<li class="menu-item {% if page.title == currentPage %}active{% endif %}"><a href="{{page.url}}" class="menu-link">{{page.menu}}</a></li>
+					{% endif %}
+				{% endfor %}
 				<li class="menu-item">
 					<a href="#contact" class="menu-link">Contact</a>
 				</li>
@@ -32,3 +26,4 @@
 		</footer>
 	</body>
 </html>
+

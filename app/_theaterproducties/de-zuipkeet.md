@@ -2,7 +2,7 @@
 title: De Zuipkeet
 headerimage: /assets/img/theaterproducties/de_zuipkeet/Theaterproducties-dezuipkeet-Jelle-Kuiper.jpg
 teasertext: De Zuipkeet is een theatervoorstelling over de gevolgen van drankmisbruik in een klein Fries gezin.
-formimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
+image: bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
 layout: detailpage

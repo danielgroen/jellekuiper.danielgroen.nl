@@ -1,14 +1,12 @@
 ---
 title: Theaterproducties
+menu: Theaterproducties
 keywords: Creatief, Aangrijpend, Radicaal.
+layout: page
+order: 3
 teaserText: Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presentatie, dagvoorzitterschap of een op maat gemaakte optreden tijdens een congres of zakelijke bijeenkomst. Altijd met  groot succes. Jelle zorgt er altijd voor dat zijn optreden naadloos aansluit op het thema van het congres of de bedrijfsbijeenkomst.
 summary: Jelle Kuiper studeerde in 1998 af als theatermaker. Naast dat hij zelf veel op het podium staat, produceert hij ook theatervoorstellingen. Op dit moment produceert en regiseert Jelle de eerste voorstelling van cabarettalent Stefano Keizers.
 headerimage: /assets/img/theaterproducties/Theaterproducties-JelleKuiper-StefanoKeizers.jpg
-formimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
-subject: 'Bv. Theaterproducent'
-message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
-layout: page
-order: 3
 ---
 
 <!-- block usp -->
@@ -43,5 +41,5 @@ order: 3
 </section>
 
 {% include block/block.counter.html firstTimer="12" firstTitle="Theaterproducties" secondTimer="9" secondTitle="Jaar ervaring" %}
-{% include block/block.contactform.html %}
+{% include block/block.contactform.html subject="Bv. Theaterproducent"  image="bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg" message="Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte" %}
 {% include entities/page/page.teaser.html teasers="trouwambtenaar, bedrijfsoptredens"%}

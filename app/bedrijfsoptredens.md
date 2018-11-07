@@ -1,15 +1,14 @@
 ---
 title: Bedrijfsoptredens
+menu: Bedrijfsoptredens
+order: 2
+layout: page
 keywords: Bijzonder, Spannend, Krachtig
+headerimage: /assets/img/bedrijfsoptredens/Bedrijfsoptredens-Jelle-Kuiper-hero.jpg
 teaserText: Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presentatie, dagvoorzitterschap of een op maat gemaakte optreden tijdens een congres of zakelijke bijeenkomst. Altijd met  groot succes. Jelle zorgt er altijd voor dat zijn optreden naadloos aansluit op het thema van het congres of de bedrijfsbijeenkomst.
 summary: Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presentatie, dagvoorzitterschap of een op maat gemaakte optreden tijdens een congres of zakelijke bijeenkomst. Altijd met  groot succes. Jelle zorgt er altijd voor dat zijn optreden naadloos aansluit op het thema van het congres of de bedrijfsbijeenkomst.
-headerimage: /assets/img/bedrijfsoptredens/Bedrijfsoptredens-Jelle-Kuiper-hero.jpg
-formimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-contact.jpg
-subject: 'Bv. Fakespeech Amsterdam'
-message: 'Bv. Hoi Jelle, ik ga wil je graag inhuren voor een fakespeech bij mijn bedrijf. Zullen we een keer koffie drinken?  Groetjes, Laura'
-layout: page
-order: 2
 ---
+
 <!-- block usp -->
 <section class="block usps">
 	<article class="usp">
@@ -67,5 +66,5 @@ order: 2
 </section>
 
 {% include block/block.counter.html firstTimer="307" firstTitle="Bedrijfsoptredens" secondTimer="95" secondTitle="Fakespeeches" %}
-{% include block/block.contactform.html %}
+{% include block/block.contactform.html image="bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-contact.jpg" subject="Bv. Fakespeech Amsterdam" message="Bv. Hoi Jelle, ik ga wil je graag inhuren voor een fakespeech bij mijn bedrijf. Zullen we een keer koffie drinken?  Groetjes, Laura" %}
 {% include entities/page/page.teaser.html teasers="trouwambtenaar, theaterproducties"%}

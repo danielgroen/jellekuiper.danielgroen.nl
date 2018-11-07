@@ -4,6 +4,11 @@ body.front {
 			@include background();
 			margin-bottom: $gutter*2;
 		}
+		&.references {
+			.subtitle {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -25,10 +30,6 @@ body.front {
 			}
 
 			&.references {
-				.subtitle {
-					display: none;
-				}
-				
 				.reference {
 					flex-direction: row;
 					justify-content: space-between;

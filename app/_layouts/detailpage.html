@@ -3,10 +3,6 @@ layout: master
 ---
 {% include section/section.header.html %}
 
-<div class="heading">
-	<a href="/theaterproducties" class="back">{% include svg/arrow-left.svg %} terug</a>
-	<h1 class="title">{{ page.title }}</h1>
-</div>
 
 <main>
 	<picture class="picture focuspoint">
@@ -17,7 +13,7 @@ layout: master
 		<p class="paragraph">{{ content }}</p>
 	</section>
 
-	{% include block/block.contactform.html %}
+	{% include block/block.contactform.html subject="Bv. Theaterproducent" image="bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg" message="Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte" %}
 	{% include entities/theaterproducties/theaterproductie.teaser.html %}
 
 </main>

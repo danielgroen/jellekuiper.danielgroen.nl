@@ -1,13 +1,24 @@
 <header class="header">
 	<nav class="main-menu">
 		<div class="menu-toggle"></div>
-		<a href="/"><h1 class="logo">Jelle Kuiper</h1></a>
+		<a href="/"><h1 class="logo">{{site.name}}</h1></a>
 		<ul class="nav" style="opacity:0;">
-			<li class="menu-item {% if page.layout contains 'front' %}active{% endif %}"><a href="/" class="menu-link">Home</a></li>
-			<li class="menu-item {% if page.path contains 'trouwambtenaar' %}active{% endif %}"><a href="/trouwambtenaar" class="menu-link">Trouwambtenaar</a></li>
-			<li class="menu-item {% if page.path contains 'bedrijfsoptredens' %}active{% endif %}"><a href="/bedrijfsoptredens"  class="menu-link">Bedrijfsoptredens</a></li>
-			<li class="menu-item {% if page.path contains 'theaterproducties' %}active{% endif %}"><a href="/theaterproducties" class="menu-link">Theaterproducties</a></li>
+		{% assign pages = site.pages | sort: 'order' %}
+		{% assign currentPage = page.title %}
+		{% for page in pages %}
+			{% if page.menu %}
+				<li class="menu-item {% if page.title == currentPage %}active{% endif %}"><a href="{{page.url}}" class="menu-link">{{page.menu}}</a></li>
+			{% endif %}
+		{% endfor %}
 			<li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
 		</ul>
 	</nav>
 </header>
+
+{% if page.layout == 'detailpage' %}
+<div class="heading">
+		<a href="/theaterproducties" class="back">{% include svg/arrow-left.svg %} terug</a>
+		<h1 class="title">{{ page.title }}</h1>
+	</div>
+{% endif %}
+
