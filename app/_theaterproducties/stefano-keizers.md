@@ -1,7 +1,7 @@
 ---
 title: Stefano Keizers
 headerimage: /assets/img/theaterproducties/Theaterproducties-JelleKuiper-StefanoKeizers.jpg
-teasertext: De eerste avondvullende voorstelling van cabarettalent Stefano Keizers.
+teasertext: Jelle Kuiper regisseerde de eerste avondvullende voorstelling van cabarettalent Stefano Keizers
 image: bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'

@@ -1,10 +1,10 @@
 ---
 title: Bedrijfsoptredens
 menu: Bedrijfsoptredens
-order: 2
+order: 3
 layout: page
-keywords: Bijzonder, Spannend, Krachtig
-headerimage: /assets/img/bedrijfsoptredens/Bedrijfsoptredens-Jelle-Kuiper-hero.jpg
+keywords: Bijzonder, Spannend, 
+headerimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-contact.jpg
 teaserText: Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presentatie, dagvoorzitterschap of een op maat gemaakte optreden tijdens een congres of zakelijke bijeenkomst. Altijd met  groot succes. Jelle zorgt er altijd voor dat zijn optreden naadloos aansluit op het thema van het congres of de bedrijfsbijeenkomst.
 summary: Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presentatie, dagvoorzitterschap of een op maat gemaakte optreden tijdens een congres of zakelijke bijeenkomst. Altijd met  groot succes. Jelle zorgt er altijd voor dat zijn optreden naadloos aansluit op het thema van het congres of de bedrijfsbijeenkomst.
 ---
@@ -60,11 +60,11 @@ summary: Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presenta
 		<div class="article">
 			<strong class="subtitle">Meer informatie?</strong>
 			<p class="paragraph">Jelle is exclusief aangesloten bij de SPEAKERS ACADEMY. Wilt u meer informatie over mogelijkheden, beschikbaarheid en/of kosten dan kunt u contact opnemen met de Speakers Academy.</p>
-			<a href="/bedrijfsoptredens" class="button">Speakers academy</a>
+			<a href="https://www.speakersacademy.com/nl/spreker/jelle-kuiper/" class="button">Speakers academy</a>
 		</div>
 	</article>
 </section>
 
-{% include block/block.counter.html firstTimer="307" firstTitle="Bedrijfsoptredens" secondTimer="95" secondTitle="Fakespeeches" %}
-{% include block/block.contactform.html image="bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-contact.jpg" subject="Bv. Fakespeech Amsterdam" message="Bv. Hoi Jelle, ik ga wil je graag inhuren voor een fakespeech bij mijn bedrijf. Zullen we een keer koffie drinken?  Groetjes, Laura" %}
+{% include block/block.counter.html firstTimer="648" firstTitle="Bedrijfsoptredens" secondTimer="18" secondTitle="Jaar ervaring" %}
+{% include block/block.contactform.html image="bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-contact.jpg" subject="Bv. Fakespeech Amsterdam" message="Bv. Hoi Jelle, ik ga wil je graag inhuren voor een fakespeech bij mijn bedrijf. Groetjes, Laura" %}
 {% include entities/page/page.teaser.html teasers="trouwambtenaar, theaterproducties"%}

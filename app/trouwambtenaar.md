@@ -2,7 +2,7 @@
 title: Trouwambtenaar
 menu: Trouwambtenaar
 layout: page
-order: 1
+order: 2
 headerimage: /assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-hero.jpg
 keywords: Persoonlijk, Humoristisch, Ontspannen
 teaserText: Omdat standaard huwelijksceremonies best wat leuker en wat minder stijf kunnen heeft Jelle in 2005 besloten zijn cabarettalent hierop in te zetten. Sindsdien is hij buitengewoon ambtenaar van de burgerlijke stand. Hij zorgt dat jouw belangrijkste dag van je leven een unieke ervaring wordt, voor jullie én voor jullie gasten. De toon van jullie dag wordt gezet met een ontspannen en intieme ceremonie vol humor en interactie.
@@ -73,6 +73,6 @@ summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij 
 	</article>
 </section>
 
-{% include block/block.counter.html firstTimer="627" firstTitle="Huwelijk gesloten" secondTimer="10" secondTitle="Jaar ervaring" %}
+{% include block/block.counter.html firstTimer="515" firstTitle="Huwelijken" secondTimer="11" secondTitle="Jaar ervaring" %}
 {% include block/block.contactform.html subject="Bv. Trouwambtenaar Amsterdam"  image="trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg" message="Bv. Hoi Jelle, ik ga trouwen op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Laura" %}
 {% include entities/page/page.teaser.html teasers="bedrijfsoptredens, theaterproducties"%}
