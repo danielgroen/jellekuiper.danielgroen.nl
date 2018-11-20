@@ -1,7 +1,6 @@
 ---
 title: Trouwambtenaar
 menu: Trouwambtenaar
-layout: page
 order: 2
 headerimage: /assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-hero.jpg
 keywords: Persoonlijk, Humoristisch, Ontspannen

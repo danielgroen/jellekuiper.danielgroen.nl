@@ -5,8 +5,7 @@ teasertext: A JE TO! is alweer de 4e theater voorstelling van Buurman en Buurman
 image: bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
-layout: detailpage
-order: 3
+order: 2
 ---
 
 In 2009 verwierf Jelle de theaterrechten van Buurman en Buurman (bekend van VPRO-tv). Samen met Senf Theaterpartners ontwikkelde Jelle een theatervoorstelling van deze klussende buurmannen. In maart 2010 ging de eerste Buurman en Buurman musical in première. 'Buurman en Buurman, gaan verhuizen'.

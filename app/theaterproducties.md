@@ -2,7 +2,6 @@
 title: Theaterproducties
 menu: Theaterproducties
 keywords: Creatief, Aangrijpend, Radicaal.
-layout: page
 order: 1
 teaserText: Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presentatie, dagvoorzitterschap of een op maat gemaakte optreden tijdens een congres of zakelijke bijeenkomst. Altijd met  groot succes. Jelle zorgt er altijd voor dat zijn optreden naadloos aansluit op het thema van het congres of de bedrijfsbijeenkomst.
 summary: 'In 2010 ging Jelle Kuiper zijn eerste theatervoorstelling in premiere: Buurman & Buurman gaan verhuizen. Inmiddels staat de 4e voorstelling van Buurman & Buurman in het theater en zijn er meer dan 650 shows gespeeld. Ook is Jelle (mede) producent van Judas, naar de bestseller van Astrid Holleeder en is hij de regisseur van Stefano Keizers.'
@@ -26,7 +25,8 @@ headerimage: /assets/img/theaterproducties/Theaterproducties-JelleKuiper-Stefano
 
 <!-- block usp -->
 <section class="block usps">
-	{% for theaterproductie in site.theaterproducties %}
+  {% assign theaterproducties = site.theaterproducties | sort: 'order' %}
+	{% for theaterproductie in theaterproducties %}
 	<article class="usp">
 		<picture class="focuspoint picture">
 			<img class="img" src="{{theaterproductie.headerimage}}" alt="{{theaterproductie.title}}">

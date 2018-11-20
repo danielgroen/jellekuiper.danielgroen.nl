@@ -42,8 +42,8 @@ collections:
 
 defaults:
   - scope:
-      path: "" # empty string for all files
+      path: '' # empty string for all files
     values:
-      layout: "page"
+      layout: 'detailpage'
       weight: 0
       opengraph: 'opengraph.png'

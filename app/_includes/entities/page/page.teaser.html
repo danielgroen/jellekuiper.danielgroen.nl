@@ -1,7 +1,7 @@
 {% capture block %}
   <strong class="subtitle">Jelle doet ook</strong>
   {% assign references = include.teasers | split: ', '%}
-  {% assign pages = site.pages | sort: 'weight' %}
+  {% assign pages = site.pages | sort: 'order' %}
 
   {% for page in pages %}
   {% assign pageTitle = page.title | downcase %}

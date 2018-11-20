@@ -5,7 +5,6 @@ teasertext: De Zuipkeet is een theatervoorstelling over de gevolgen van drankmis
 image: bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'
 message: 'Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte'
-layout: detailpage
 order: 6
 ---
 
