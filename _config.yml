@@ -1,5 +1,5 @@
 # cname veranderd mee met de url
-url: https://webnozems.nl
+url: http://jellekuiper.sven
 name: "Jelle Kuiper"
 description: "Voor een leuke trouwdag"
 language: 'nl/nl'
@@ -44,6 +44,10 @@ defaults:
   - scope:
       path: '' # empty string for all files
     values:
-      layout: 'detailpage'
-      weight: 0
+      layout: 'page'
       opengraph: 'opengraph.png'
+  - scope:
+      path: ''
+      type: 'theaterproducties'
+    values:
+      layout: 'detailpage'
