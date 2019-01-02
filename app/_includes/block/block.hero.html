@@ -1,9 +1,26 @@
 {% capture block %}
-	<picture class="hero-image focuspoint">
-		<img class="img" src="{{ page.headerimage }}" alt="Jelle Kuiper">
-	</picture>
+<div class="hero-wrapper">
+
+  {% if page.url == '/' %}
+    <div class="owl-carousel">
+      {% for slider_image in page.slider_images %}
+      <picture class="hero-image focuspoint">
+        <img class="img" src="/assets/img/{{slider_image.image}}" alt="Jelle Kuiper">
+      </picture>
+      {% endfor %}
+    </div>
+
+  {%else %}
+    <picture class="hero-image focuspoint">
+      <img class="img" src="{{ page.headerimage }}" alt="Jelle Kuiper">
+    </picture>
+  {% endif %}
+
+  <h1 class="title">{{ page.title }}</h1>
+</div>
+
+
 	<div class="introduction">
-		<h1 class="title">{{ page.title }}</h1>
 		<h2 class="subtitle">{{ page.keywords }}</h2>
 		<p class="introduction">{{ page.summary }}</p>
 	</div>

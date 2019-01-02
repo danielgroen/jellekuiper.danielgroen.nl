@@ -3,7 +3,26 @@ body.front {
 		&.contactform {
 			@include background();
 			margin-bottom: $gutter*2;
-		}
+    }
+
+    &.hero {
+      .inner {
+        height: 100%;
+
+        .hero-wrapper {
+          height: 100%;
+          .owl-carousel {
+            height: 100%;
+            
+            .owl-stage-outer {
+              height: 100%;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+
 		&.references {
 			.subtitle {
 				display: none;
