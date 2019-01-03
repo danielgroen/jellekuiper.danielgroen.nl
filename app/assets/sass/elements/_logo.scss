@@ -1,6 +1,25 @@
+.logo {
+  @include font('title');
+  color: $black;
+  position: absolute;
+  z-index: 1;
+  
+  h1 {
+    display: inline-block;
+  }
+}
+
+@include breakpoint(max-width bpmax($desktop)) {
+  .logo {
+    top: 16px;
+    font-size: 1.3rem;
+    left: #{100vw / 24 * 1};
+  }
+}
+
 @include breakpoint($desktop) {
-	.logo {
-		display: block;
-		margin-top: -10px;
-	}
+  .logo {
+    font-size: 1.5rem;
+    top: 30px;
+  }
 }

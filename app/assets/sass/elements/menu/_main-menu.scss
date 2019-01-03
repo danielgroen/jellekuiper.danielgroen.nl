@@ -1,121 +1,118 @@
-.main-menu {
-		position: relative;
+@include breakpoint (max-width bpmax($desktop)) {
+  .main-menu {
+    position: relative;
 
-	.nav {
-		padding-bottom: $gutter * 2;
-		display: flex;
-		height: 100vh;
-		z-index: 10;
-		width: 100vw;
-		pointer-events: none;
-		top: 0;
-		left: 0;
-		transition: all 0.25s ease;
-		transform: scale(.9);
-		opacity: 0;
-		position: fixed;
-		flex-direction: column;
-		justify-content: space-around;
-		pointer-events: none;
+    .nav {
+      padding-bottom: $gutter * 2;
+      display: flex;
+      height: 100vh;
+      z-index: 10;
+      width: 100vw;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      transform: scale(.9);
+      opacity: 0;
+      position: fixed;
+      flex-direction: column;
+      justify-content: space-around;
+      pointer-events: none;
 
-		.menu-item {
-			@include font('subtitle');
-			width: 100%;
-			text-align: center;
-			transition: all $speed/2;
-			pointer-events: all;
+      .menu-item {
+        width: 100%;
+        text-align: center;
+        pointer-events: all;
 
-			.menu-link {
-				position: relative;
-				width: 100%;
-				text-decoration: none;
-				color: $black;
-				transition: all $speed/2;
+        .menu-link {
+          width: 100%;
+        }
 
-				&:after {
-					content: '';
-					transition: all 0.25s ease;
-					transition: width $speed $easing-cubic;
-					width: 0;
-					background-color: $primary;
-					height: 6px;
-					left: 0;
-					bottom: -5px;
-					z-index: -1;
-					opacity: 1 !important;
-					position: absolute;
-				}
-			}
-
-			// &:hover,
-			&.active {
-				opacity: 1 !important;
-
-				.menu-link {
-					&:after {
-						width: 100%;
-					}
-				}				
-			}
-
-		}
-	} 
+				&.button {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
-@include breakpoint ($desktop) {
+.main-menu {
+  .nav {
+    transition: all 0.25s ease;
+
+    .menu-item {
+      transition: all $speed/2;
+
+      &:hover {
+        .menu-link {
+          color: $black;
+        }
+      }
+
+      &.active {
+        .menu-link {
+          color: $black;
+
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+
+      .menu-link {
+        transition: all $speed/2;
+        position: relative;
+        @include font('menu-item');
+        text-decoration: none;
+
+        &:after {
+          content: '';
+          transition: all 0.25s ease;
+          transition: width $speed $easing-cubic;
+          width: 0;
+          background-color: $primary !important;
+          height: 3px;
+          left: 0;
+          bottom: -2px;
+          z-index: -1;
+          opacity: 1 !important;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint($desktop) {
 	.main-menu {
-		.nav {
-			margin: $padding auto;
-			opacity: 1 !important;
-			position: static;
+    height: $menu-height;
+
+    .nav {
+      opacity: 1 !important;
+      display: flex;
 			flex-direction: row;
-			transform: scale(1);
-			width: calc(#{$max-width} / 37 * 35);
+      align-items: center;
 			justify-content: flex-end;
-			background-color: transparent !important;
-			height: auto;
+      height: 100%;
 
 			.menu-item {
-				width: auto;
-				opacity: .7;
-				margin-left: calc(#{$max-width} / 37 * 1);
+				margin-left: calc(#{$max-width} / 37 * 2);
 
 				&:first-child {
 					display: none;
 				}
 
-				&:last-child {
-					opacity: 1;
+				&.button {
+          text-decoration: none;
+          cursor: pointer;
+          padding: 13px $padding*2;
+          border-radius: 10px;
+          display: inline-block;
+          font-family: "MuseoSans";
+          color: $white;
 
-					.menu-link {
-						background-color: $primary;
-						border-radius: $border-radius;
-						text-decoration: none;
-						padding: $padding $gutter;
-						margin-top: -$padding;
-						display: inline-block;
-						box-shadow: $box-shadow;
-
-						&:hover {
-							background-color: $hover;
-						}
-
-						&:after {
-							background-color: transparent;
-						}
-					}
-				}
-
-				.menu-link {
-					@include font('normal');
-					width: auto;
-
-					&:after {
-						background-color: $white;
-						height: 1px;
-						left: 0;
-						bottom: 1px;
-					}
+          &:hover {
+            background-color: $hover;
+          }
 				}
 			}
 		}

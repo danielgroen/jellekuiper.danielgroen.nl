@@ -1,11 +1,17 @@
 .body {
-	@include font('normal');
-	width: 100vw;
-	height: auto;
+  @include font('normal');
+}
 
-	&.pinned {
-		max-height: 100vh;
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
+@include breakpoint( max-width bpmax($desktop)) {
+  .body {
+    @include font('normal');
+    width: 100vw;
+    margin-top: $menu-height;
+
+    &.pinned {
+      max-height: 100vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  }
 }

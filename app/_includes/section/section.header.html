@@ -1,7 +1,13 @@
 <header class="header">
 	<nav class="main-menu">
-		<div class="menu-toggle"></div>
-		<a href="/"><h1 class="logo">{{site.name}}</h1></a>
+    <div class="menu-toggle"></div>
+    {% if page.layout == 'detailpage' %}
+      <a class="logo" href="/theaterproducties"><h1>{{site.name}}</h1></a>
+		  <a class="back" href="/theaterproducties">{% include svg/arrow-left.svg %}</a>
+    {% else %}
+      <a class="logo" href="/"><h1>{{site.name}}</h1></a>
+    {% endif %}
+
 		<ul class="nav" style="opacity:0;">
 		{% assign pages = site.pages | sort: 'order' %}
 		{% assign currentPage = page.title %}
@@ -10,15 +16,8 @@
 				<li class="menu-item {% if page.title == currentPage %}active{% endif %}"><a href="{{page.url}}" class="menu-link">{{page.menu}}</a></li>
 			{% endif %}
 		{% endfor %}
-			<li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+			<a href="#contact" class="menu-item button">Contact</a>
 		</ul>
 	</nav>
 </header>
-
-{% if page.layout == 'detailpage' %}
-<div class="heading">
-		<a href="/theaterproducties" class="back">{% include svg/arrow-left.svg %} terug</a>
-		<h1 class="title">{{ page.title }}</h1>
-	</div>
-{% endif %}
 

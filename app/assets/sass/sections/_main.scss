@@ -1,23 +1,7 @@
 main {
 	max-width: #{$max-width};
 	width: 100%;
-    margin: 0 auto;
-	display: block;
-	top: -500px;
-	position: static;
-	z-index: 1;
-	min-height: 200vh;
-	transform: translateZ(0);
-	
-	&:after {
-		height: 100%;
-		width: 200vw;
-		z-index: -4;
-		content: '';
-		left: -50vw;
-		top: -$gutter*2;
-		display: block;
-		position: absolute;
-		background: $white;
-	}
+  margin: 0 auto;
+  display: block;
+  position: relative;
 }

@@ -1,13 +1,12 @@
+$menuHeight: 20px;
+$barWidth: 24px;
+$barHeight: 3px;
+$menu-toggle: $black;
 .main-menu {
-
-	// menu toggle
 	.menu-toggle {
-		$menuHeight: 20px;
-		$barWidth: 24px;
-		$barHeight: 3px;
 		position: absolute;
 		right: $padding;
-		top: $padding;
+		top: 17px;
 		width: $barWidth;
 		height: $menuHeight;
 		cursor: pointer;

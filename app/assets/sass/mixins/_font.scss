@@ -25,6 +25,16 @@
     }
   }
 
+  @else if $type == "menu-item" {
+    font-weight: 600;
+    font-size: 16px;
+    color: $grey-darker;
+
+    @include breakpoint($desktop) {
+      font-size: 16px;
+    }
+  }
+
   @else if $type == "textheader" {
     font-size: 22px;
     line-height: 1.45;
@@ -41,5 +51,5 @@
   @else if $type == "testimonial" {
     line-height: 1.78;
     font-style: italic;
-  }  
+  }
 }

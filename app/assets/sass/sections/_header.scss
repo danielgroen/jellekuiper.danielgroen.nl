@@ -1,27 +1,66 @@
-.header {
-	position: absolute;
-	width: #{$max-width};
-	left: 50%;
-	transform: translate(-50%);
-	z-index: 5;
+@include breakpoint(max-width bpmax($desktop)) {
+  .header {
+    position: fixed;
+    width: #{$max-width};
+    height: $menu-height;
+    left: 50%;
+    top: 0;
+    background-color: $white;
+    border-bottom: $grey;
+    transform: translate(-50%);
+    z-index: 5;
 
-    .logo {
-		@include font('title');
-		position: absolute;
-		font-size: 20px;
-		line-height: $padding;
-		left: #{100vw / 24 * 1};
-		top: $padding;
-		color: $black;
+    .back {
+      top: 17px;
+      margin-left: #{100vw / 24 * 1};
+      position: absolute;
+      font-size: 1.3rem;
+      font-weight: 400;
+      z-index: 5;
+      color: transparent;
+
+      svg {
+        fill: $black;
+        color: $grey;
+        width: 25px;
+      }
     }
+  }
+}
+
+.header {
+  
+  &:after {
+    content: '';
+    position: absolute;
+    width: 150vw;
+    height: 100%;
+    top: 0;
+    left: -50vw;
+    z-index: -3;
+    border-bottom: 1px solid #eaeaea;
+  }
 }
 
 @include breakpoint ($desktop) {
-	.header {
-		margin-top: $gutter;
+  .header {
+    position: relative;
+    padding:  0 $gutter*2;
+    margin: 0 auto;
 
-		.logo {
-			font-size: 1.5rem;
-		}
-	}
+    .back {
+      display: none;
+    }
+
+    .nav {
+      .menu-item:not(:last-child) {
+        a {
+          &:after {
+            opacity: .7;
+            background-color: $placeholder;
+          }
+        }
+      }
+    }
+  }
 }
