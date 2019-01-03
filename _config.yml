@@ -1,5 +1,12 @@
-# cname veranderd mee met de url
-url: http://jellekuiper.sven
+#development
+# url: http://jellekuiper.sven
+
+#staging
+url: http://webnozems.nl
+
+#production
+# url: http://jellekuiper.sven
+
 name: "Jelle Kuiper"
 description: "Voor een leuke trouwdag"
 language: 'nl/nl'

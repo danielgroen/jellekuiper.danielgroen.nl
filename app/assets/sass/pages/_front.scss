@@ -10,13 +10,20 @@ body.front {
         height: 100%;
 
         .hero-wrapper {
-          height: 100%;
+          
           .owl-carousel {
-            height: 100%;
+            height: 80vh;
             
             .owl-stage-outer {
-              height: 100%;
-              width: auto;
+              height: 80vh !important;
+              .owl-stage {
+                
+              }
+              .hero-image {
+                img {
+                  width: auto !important;
+                }
+              }
             }
           }
         }

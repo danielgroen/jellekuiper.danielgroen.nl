@@ -14228,6 +14228,9 @@ $(window).ready( function() {
 	// https://jonom.github.io/jquery-focuspoint/demos/helper/index.html
 	var focuspoint = $('.focuspoint');
 	var images = {
+		'Jelle-Kuiper-1.jpg': { x: -0.15, y: 0.53, width: 1920, height: 1280 },
+		'Jelle-Kuiper-2.jpg': { x: -0.15, y: 0.53, width: 1920, height: 1280 },
+		'Jelle-Kuiper-3.jpg': { x: -0.15, y: 0.53, width: 1920, height: 1280 },
 		'Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg': { x: -0.15, y: 0.53, width: 1280, height: 1920 },
 		'Bedrijfsoptredens-Jelle-Kuiper-hero.jpg': { x: -0.40, y: 0.47, width: 960, height: 370 },
 		'Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-2.jpg': { x: -0.72, y: 0.63, width: 1000, height: 675 },
@@ -14247,7 +14250,6 @@ $(window).ready( function() {
 		'Trouwambtenaar-Jelle-Kuiper-leuktrouwen-prijs.jpg': { x: -0.31, y: 0.49, width: 960, height: 370 },
 		'Trouwambtenaar-Jelle-Kuiper-leuktrouwen.jpg': { x: 0.07, y: 0.47, width: 500, height: 426 },
 		'Trouwambtenaar-Jelle-Kuiper-Persoonlijk.jpg': { x: 0.25, y: 0.48, width: 640, height: 427 },
-		'jellekuiper.jpg': { x: 0.29, y: 0.2, width: 1920, height: 1280 },
 	}
 
 	function imageLoaded() {
