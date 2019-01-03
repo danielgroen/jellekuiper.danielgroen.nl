@@ -3,13 +3,13 @@
   color: $black;
   position: absolute;
   z-index: 1;
-  
+
   h1 {
     display: inline-block;
   }
 }
 
-@include breakpoint(max-width bpmax($desktop)) {
+@include breakpoint(max-width bpmax(960px)) {
   .logo {
     top: 16px;
     font-size: 1.3rem;
@@ -17,9 +17,9 @@
   }
 }
 
-@include breakpoint($desktop) {
+@include breakpoint(960px) {
   .logo {
     font-size: 1.5rem;
-    top: 30px;
+    top: 33px;
   }
 }

@@ -2,7 +2,7 @@
   @include font('normal');
 }
 
-@include breakpoint( max-width bpmax($desktop)) {
+@include breakpoint( max-width bpmax(960px)) {
   .body {
     @include font('normal');
     width: 100vw;

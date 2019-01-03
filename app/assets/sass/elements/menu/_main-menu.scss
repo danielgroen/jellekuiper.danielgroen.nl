@@ -1,4 +1,4 @@
-@include breakpoint (max-width bpmax($desktop)) {
+@include breakpoint (max-width bpmax(960px)) {
   .main-menu {
     position: relative;
 
@@ -82,7 +82,7 @@
   }
 }
 
-@include breakpoint($desktop) {
+@include breakpoint(960px) {
 	.main-menu {
     height: $menu-height;
 

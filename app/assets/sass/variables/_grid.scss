@@ -19,9 +19,10 @@ $offset: 50px;
   --max-width: 100vw;
   --menu-height: 60px;
 
+  // max-width
   @include breakpoint(960px) {
-    --max-width: 960px;
     --menu-height: 94px;
+    --max-width: 960px;
   }
 }
 

@@ -91,19 +91,17 @@
       .back {
         color: $placeholder;
         position: absolute;
-        margin-top: -$gutter*.5;
-        top: $gutter*1.5;
+        margin-top: $padding;
 		    margin-left: calc(#{$max-width} / 37 * 1);
-        // margin-left: calc((100vw - #{$max-width})  / 2 + (#{$max-width} / 37 * 1));
-  
+
         svg {
           fill: $placeholder;
           width: 10px;
         }
-  
+
         &:hover {
           color: $black;
-  
+
           svg {
             fill: $black;
           }

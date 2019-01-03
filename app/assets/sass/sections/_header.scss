@@ -1,11 +1,9 @@
-@include breakpoint(max-width bpmax($desktop)) {
+@include breakpoint(max-width bpmax(960px)) {
   .header {
     position: fixed;
     width: #{$max-width};
-    height: $menu-height;
     left: 50%;
     top: 0;
-    background-color: $white;
     border-bottom: $grey;
     transform: translate(-50%);
     z-index: 5;
@@ -29,10 +27,12 @@
 }
 
 .header {
-  
+  height: $menu-height;
+
   &:after {
     content: '';
     position: absolute;
+    background-color: $white;
     width: 150vw;
     height: 100%;
     top: 0;
@@ -42,7 +42,7 @@
   }
 }
 
-@include breakpoint ($desktop) {
+@include breakpoint(960px) {
   .header {
     position: relative;
     padding:  0 $gutter*2;

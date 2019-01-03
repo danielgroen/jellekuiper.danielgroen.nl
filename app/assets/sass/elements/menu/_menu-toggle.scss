@@ -60,7 +60,7 @@ $menu-toggle: $black;
 	}
 }
 
-@include breakpoint ($desktop) {
+@include breakpoint(960px) {
 	.main-menu {
 		.menu-toggle {
 			display: none;
