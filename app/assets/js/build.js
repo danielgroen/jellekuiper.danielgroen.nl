@@ -14228,9 +14228,9 @@ $(window).ready( function() {
 	// https://jonom.github.io/jquery-focuspoint/demos/helper/index.html
 	var focuspoint = $('.focuspoint');
 	var images = {
-		'Jelle-Kuiper-1.jpg': { x: -0.15, y: 0.53, width: 1920, height: 1280 },
-		'Jelle-Kuiper-2.jpg': { x: -0.15, y: 0.53, width: 1920, height: 1280 },
-		'Jelle-Kuiper-3.jpg': { x: -0.15, y: 0.53, width: 1920, height: 1280 },
+		'Jelle-Kuiper-1.jpg': { x: -0.15, y: -0.2, width: 1920, height: 1280 },
+		'Jelle-Kuiper-2.jpg': { x: -0.15, y: -0.2, width: 1920, height: 1280 },
+		'Jelle-Kuiper-3.jpg': { x: -0.15, y: -0.2, width: 1920, height: 1280 },
 		'Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg': { x: -0.15, y: 0.53, width: 1280, height: 1920 },
 		'Bedrijfsoptredens-Jelle-Kuiper-hero.jpg': { x: -0.40, y: 0.47, width: 960, height: 370 },
 		'Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-2.jpg': { x: -0.72, y: 0.63, width: 1000, height: 675 },
