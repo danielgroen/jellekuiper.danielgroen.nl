@@ -3,7 +3,7 @@
     position: relative;
 
     .nav {
-      padding-bottom: $gutter * 2;
+      padding: $gutter*8 0;
       display: flex;
       height: 100vh;
       z-index: 10;
@@ -16,15 +16,15 @@
       position: fixed;
       flex-direction: column;
       justify-content: space-around;
-      pointer-events: none;
 
       .menu-item {
         width: 100%;
         text-align: center;
-        pointer-events: all;
+        // pointer-events: none;
 
         .menu-link {
           width: 100%;
+          pointer-events: none;
         }
 
 				&.button {

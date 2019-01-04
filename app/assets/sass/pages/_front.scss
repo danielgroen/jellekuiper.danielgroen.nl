@@ -10,14 +10,14 @@ body.front {
         height: 100%;
 
         .hero-wrapper {
-          
+
           .owl-carousel {
             height: 80vh;
-            
+
             .owl-stage-outer {
               height: 80vh !important;
               .owl-stage {
-                
+
               }
               .hero-image {
                 img {
@@ -61,7 +61,8 @@ body.front {
 					justify-content: space-between;
 					color: $black;
 					text-align: left;
-					margin-bottom: $gutter;
+          margin-bottom: $gutter*2;
+          overflow: visible;
 
 					&:after {
 						content: none;
@@ -74,10 +75,10 @@ body.front {
 					}
 
 					.introduction {
-						flex: 0 0 calc(#{$max-width} / 37 * 17);
-						padding: calc(#{$max-width} / 37 * 1);
+						flex: 0 0 calc(#{$max-width} / 37 * 16);
+						padding: calc(#{$max-width} / 37 * 1) calc(#{$max-width} / 37 * 1);
 						position: static;
-						height: auto;
+            height: auto;
 
 						.title,
 						.keywords {
@@ -109,12 +110,13 @@ body.front {
 						.button{
 							position: static;
 							width: 100%;
-							text-align: center;
+              text-align: center;
+              border-radius: 10px;
 						}
 					}
 
 					.reference-image {
-						flex: 0 0 calc(#{$max-width} / 37 * 17);
+            flex: 0 0 calc(#{$max-width} / 37 * 19);
 
 						&:not(.focuspoint) {
 							position: relative;
@@ -122,7 +124,20 @@ body.front {
 							width: 100%;
 							overflow: hidden;
 						}
-					}
+          }
+
+          &:nth-child(odd) {
+            .reference-image {
+              margin-left: calc(#{$max-width} / 37 * 1);
+            }
+          }
+          
+          &:nth-child(even) {
+            .reference-image {
+              margin-left: calc(#{$max-width} / 37 * -1);
+              margin-right: calc(#{$max-width} / 37 * 1);
+            }
+          }
 				}
 			}
 		}

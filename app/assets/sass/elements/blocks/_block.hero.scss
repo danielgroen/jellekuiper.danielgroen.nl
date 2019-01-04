@@ -8,6 +8,12 @@
 	width: 100vw;
   overflow: hidden;
 
+  .hero-wrapper {
+  	height: calc(90vh - #{$offset});
+    outline: 1px solid red;
+    
+  }
+
   .hero-image {
     display: block;
     height: calc(100vh + 100px);

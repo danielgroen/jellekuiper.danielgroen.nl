@@ -12,7 +12,7 @@ summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij 
 <section class="block usps">
 	<article class="usp">
 		<picture class="focuspoint picture fade-in">
-			<img class="img" src="/assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-leuktrouwen.jpg" alt="Jelle Kuiper">
+			<img class="img" src="/assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-leuk-trouwen.jpg" alt="Jelle Kuiper">
 		</picture>
 		<div class="article">
 			<strong class="subtitle">Leuk trouwen</strong>

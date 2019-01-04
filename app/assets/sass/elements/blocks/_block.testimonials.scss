@@ -4,7 +4,9 @@
 	.inner {
 		&:before,
 		.name:after {
-			@include font('title');
+      // @include font('title');
+      font-family: arial;
+      font-weight: 900;
 			color: $primary;
 			text-align: center;
 			position: absolute;
@@ -14,7 +16,7 @@
 			line-height: 0;
 			font-weight: 800;
 			opacity: .9;
-			z-index: -1;
+      z-index: -1;
 		}
 
 		&:before {

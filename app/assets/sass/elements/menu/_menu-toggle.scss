@@ -6,11 +6,11 @@ $menu-toggle: $black;
 	.menu-toggle {
 		position: absolute;
 		right: $padding;
-		top: 17px;
+		top: 20px;
 		width: $barWidth;
 		height: $menuHeight;
 		cursor: pointer;
-		border-top: $barHeight solid $menu-toggle; 
+		border-top: $barHeight solid $menu-toggle;
 		border-bottom: $barHeight solid $menu-toggle;
 		transition: all 0.25s $easing-cubic;
 		transform-origin: center;
@@ -53,8 +53,12 @@ $menu-toggle: $black;
 	z-index: 20;
 
 	~ .nav {
-		pointer-events: all;
-		opacity: 1 !important;
+
+    .menu-link {
+      pointer-events: all;
+    }
+    
+    opacity: 1 !important;
 		transform: scale(1);
 		background-color: $white;
 	}
