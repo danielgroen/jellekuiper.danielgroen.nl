@@ -1,4 +1,4 @@
-@include breakpoint(max-width bpmax($desktop)) {
+@include breakpoint(max-width bpmax(960px)) {
   .detailpage {
     .header {
       .logo {
@@ -60,7 +60,8 @@
           }
 
           .introduction {
-            height: 55%;
+            height: 240px;
+            margin-top: 15px;
 
             .description {
               font-weight: 700;
@@ -92,7 +93,8 @@
         color: $placeholder;
         position: absolute;
         margin-top: $padding;
-		    margin-left: calc(#{$max-width} / 37 * 1);
+        margin-left: calc(#{$max-width} / 37 * 1);
+        z-index: 1;
 
         svg {
           fill: $placeholder;
@@ -127,6 +129,7 @@
             margin-bottom: $gutter*2;
 
             .reference {
+              height: 300px;
               .introduction {
                 padding: 0 20px !important;
                 margin: 10px 0;

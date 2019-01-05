@@ -1,5 +1,6 @@
 ---
 title: Jelle Kuiper
+machine_name: jelle_uiper
 menu: Home
 keywords: Trouwambtenaar, Cabaretier, Theaterproducent
 summary: Jelle kan met recht een creatieve duizendpoot worden genoemd. Hij is cabaretier en verzorgt optredens op maat. Hij is officieel trouwambtenaar in heel Nederland. Ook is hij theaterproducent van o.a. de Buurman en Buurman voorstellingen en regisseert hij Stefano Keizers.

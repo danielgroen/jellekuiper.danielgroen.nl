@@ -1,5 +1,6 @@
 ---
-title: Bedrijfsoptredens
+title: Bedrijfs&shy;optredens
+machine_name: Bedrijfsoptredens
 menu: Bedrijfsoptredens
 order: 3
 keywords: Bijzonder, Spannend,

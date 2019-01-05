@@ -1,5 +1,6 @@
 ---
-title: Theaterproducties
+title: Theater&shy;producties
+machine_name: Theaterproducties
 menu: Theaterproducties
 keywords: Creatief, Aangrijpend, Radicaal.
 order: 1

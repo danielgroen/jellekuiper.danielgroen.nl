@@ -3,8 +3,8 @@
 .focuspoint {
 	position: relative; /*Any position but static should work*/
 	overflow: hidden;
-	width: calc($max-width / 24 * 22);
-	height: $gutter * 15;
+  width: auto;
+  height: 100%;
 
 	img {
 		position: absolute;

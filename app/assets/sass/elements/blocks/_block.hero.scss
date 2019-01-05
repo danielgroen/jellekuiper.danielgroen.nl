@@ -23,9 +23,12 @@ $hero-height: calc(80vh - #{$menu-height});
         position: absolute;
         bottom: $gutter*2;
         left: 50%;
+        // word-break: break-all;
         transform: translateX(-50%);
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         text-align: center;
+        z-index: 3;
+        width: calc(100vw - 20px);
       }
     }
   
@@ -68,7 +71,6 @@ $hero-height: calc(80vh - #{$menu-height});
       .hero-wrapper {
         .page-title {
           font-size: 4rem;
-          z-index: 10;
         }
       }
     }

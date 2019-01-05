@@ -3,7 +3,8 @@
     position: relative;
 
     .nav {
-      padding: $gutter*8 0;
+      padding: $gutter*6 0;
+      padding-top: $gutter*4;
       display: flex;
       height: 100vh;
       z-index: 10;
@@ -20,7 +21,6 @@
       .menu-item {
         width: 100%;
         text-align: center;
-        // pointer-events: none;
 
         .menu-link {
           width: 100%;
@@ -63,6 +63,7 @@
         position: relative;
         @include font('menu-item');
         text-decoration: none;
+        color: $grey-darker;
 
         &:after {
           content: '';

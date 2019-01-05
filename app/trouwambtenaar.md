@@ -1,5 +1,6 @@
 ---
-title: Trouwambtenaar
+title: Trouw&shy;ambtenaar
+machine_name: Trouwambtenaar
 menu: Trouwambtenaar
 order: 2
 headerimage: /assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-hero.jpg

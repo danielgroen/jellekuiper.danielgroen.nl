@@ -11,7 +11,7 @@
 
 @include breakpoint(max-width bpmax(960px)) {
   .logo {
-    top: 16px;
+    top: 20px;
     font-size: 1.3rem;
     left: #{100vw / 24 * 1};
   }
