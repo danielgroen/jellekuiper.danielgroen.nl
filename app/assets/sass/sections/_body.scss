@@ -7,10 +7,11 @@
     @include font('normal');
     width: 100vw;
     margin-top: $menu-height;
+    overflow: visible;
 
     &.pinned {
       max-height: 100vh;
-      overflow-y: scroll;
+      // overflow-y: scroll;
       overflow-x: hidden;
     }
   }
