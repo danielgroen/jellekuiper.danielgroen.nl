@@ -15,5 +15,6 @@ NRC over Stefano Keizers: 'Een sensationeel optreden. Wie zich wel eens afvraagt
 Regie: Jelle Kuiper<br>
 meer info: [stefanokeizers.nl](http://stefanokeizers.nl)
 
-{% include block/block.video.html src="https://www.youtube.com/embed/8K2t1XctMdo" %}
+
 {% include elements/button.html text="Stefano Keizers" href="http://www.stefanokeizers.nl/" %}
+{% include block/block.video.html src="https://www.youtube.com/embed/8K2t1XctMdo" %}

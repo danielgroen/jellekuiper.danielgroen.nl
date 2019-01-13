@@ -15,5 +15,5 @@ De makers van de succesvolle Buurman & Buurman-voorstellingen vertaalden dit avo
 André het astronautje is een voorstelling voor alle ruimtereizigers vanaf 3 jaar.
 Ready for take-off!
 
-{% include block/block.video.html src="https://www.youtube.com/embed/MFRISEX3Hm0" %}
 {% include elements/button.html text="André het astronautje" href="https://astronautje.nl/" %}
+{% include block/block.video.html src="https://www.youtube.com/embed/MFRISEX3Hm0" %}

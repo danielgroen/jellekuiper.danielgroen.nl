@@ -1,6 +1,6 @@
 ---
 title: Judas
-headerimage: /assets/img/theaterproducties/judas/Theaterproducties-judas-Jelle-Kuiper.jpg
+headerimage: /assets/img/theaterproducties/judas/Theaterproducties-judas-Jelle-Kuiper-3.jpg
 teasertext: Psychologische theaterthriller naar de bestseller van Astrid Holleeder.
 image: bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'
@@ -22,5 +22,5 @@ Holleeder is?
 De regie ligt in handen van Johan Doesburg, Sophie Kassies is verantwoordelijk voor het script.
 Eerder werkten zij beiden aan onder meer 'De Prooi' en 'Tirza'. 'Judas' is een coproductie van Senf Theaterpartners, Kik Productions en Jelle Kuiper Producties.
 
-{% include block/block.video.html src="https://www.youtube.com/embed/L7urQeg7KZ4" %}
 {% include elements/button.html text="Judas in theater" href="https://judasintheater.nl/" %}
+{% include block/block.video.html src="https://www.youtube.com/embed/L7urQeg7KZ4" %}

@@ -1,5 +1,5 @@
 ---
-title: Buurman en Buurman
+title: Buurman & Buurman
 headerimage: /assets/img/theaterproducties/buurman_en_buurman/Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-3.jpg
 teasertext: A JE TO! is alweer de 4e theater voorstelling van Buurman en Buurman.
 image: bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
@@ -12,5 +12,5 @@ In 2009 verwierf Jelle de theaterrechten van Buurman en Buurman (bekend van VPRO
 
 Een vervolg kon niet uitblijven op in maart 2012 ging 'Buurman en Buurman beginnen voorzichzelf' in premiere. De derde voorstelling 'Buurman en Buurman worden brommend ' toerde in 2015 en 2016 door Nederland. Vanaf oktober 2017 is de 4e voorstelling 'A JE TO!' in alle theaters te zien. Voor meer info over de Buurman en Buurman musicals kunt u terecht op de Buurman en Buurman website.
 
-{% include block/block.video.html src="https://www.youtube.com/embed/BxSe_HeXCSI" %}
 {% include elements/button.html text="Buurman en Buurman" href="https://buurmantheater.nl" %}
+{% include block/block.video.html src="https://www.youtube.com/embed/BxSe_HeXCSI" %}

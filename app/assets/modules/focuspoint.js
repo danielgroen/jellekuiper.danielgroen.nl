@@ -25,7 +25,7 @@ $(window).ready( function() {
 		'Bedrijfsoptreden-Jelle-Kuiper-presentatie-maxima.jpg': { x: 0.28, y: 0.54, width: 1920, height: 1285 },
 		'Bedrijfsoptreden-Jelle-Kuiper-quiz.jpg': { x: 0.35, y: 0.41, width: 1250, height: 832 },
 		'Theaterproducties-Jelle-Kuiper-introductie.jpeg': { x: -0.06, y: 0.24, width: 1098, height: 960 },
-		'Theaterproducties-judas-Jelle-Kuiper.jpg': { x: 0.49, y: -0.49, width: 866, height: 455 },
+		'Theaterproducties-judas-Jelle-Kuiper-3.jpg': { x: 0.29, y: -0.05, width: 1400, height: 933 },
 		'Theaterproducties-JelleKuiper-StefanoKeizers.jpg': { x: -0.00, y: 0.43, width: 1920, height: 1280 },
 		'Theaterproducties-andrehetastronautje-Jelle-Kuiper.jpg': { x: -0.02, y: -0.39, width: 1920, height: 1366 },
 		'Theaterproducties-dezuipkeet-Jelle-Kuiper.jpg': { x: 0.51, y: -0.21, width: 1920, height: 1278 },
@@ -38,7 +38,7 @@ $(window).ready( function() {
 		'Trouwambtenaar-Jelle-Kuiper-Persoonlijk.jpg': { x: 0.25, y: 0.48, width: 640, height: 427 },
 	}
 
-	function imageLoaded() {
+  function imageLoaded() {
 
 		$.each(focuspoint, function () {
 			var that = $(this),
