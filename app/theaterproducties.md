@@ -42,5 +42,7 @@ headerimage: /assets/img/theaterproducties/Theaterproducties-JelleKuiper-Stefano
 </section>
 
 {% include block/block.counter.html firstTimer="12" firstTitle="Theaterproducties" secondTimer="9" secondTitle="Jaar ervaring" %}
+
 {% include block/block.contactform.html subject="Bv. Theaterproducent"  image="bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg" message="Bv. Hoi Jelle,  ik heb een producent nodig voor een theatervoorstelling die ik op aan het zetten ben. Wil je een keertje koffie drinken? Groetjes, Charlotte" %}
+
 {% include entities/page/page.teaser.html teasers="trouwambtenaar, bedrijfsoptredens"%}

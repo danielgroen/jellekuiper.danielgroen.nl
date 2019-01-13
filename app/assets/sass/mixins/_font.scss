@@ -39,7 +39,8 @@
   @else if $type == "textheader" {
     font-size: 22px;
     line-height: 1.45;
-    font-weight: 600;
+    font-weight: 900;
+    font-family: "MuseoSans";
 
     @include breakpoint($desktop) {
       font-size: 24px;

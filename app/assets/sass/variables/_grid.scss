@@ -23,6 +23,7 @@ $offset: 50px;
   @include breakpoint(960px) {
     --menu-height: 94px;
     --max-width: 960px;
+    --max-width: 1024px;
   }
 }
 

@@ -63,7 +63,7 @@
         position: relative;
         @include font('menu-item');
         text-decoration: none;
-        color: $grey-darker;
+        color: rgba($grey-darker, 0.6);
 
         &:after {
           content: '';

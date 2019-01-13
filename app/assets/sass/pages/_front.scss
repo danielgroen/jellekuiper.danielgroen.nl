@@ -16,6 +16,7 @@ body.front {
 
             .owl-stage-outer {
               height: 80vh !important;
+
               .owl-stage {
 
               }
@@ -32,7 +33,7 @@ body.front {
 
 		&.references {
 			.subtitle {
-				display: none;
+        display: none;
 			}
 		}
 	}
@@ -61,7 +62,7 @@ body.front {
 					justify-content: space-between;
 					color: $black;
 					text-align: left;
-          margin-bottom: $gutter*2;
+          margin-bottom: $gutter*3;
           overflow: visible;
 
 					&:after {
@@ -84,7 +85,10 @@ body.front {
 						.keywords {
 							text-shadow: none;
 							font-size: 2rem;
-						}
+            }
+            .title {
+              padding-left: 0;
+            }
 
 						.keywords {
 							position: relative;
@@ -104,7 +108,8 @@ body.front {
 						}
 
 						.description {
-							display: block;
+              display: block;
+              margin-bottom: 32px;
 						}
 
 						.button{

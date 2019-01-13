@@ -37,9 +37,9 @@
 		border: 1px solid #d0d0d0;
 		background-color: transparent;
 		border-radius: $border-radius;
-		padding: 10px 1rem;
+    padding: 10px 1rem;
 		@include font;
-		margin-bottom: $gutter / 2.5;
+		margin-bottom: 24px;
 
 		&:focus {
 			border: 1px solid #777777;

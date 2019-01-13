@@ -15,8 +15,8 @@
 
   &:after {
     content: '';
-    width: 40px;
-    height: 100%;
+    width: 200px;
+    height: calc(100% + 20px);
     transform: translateX(100%);
     background-color: $white;
     position: absolute;
@@ -83,7 +83,8 @@
 					width: #{100vw / 24 * 20};
 					left: #{100vw / 24 * 1};
 					position: absolute;
-					bottom: $padding;
+          bottom: $padding;
+          bottom: 0 !important;
 					font-weight: 600;
 				}
 			}

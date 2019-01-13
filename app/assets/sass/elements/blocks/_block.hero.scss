@@ -16,14 +16,13 @@ $hero-height: calc(80vh - #{$menu-height});
         left: 0;
         z-index: -5;
       }
-  
+
       .page-title {
         @include font('title');
         color: $white;
         position: absolute;
         bottom: $gutter*2;
         left: 50%;
-        // word-break: break-all;
         transform: translateX(-50%);
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         text-align: center;
@@ -36,7 +35,7 @@ $hero-height: calc(80vh - #{$menu-height});
       color: $black;
       text-align: center;
       width: 90%;
-      margin: $padding*2 auto;
+      margin: $padding*3 auto;
       margin-bottom: $padding*4;
       max-width: 640px;
   

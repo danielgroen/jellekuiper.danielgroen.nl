@@ -3,7 +3,7 @@ title: Bedrijfs&shy;optredens
 machine_name: Bedrijfsoptredens
 menu: Bedrijfsoptredens
 order: 3
-keywords: Bijzonder, Spannend,
+keywords: Bijzonder, Spannend, Krachtig
 headerimage: /assets/img/bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-contact.jpg
 teaserText: Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presentatie, dagvoorzitterschap of een op maat gemaakte optreden tijdens een congres of zakelijke bijeenkomst. Altijd met  groot succes. Jelle zorgt er altijd voor dat zijn optreden naadloos aansluit op het thema van het congres of de bedrijfsbijeenkomst.
 summary: Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presentatie, dagvoorzitterschap of een op maat gemaakte optreden tijdens een congres of zakelijke bijeenkomst. Altijd met  groot succes. Jelle zorgt er altijd voor dat zijn optreden naadloos aansluit op het thema van het congres of de bedrijfsbijeenkomst.
