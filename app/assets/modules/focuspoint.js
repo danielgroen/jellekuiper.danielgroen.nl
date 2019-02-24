@@ -24,6 +24,7 @@ $(window).ready( function() {
 		'Bedrijfsoptreden-Jelle-Kuiper-contact.jpg': { x: 0.15, y: -0.36, width: 1235, height: 1851 },
 		'Bedrijfsoptreden-Jelle-Kuiper-presentatie-maxima.jpg': { x: 0.28, y: 0.54, width: 1920, height: 1285 },
 		'Bedrijfsoptreden-Jelle-Kuiper-quiz.jpg': { x: 0.35, y: 0.41, width: 1250, height: 832 },
+		'Theaterproducties-buurmanbuurmanXL-Jelle-Kuiper-hangen.jpg': { x: 0.35, y: 0.21, width: 2220, height: 3342 },
 		'Theaterproducties-Jelle-Kuiper-introductie.jpeg': { x: -0.06, y: 0.24, width: 1098, height: 960 },
 		'Theaterproducties-judas-Jelle-Kuiper-3.jpg': { x: 0.29, y: -0.05, width: 1400, height: 933 },
 		'Theaterproducties-JelleKuiper-StefanoKeizers.jpg': { x: -0.00, y: 0.43, width: 1920, height: 1280 },
@@ -31,10 +32,12 @@ $(window).ready( function() {
 		'Theaterproducties-dezuipkeet-Jelle-Kuiper.jpg': { x: 0.51, y: -0.21, width: 1920, height: 1278 },
 		'Trouwambtenaar-Jelle-Kuiper-hero.jpg': { x: -0.33, y: 0.52, width: 1920, height: 1280 },
 		'Trouwambtenaar-Jelle-Kuiper-ceremonieel-huwelijk.jpg': { x: -0.15, y: -0.02, width: 900, height: 601 },
+		'Trouwambtenaar-Jelle-Kuiper-ceremonieel-huwelijk-koppel.jpg': { x: -0.15, y: -0.02, width: 720, height: 1080 },
 		'Trouwambtenaar-Jelle-Kuiper-kosten.jpg': { x: -0.15, y: 0.55, width: 900, height: 601 },
 		'Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg': { x: 0.07, y: 0.68, width: 720, height: 1080 },
 		'Trouwambtenaar-Jelle-Kuiper-leuktrouwen-prijs.jpg': { x: -0.31, y: 0.49, width: 960, height: 370 },
 		'Trouwambtenaar-Jelle-Kuiper-leuk-trouwen.jpg': { x: 0.07, y: 0.47, width: 1438, height: 960 },
+		'Trouwambtenaar-Jelle-Kuiper-schoenen-kosten.jpg': { x: 0.07, y: 0.47, width: 640, height: 427 },
 		'Trouwambtenaar-Jelle-Kuiper-Persoonlijk.jpg': { x: 0.25, y: 0.48, width: 640, height: 427 },
 	}
 

@@ -6,8 +6,8 @@
   .body {
     @include font('normal');
     width: 100vw;
-    margin-top: $menu-height;
-    overflow: visible;
+    padding-top: $menu-height;
+    // overflow: visible;
 
     &.pinned {
       max-height: 100vh;

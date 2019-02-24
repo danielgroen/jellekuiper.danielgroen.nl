@@ -66,5 +66,5 @@ summary: Vele bedrijven en instellingen hebben Jelle ingehuurd voor een presenta
 </section>
 
 {% include block/block.counter.html firstTimer="648" firstTitle="Bedrijfsoptredens" secondTimer="18" secondTitle="Jaar ervaring" %}
-{% include block/block.contactform.html image="bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-contact.jpg" subject="Bv. Fakespeech Amsterdam" message="Bv. Hoi Jelle, ik ga wil je graag inhuren voor een fakespeech bij mijn bedrijf. Groetjes, Laura" %}
+{% include block/block.contactform.html image="bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-contact.jpg" subject="Bv. Fakespeech Amsterdam" message="Bv. Hoi Jelle, ik ga wil je graag inhuren voor een fakespeech bij mijn bedrijf. Groetjes, Charlotte" %}
 {% include entities/page/page.teaser.html teasers="trouwambtenaar, theaterproducties"%}

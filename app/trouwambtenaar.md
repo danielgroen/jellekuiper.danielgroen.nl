@@ -5,15 +5,15 @@ menu: Trouwambtenaar
 order: 2
 headerimage: /assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-hero.jpg
 keywords: Persoonlijk, Humoristisch, Ontspannen
-teaserText: Omdat standaard huwelijksceremonies best wat leuker en wat minder stijf kunnen heeft Jelle in 2005 besloten zijn cabarettalent hierop in te zetten. Sindsdien is hij buitengewoon ambtenaar van de burgerlijke stand. Hij zorgt dat jouw belangrijkste dag van je leven een unieke ervaring wordt, voor jullie én voor jullie gasten. De toon van jullie dag wordt gezet met een ontspannen en intieme ceremonie vol humor en interactie.
-summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij mag in heel Nederland officieel huwelijken sluiten. Jelle is uitgeroepen tot beste trouwambtenaar van 2014 bij de Dutch Wedding Awards!
+teaserText: Omdat standaard huwelijksceremonies best wat leuker en wat minder stijf kunnen heeft Jelle in 2005 besloten zijn cabarettalent hierop in te zetten. Sindsdien is hij buitengewoon ambtenaar van de burgerlijke stand. Of terwijl BABS. Hij zorgt dat je mooiste dag van je leven een unieke ervaring wordt, voor jullie én voor jullie gasten. Een intieme, zeer persoonlijke ceremonie vol humor en interactie.
+summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij mag in heel Nederland officieel huwelijken sluiten. Jelle is uitgeroepen tot beste trouwambtenaar van 2014 bij de Dutch Wedding Awards en heeft inmiddels meer dan 500 huwelijken gesloten!
 ---
 
 <!-- block usp -->
 <section class="block usps">
 	<article class="usp">
 		<picture class="focuspoint picture fade-in">
-			<img class="img" src="/assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-leuk-trouwen.jpg" alt="Jelle Kuiper">
+			<img class="img" src="/assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-kosten.jpg" alt="Jelle Kuiper">
 		</picture>
 		<div class="article">
 			<strong class="subtitle">Leuk trouwen</strong>
@@ -46,7 +46,7 @@ summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij 
 	</article>
 	<article class="usp">
 		<picture class="focuspoint picture">
-			<img class="img" src="/assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-ceremonieel-huwelijk.jpg" alt="Jelle Kuiper">
+			<img class="img" src="/assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-ceremonieel-huwelijk-koppel.jpg" alt="Jelle Kuiper">
 		</picture>
 		<div class="article">
 			<strong class="subtitle">Een ceremonieel huwelijk</strong>
@@ -61,7 +61,7 @@ summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij 
 <section class="block usps">
 	<article class="usp">
 		<picture class="focuspoint picture">
-			<img class="img" src="/assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-kosten.jpg" alt="Jelle Kuiper">
+			<img class="img" src="/assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-schoenen-kosten.jpg" alt="Jelle Kuiper">
 		</picture>
 		<div class="article">
 			<strong class="subtitle">Kosten</strong>
@@ -74,5 +74,5 @@ summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij 
 </section>
 
 {% include block/block.counter.html firstTimer="515" firstTitle="Huwelijken" secondTimer="11" secondTitle="Jaar ervaring" %}
-{% include block/block.contactform.html subject="Bv. Trouwambtenaar Amsterdam"  image="trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg" message="Bv. Hoi Jelle, ik ga trouwen op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Laura" %}
+{% include block/block.contactform.html subject="Bv. Trouwambtenaar Amsterdam"  image="trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg" message="Bv. Hoi Jelle, ik ga trouwen op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Charlotte" %}
 {% include entities/page/page.teaser.html teasers="bedrijfsoptredens, theaterproducties"%}

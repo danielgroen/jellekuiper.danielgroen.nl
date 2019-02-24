@@ -1,6 +1,6 @@
 ---
 title: Buurman en Buurman XL
-headerimage: /assets/img/theaterproducties/buurman_en_buurman/Bedrijfsoptreden-buurmanbuurman-Jelle-Kuiper-2.jpg
+headerimage: /assets/img/theaterproducties/buurman_en_buurman_XL/Theaterproducties-buurmanbuurmanXL-Jelle-Kuiper-hangen.jpg
 teasertext: In de zomer van 2014 stond Buurman en Buurman XL op Lowlands en de Parade.
 image: bedrijfsoptredens/Bedrijfsoptreden-Jelle-Kuiper-fakespeech.jpg
 subject: 'Bv. Theaterproducent'
