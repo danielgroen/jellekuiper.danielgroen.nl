@@ -6,7 +6,7 @@ order: 2
 headerimage: /assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-hero.jpg
 keywords: Persoonlijk, Humoristisch, Ontspannen
 teaserText: Omdat standaard huwelijksceremonies best wat leuker en wat minder stijf kunnen heeft Jelle in 2005 besloten zijn cabarettalent hierop in te zetten. Sindsdien is hij buitengewoon ambtenaar van de burgerlijke stand. Of terwijl BABS. Hij zorgt dat je mooiste dag van je leven een unieke ervaring wordt, voor jullie én voor jullie gasten. Een intieme, zeer persoonlijke ceremonie vol humor en interactie.
-summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij mag in heel Nederland officieel huwelijken sluiten. Jelle is uitgeroepen tot beste trouwambtenaar van 2014 bij de Dutch Wedding Awards en heeft inmiddels meer dan 500 huwelijken gesloten!
+summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij mag in heel Nederland officieel huwelijken sluiten. Jelle is in 2014 uitgeroepen tot trouwambtenaar van het jaar bij de Dutch Wedding Awards en heeft inmiddels meer dan 500 huwelijken gesloten!
 ---
 
 <!-- block usp -->

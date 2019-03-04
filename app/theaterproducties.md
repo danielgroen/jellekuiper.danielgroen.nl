@@ -17,7 +17,7 @@ headerimage: /assets/img/theaterproducties/Theaterproducties-JelleKuiper-Stefano
 		</picture>
 		<div class="article">
 			<strong class="subtitle">Producties​​</strong>
-			<p class="paragraph">In 2010 ging zijn eerste voorstelling Buurman en Buurman gaan verhuizen in premiere. Inmiddels is alweer de 4e Buurman en Buurman theatervoorstelling te zien. Daarnaast maakte Jelle het indringende familiedrama 'De Zuipkeet' en samen met André Kuipers de familievoorstelling 'André het astronautje'.</p>
+			<p class="paragraph">In 2010 ging zijn eerste voorstelling Buurman & Buurman gaan verhuizen in premiere. Inmiddels is alweer de 5e Buurman & Buurman theatervoorstelling te zien. Daarnaast maakte Jelle het indringende familiedrama 'De Zuipkeet' en samen met André Kuipers de familievoorstelling 'André het astronautje'.</p>
 		</div>
 	</article>
 </section>
