@@ -7,8 +7,9 @@
 			<blockquote class="quote">{{ testimonial.text }}"</blockquote>
 			<p class="name">{{ testimonial.name }}</p>
 		</article>
-	{% endfor %}
+  {% endfor %}
 </div>
+<div class="pagination"><span class="from">1</span> / <span class="to">70</span></div>
 {% endcapture %}
 
 {% include block/block.html classes="testimonials" %}
