@@ -1,8 +1,8 @@
 #staging
-url: http://webnozems.nl
+# url: http://jellekuiper.sven
 
 #production
-# url: http://jellekuiper.sven
+url: jellekuiper.nl
 
 name: "Jelle Kuiper"
 description: "Voor een leuke trouwdag"
