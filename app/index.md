@@ -3,7 +3,7 @@ title: Jelle Kuiper
 machine_name: jelle_uiper
 menu: Home
 keywords: Trouwambtenaar, Cabaretier, Theaterproducent
-summary: Jelle kan met recht een creatieve duizendpoot worden genoemd. Hij is theaterproducent van o.a. Judas, naar de bestseller van Astrid Holleeder en de Buurman & Buurman voorstellingen. Daarnaast is hij cabaretier en verzorgt hij optredens op maat. Ook is Jelle officieel trouwambtenaar en de regisseur van Stefano Keizers.
+summary: Jelle is theaterproducent van o.a. Judas en de Buurman & Buurman voorstellingen. Daarnaast is hij officieel trouwambtenaar (BABS). Jelle is cabaretier en verzorgt optredens op maat. Ook is hij de regisseur en voogd van Stefano Keizers.
 headerimage: /assets/img/jellekuiper.jpg
 slider_images:
 - image: "Jelle-Kuiper-1.jpg"

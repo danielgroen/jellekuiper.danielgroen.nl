@@ -2,12 +2,13 @@
 # url: http://jellekuiper.sven
 
 #production
-url: jellekuiper.nl
+url: https://jellekuiper.nl
 
 name: "Jelle Kuiper"
-description: "Voor een leuke trouwdag"
+title: "De leukste trouwambtenaar!"
+description: "Jelle Kuiper, de leukste trouwambtenaar, cabaretier en theaterproducent."
 language: 'nl/nl'
-keywords: "trouwen jellekuiper jelle kuiper amsterdam"
+keywords: "Jelle Kuiper, de leukste trouwambtenaar, cabaretier en theaterproducent."
 author:
   name: jellekuiper
   email: info@jellekuiper.nl
