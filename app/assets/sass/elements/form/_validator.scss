@@ -15,8 +15,12 @@
 .contactform {
 	input[type='submit'],
 	.send {
-		background-color: $placeholder;
+		background-color: $primary;
 		cursor: pointer;
 		pointer-events: all;
+
+    &:hover {
+  		background-color: $hover;
+    }
 	}
 }
