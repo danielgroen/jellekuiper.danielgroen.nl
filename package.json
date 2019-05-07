@@ -1,11 +1,14 @@
 {
-  "name": "jellekuiper.nl",
+  "name": "jellekuiper",
   "version": "0.0.1",
   "description": "site jellekuiper.nl",
   "main": "gulpfile.js",
   "scripts": {
-    "install": "./scripts/build.sh",
-    "postinstall": "bower install"
+    "postinstall": "npx gulp image && bower install",
+    "prestart": "sed -i \"s/^url: .*/url: 'http:\\/\\/jellekuiper.test'/\" _config.yml",
+    "start": "pnpx gulp serve",
+    "build": "pnpx gulp build",
+    "deploy": "sed -i \"s/^url: .*/url: 'https:\\/\\/jellekuiper.nl'/\" _config.yml && pnpx gulp deploy"
   },
   "author": "Daniel",
   "license": "ISC",
@@ -15,6 +18,9 @@
     "> 0.5%",
     "not dead"
   ],
+  "dependencies": {
+
+  },
   "devDependencies": {
     "bower": "^1.8.4",
     "breakpoint-sass": "^2.7.1",
@@ -38,6 +44,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8",
     "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8",
     "main-bower-files": "^2.13.1",
     "require-dir": "^1.0.0"
   }
