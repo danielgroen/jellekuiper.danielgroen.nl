@@ -4,7 +4,7 @@
   "description": "site jellekuiper.nl",
   "main": "gulpfile.js",
   "scripts": {
-    "postinstall": "npx gulp image && bower install",
+    "postinstall": "pnpx gulp img && pnpx bower install",
     "prestart": "sed -i \"s/^url: .*/url: 'http:\\/\\/jellekuiper.test'/\" _config.yml",
     "start": "pnpx gulp serve",
     "build": "pnpx gulp build",
@@ -19,7 +19,6 @@
     "not dead"
   ],
   "dependencies": {
-
   },
   "devDependencies": {
     "bower": "^1.8.4",

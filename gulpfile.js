@@ -5,16 +5,12 @@ var gulp = require('gulp'),
 		browserSync = require('browser-sync').create();
 
 process.setMaxListeners(0);
+requireDir('./gulp', { recurse: false });
+
 global.browserSync = browserSync;
 global.paths = {
 	'app': './app',
 	'dist': './dist',
 };
 
-global.ghpagesOptions = {
-	'force': true,
-	'branch': 'gh-pages'
-}
-
-requireDir('./gulp', { recurse: false });
 gulp.task('default', gulp.series('serve'));
