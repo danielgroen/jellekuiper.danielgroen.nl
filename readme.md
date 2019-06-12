@@ -3,6 +3,7 @@
 
 ## Before installation:
  * make sure npm is version 6.5.0 or higher (because you'll need npx)
+ * make sure you have ruby installed so you can install jekyll
 
 
 ## Installation
