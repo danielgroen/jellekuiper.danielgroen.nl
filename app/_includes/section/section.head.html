@@ -46,9 +46,15 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-960541273');
-  </script>
+	</script>
+	
+	<!-- Event snippet for Aanvraagformulier conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+	<script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-960541273/LvODCLWv-HsQ2eSCygM', 'event_callback': callback }); return false; } </script>
 
+	<!-- local storage fonts -->
 	<script type="text/javascript">!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.local_storage_font&&localStorage.local_storage_font_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.local_storage_font);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(c(n.responseText),localStorage.local_storage_font=n.responseText,localStorage.local_storage_font_file=o)}),n.send()}else{var a=document.createElement("link");a.href=o,a.rel="stylesheet",a.type="text/css",document.getElementsByTagName("head")[0].appendChild(a),document.cookie="local_storage_font"}}function c(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="/assets/css/fonts.css";window.localStorage&&localStorage.local_storage_font||document.cookie.indexOf("local_storage_font")>-1?n():e(window,"load",n)}();</script><noscript><link rel="stylesheet" href="/assets/css/fonts.css" async defer></noscript>
+
+	<!-- includes -->
 	<link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css" async defer>
 	<script type="text/javascript" src="/assets/js/build.js" defer></script>
 </head>
