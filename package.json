@@ -19,7 +19,7 @@
     "not dead"
   ],
   "engines" : {
-    "node" : "10"
+    "node" : ">=8.0"
   },
   "dependencies": {
   },
@@ -46,7 +46,6 @@
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8",
     "gulp-uglify": "^3.0.1",
-    "gulp-util": "^3.0.8",
     "main-bower-files": "^2.13.1",
     "require-dir": "^1.0.0"
   }

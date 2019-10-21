@@ -8,3 +8,6 @@ app/js
 .publish
 .sass-cache
 .jekyll-metadata
+*.log
+*.sql
+*.bak

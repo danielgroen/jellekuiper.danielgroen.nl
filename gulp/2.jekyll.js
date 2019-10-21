@@ -1,7 +1,5 @@
 const	gulp = require('gulp'),
-      child = require('child_process'),
-      gutil = require('gulp-util');
-
+      child = require('child_process');
 
 gulp.task('jekyll-build', () => {
   return child.spawn('jekyll', ['build']);
@@ -16,7 +14,7 @@ gulp.task('jekyll-serve', done => {
     buffer.toString()
       .split(/\n/)
       .forEach((message) => {
-        gutil.log('Jekyll: ' + message);
+        console.log('Jekyll: ' + message);
 
         // Finalize gulp task
         if (message.includes('Server running') && taskFinalized === false) {
