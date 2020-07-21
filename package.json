@@ -4,11 +4,12 @@
   "description": "site jellekuiper.nl",
   "main": "gulpfile.js",
   "scripts": {
-    "postinstall": "pnpx gulp img && pnpx bower install",
+    "postinstall": "npx gulp img && npx bower install",
     "prestart": "sed -i \"s/^url: .*/url: 'http:\\/\\/jellekuiper.test'/\" _config.yml",
-    "start": "pnpx gulp serve",
-    "build": "pnpx gulp build",
-    "deploy": "sed -i \"s/^url: .*/url: 'https:\\/\\/jellekuiper.nl'/\" _config.yml && pnpx gulp deploy"
+    "start": "npx gulp serve",
+    "build": "npx gulp build",
+    "gh-pages": "npm run build && node -e 'require(\"gh-pages\").publish(\"dist\", err => {} );'",
+    "deploy": "sed -i \"s/^url: .*/url: 'https:\\/\\/jellekuiper.nl'/\" _config.yml && npm run gh-pages"
   },
   "author": "Daniel",
   "license": "ISC",
@@ -18,16 +19,16 @@
     "> 0.5%",
     "not dead"
   ],
-  "engines" : {
-    "node" : ">=8.0"
+  "engines": {
+    "node": ">=8.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "bower": "^1.8.4",
     "breakpoint-sass": "^2.7.1",
     "browser-sync": "^2.18.8",
     "child_process": "^1.0.2",
+    "gh-pages": "^3.1.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean": "^0.4.0",
@@ -35,7 +36,6 @@
     "gulp-cli": "^2.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-css-image-dimensions": "^1.1.5",
-    "gulp-gh-pages": "git+ssh://git@github.com/tekd/gulp-gh-pages.git#update-dependency",
     "gulp-htmlmin": "^5.0.1",
     "gulp-image": "^4.3.0",
     "gulp-image-resize": "^0.13.0",

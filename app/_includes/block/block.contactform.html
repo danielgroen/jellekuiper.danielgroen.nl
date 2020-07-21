@@ -1,6 +1,6 @@
 {% capture block %}
 	<form id="gform" class="form" method="POST">
-		<strong class="subtitle">Contact</strong>
+		<strong class="subtitle">{% if include.title %}{{include.title}}{% else %}Contact{% endif %}</strong>
 		<p>Heb je een vraag? Bel op <a class="tel"></a> of stuur me een berichtje.</p>
 
 		<div class="salutation">

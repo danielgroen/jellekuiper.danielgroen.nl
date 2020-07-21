@@ -16,7 +16,7 @@ summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij 
 			<img class="img" src="/assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-kosten.jpg" alt="Jelle Kuiper">
 		</picture>
 		<div class="article">
-			<strong class="subtitle">Leuk trouwen</strong>
+			<strong class="subtitle">Leuk trouwen met trouwambtenaar Jelle</strong>
 			<p class="paragraph">Omdat standaard huwelijksceremonies best wat leuker en wat minder stijf kunnen heeft Jelle in 2005 besloten zijn cabarettalent hierop in te zetten. Sindsdien is hij buitengewoon ambtenaar van de burgerlijke stand. Hij zorgt dat jouw belangrijkste dag van je leven een unieke ervaring wordt, voor jullie én voor jullie gasten. De toon van jullie dag wordt gezet met een ontspannen en intieme ceremonie vol humor en interactie.</p>
 		</div>
 	</article>
@@ -40,7 +40,7 @@ summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij 
 			<img class="img" src="/assets/img/trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-leuktrouwen-prijs.jpg" alt="Jelle Kuiper">
 		</picture>
 		<div class="article">
-			<strong class="subtitle">Uit het juryrapport van de Dutch Wedding Awards:</strong>
+			<strong class="subtitle">Juryrapport van de Dutch Wedding Awards (categorie trouwambtenaar - BABS):</strong>
 			<blockquote class="quote">"Deze trouwambtenaar doet iets met mensen. Je voelt je direct thuis bij hem; het is vertrouwd. Hij trekt de trouwceremonie niet naar zich toe alsof het zijn show is, maar het bruidspaar staat in het middelpunt van de belangstelling, TOP"</blockquote>
 		</div>
 	</article>
@@ -74,7 +74,11 @@ summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij 
 </section>
 
 {% include block/block.counter.html firstTimer="515" firstTitle="Huwelijken" secondTimer="11" secondTitle="Jaar ervaring" %}
-{% include block/block.contactform.html subject="Bv. Trouwambtenaar Amsterdam"  image="trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg" message="Bv. Hoi Jelle, ik ga trouwen op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Charlotte" %}
+{% include block/block.contactform.html
+  title="Contact met trouwambtenaar Jelle"
+  subject="Bv. Trouwambtenaar Amsterdam"
+  image="trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg"
+  message="Bv. Hoi Jelle, ik ga trouwen op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Charlotte" %}
 {% include entities/page/page.teaser.html teasers="bedrijfsoptredens, theaterproducties"%}
 <script>
 	function trackButton() {
