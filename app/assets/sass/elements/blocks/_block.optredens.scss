@@ -2,20 +2,24 @@
 	text-align: center;
 	
 	ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
 		li {
-			display: inline !important;
 			list-style: none;
-			line-height: 2rem;
-			color: $grey;
+      line-height: 2rem;
+      margin: 0 15px;
+      color: $grey;
 
 			&:before {
 				content: none;
-			}
+      }
 
 			&:not(:last-child):after {
-				content: " - ";
+				content: "-";
 				position: absolute;
-				right: -20px;
+				right: -30px;
 				padding-right: 10px;
 			}
 		}

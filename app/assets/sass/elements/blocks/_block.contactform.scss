@@ -3,7 +3,10 @@
 
 	.picture {
 		display: none;
-	}
+  }
+  #email {
+    display: none;
+  }
 }
 
 @include breakpoint ($desktop) {

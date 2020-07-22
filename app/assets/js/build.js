@@ -14967,6 +14967,7 @@ $(window).ready( function() {
 		});
 	});
 });
+// Honeypot
 var mobile  = '06 ';    var telephone  = '020 ';     var email = "info";
     mobile += '49 ';        telephone += '772 ';         email += "@jellekuiper.nl";
     mobile += '84 ';        telephone += '45 ';
@@ -14985,25 +14986,38 @@ if ($('.mail').length > 0 ) {
   $('.mail').attr('href', 'mailto:' + email ).text(email);
 }
 
-
-var $contactForm = $('.form');
+// form
+const $contactForm = $('.form'),
+      url = window.location.origin;
 
 $contactForm.submit(function(e) {
   var event = e;
   e.preventDefault();
-  $('.to').val(email);
 
-  if ( $('#honeypot').val() ) {
-    return false;
-  }
-  
+  const name = $("#name").val(),
+        subject = $("#subject").val(),
+        email = $("#mail").val(),
+        message = $("#message").val();
+
+  const sendInfo = {
+    Name: name,
+    Subject: subject,
+    Email: email,
+    Message: message
+  };
+
+  if ( $('#email').val() ) return false; // honeypot
+
   $.ajax({
-    url: 'https://script.google.com/macros/s/AKfycbyR85wci2UtjMI2C1C8tBKKEMUxB_jESOwBQtdyz8ANv-Se-us/exec',
+    url: 'https://mailhandler.danielgroen.nl/',
     method: 'POST',
-    data: $(this).serialize(),
+    data: {jellekuiper: JSON.stringify(sendInfo)},
     dataType: 'json',
     beforeSend: function(data) {
-      $('.send.button').addClass('success').attr('value', 'Bericht verzonden');
+      console.log(data)
+      if (url !== 'http://localhost:3000') {
+        $('.send.button').addClass('success').attr('value', 'Bericht verzonden');
+      }
     },
     success: function(data) {
      $('#honeypot').val('sent');
@@ -15012,7 +15026,8 @@ $contactForm.submit(function(e) {
       alert('joo');
     },
     error: function(err) {
-      console.log(err);
+      console.error('Het formulier kon niet verzonden worden');
+      console.error(err.responseText);
     }
   });
 });

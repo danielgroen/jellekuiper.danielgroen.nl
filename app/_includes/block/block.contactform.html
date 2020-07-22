@@ -5,22 +5,21 @@
 
 		<div class="salutation">
 			<label for="name">Naam</label>
-		  <input class="form-field" type="text" name="name" placeholder="B.v. Charlotte van Dijk" required>
+		  <input class="form-field" type="text" id="name" name="name" placeholder="B.v. Charlotte van Dijk" required>
 		</div>
 
 		<div class="salutation-2">
 			<label for="email">E-mail</label>
-		  <input class="form-field" type="email" name="email" placeholder="B.v. charlottevandijk@gmail.com" required>
+		  <input class="form-field" type="email" id="mail" name="email" placeholder="B.v. charlottevandijk@gmail.com" required>
 		</div>
 
 		<label for="subject">Onderwerp</label>
-	  <input class="form-field" type="text" name="subject" placeholder="{{include.subject}}" required>
+	  <input class="form-field" type="text" id="subject" name="subject" placeholder="{{include.subject}}" required>
 
 		<label for="message">Bericht</label>
-	  <textarea class="form-field" name="message" rows="5" placeholder="{{include.message}}" required></textarea>
+    <textarea class="form-field" id="message" name="message" rows="5" placeholder="{{include.message}}" required></textarea>
 
-	  <input type="hidden" id="honeypot" type="text" name="honeypot" value="" />
-	  <input type="hidden" class="to" type="text" name="to" value="" />
+	  <input type="hidden" id="email" type="text" name="email" value="" />
 	  <input class="send button" id="google-tracker" type="submit" value="Verstuur bericht" >
 	  <span class="checkmark">{% include svg/checkmark.svg %}</span>
 	</form>
