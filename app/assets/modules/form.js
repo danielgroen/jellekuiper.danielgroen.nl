@@ -54,11 +54,9 @@ $contactForm.submit(function(e) {
      $('#honeypot').val('sent');
     },
     ajaxComplete: function(data) {
-      alert('joo');
     },
     error: function(err) {
-      console.error('Het formulier kon niet verzonden worden');
-      console.error(err.responseText);
+      // console.error(err.responseText);
     }
   });
 });
