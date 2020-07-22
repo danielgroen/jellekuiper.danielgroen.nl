@@ -1,5 +1,6 @@
 node_modules
 bower_components
+app/.jekyll-cache
 environment
 dist
 css/

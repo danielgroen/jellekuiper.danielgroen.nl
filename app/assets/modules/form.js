@@ -18,19 +18,19 @@ if ($('.mail').length > 0 ) {
 }
 
 // form
-const $contactForm = $('.form'),
+var $contactForm = $('.form'),
       url = window.location.origin;
 
 $contactForm.submit(function(e) {
   var event = e;
   e.preventDefault();
 
-  const name = $("#name").val(),
+  var name = $("#name").val(),
         subject = $("#subject").val(),
         email = $("#mail").val(),
         message = $("#message").val();
 
-  const sendInfo = {
+  var sendInfo = {
     Name: name,
     Subject: subject,
     Email: email,
