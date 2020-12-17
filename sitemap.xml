@@ -3,35 +3,35 @@
   
 	<url>
 		<loc>https://jellekuiper.test/bedrijfsoptredens</loc>
-		<lastmod>2020-12-17T21:06:08+01:00</lastmod>
+		<lastmod>2020-12-17T21:50:22+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
 		<loc>https://jellekuiper.test/</loc>
-		<lastmod>2020-12-17T21:06:08+01:00</lastmod>
+		<lastmod>2020-12-17T21:50:22+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
 		<loc>https://jellekuiper.test/robots.txt</loc>
-		<lastmod>2020-12-17T21:06:08+01:00</lastmod>
+		<lastmod>2020-12-17T21:50:22+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
 		<loc>https://jellekuiper.test/theaterproducties</loc>
-		<lastmod>2020-12-17T21:06:08+01:00</lastmod>
+		<lastmod>2020-12-17T21:50:22+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
 		<loc>https://jellekuiper.test/trouwambtenaar</loc>
-		<lastmod>2020-12-17T21:06:08+01:00</lastmod>
+		<lastmod>2020-12-17T21:50:22+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
