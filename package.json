@@ -5,11 +5,10 @@
   "main": "gulpfile.js",
   "scripts": {
     "postinstall": "npx gulp img && npx bower install",
-    "prestart": "sed -i \"s/^url: .*/url: 'http:\\/\\/jellekuiper.test'/\" _config.yml",
     "start": "npx gulp serve",
     "build": "npx gulp build",
     "gh-pages": "npm run build && node -e 'require(\"gh-pages\").publish(\"dist\", err => {} );'",
-    "deploy": "sed -i \"s/^url: .*/url: 'https:\\/\\/jellekuiper.nl'/\" _config.yml && npm run gh-pages"
+    "deploy": "npm run gh-pages"
   },
   "author": "Daniel",
   "license": "ISC",

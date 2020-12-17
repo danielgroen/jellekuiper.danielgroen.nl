@@ -38,14 +38,14 @@ $(".send").on("click", function (e) {
 
   if ($("#email").val()) return false; // honeypot
 
-  const body = {
+  var body = {
     name: $("#name").val(),
     subject: $("#subject").val(),
     email: $("#mail").val(),
     honeypot: $("#email").val(),
     message: $("#message").val(),
   };
-  let mailHandler;
+  var mailHandler;
   if (!window.location.href.includes("localhost")) {
     mailHandler = "https://mailhandler.danielgroen.nl";
   } else {
@@ -55,7 +55,7 @@ $(".send").on("click", function (e) {
   e.preventDefault();
   axios
     .post(mailHandler, { jellekuiper: body })
-    .then((res) => {
+    .then(function (res) {
       $(".load-wrapper").removeClass("visible");
       $(".thankyou").addClass("visible");
       $(".thankyou .send, .overtake").on("click touch", function () {
@@ -63,7 +63,7 @@ $(".send").on("click", function (e) {
       });
       console.log("success");
     })
-    .catch((err) => {
+    .catch(function (err) {
       console.log(err);
       // catch error
     });
