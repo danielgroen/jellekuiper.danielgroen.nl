@@ -2,36 +2,36 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
 	<url>
-		<loc>https://jellekuiper.nl/bedrijfsoptredens</loc>
-		<lastmod>2020-07-22T21:27:41+02:00</lastmod>
+		<loc>https://jellekuiper.test/bedrijfsoptredens</loc>
+		<lastmod>2020-12-17T21:06:08+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://jellekuiper.nl/</loc>
-		<lastmod>2020-07-22T21:27:41+02:00</lastmod>
+		<loc>https://jellekuiper.test/</loc>
+		<lastmod>2020-12-17T21:06:08+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://jellekuiper.nl/robots.txt</loc>
-		<lastmod>2020-07-22T21:27:41+02:00</lastmod>
+		<loc>https://jellekuiper.test/robots.txt</loc>
+		<lastmod>2020-12-17T21:06:08+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://jellekuiper.nl/theaterproducties</loc>
-		<lastmod>2020-07-22T21:27:41+02:00</lastmod>
+		<loc>https://jellekuiper.test/theaterproducties</loc>
+		<lastmod>2020-12-17T21:06:08+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
 	
 	<url>
-		<loc>https://jellekuiper.nl/trouwambtenaar</loc>
-		<lastmod>2020-07-22T21:27:41+02:00</lastmod>
+		<loc>https://jellekuiper.test/trouwambtenaar</loc>
+		<lastmod>2020-12-17T21:06:08+01:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
 	</url>
