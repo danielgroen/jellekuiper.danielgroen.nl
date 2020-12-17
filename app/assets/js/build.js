@@ -15025,11 +15025,7 @@ $(".send").on("click", function (e) {
   axios
     .post(mailHandler, { jellekuiper: body })
     .then(function (res) {
-      $(".load-wrapper").removeClass("visible");
-      $(".thankyou").addClass("visible");
-      $(".thankyou .send, .overtake").on("click touch", function () {
-        location.reload();
-      });
+      $(".send.button").addClass("success").attr("value", "Bericht verzonden");
       console.log("success");
     })
     .catch(function (err) {
