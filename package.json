@@ -19,7 +19,7 @@
     "not dead"
   ],
   "engines": {
-    "node": ">=8.0"
+    "node": ">=14.0"
   },
   "dependencies": {
     "gm": "^1.23.1",
