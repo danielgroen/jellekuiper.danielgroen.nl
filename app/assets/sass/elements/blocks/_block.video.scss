@@ -1,37 +1,34 @@
 .block.video {
-	@include background();
+  @include background();
 
-	.inner {
-	    padding: 0;
-	    width: 100%;
-		height: calc(#{100vw / 24 * 22} / 16 * 9);
+  .inner {
+    padding: 0;
+    width: 100%;
+    height: calc(#{100vw / 24 * 22} / 16 * 9);
 
-	    iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: #{100vw / 24 * 22};
-			height: calc(#{100vw / 24 * 22} / 16 * 9);
-	    }
-	}
-
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: #{100vw / 24 * 22};
+      height: calc(#{100vw / 24 * 22} / 16 * 9);
+    }
+  }
 }
 
 @include breakpoint($desktop) {
-.block.video {
-	.inner {
-	    width: 100%;
-		height: calc( (#{$max-width} / 37 * 35) / 16 * 9);
+  .block.video {
+    .inner {
+      width: 100%;
+      height: calc((#{$max-width} / 37 * 35) / 16 * 9);
 
-	    iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: calc(#{$max-width});
-			height: calc( (#{$max-width} / 37 * 35) / 16 * 9);
-	    }
-	}
-
-}
-
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(#{$max-width});
+        height: calc((#{$max-width} / 37 * 35) / 16 * 9);
+      }
+    }
+  }
 }
