@@ -15002,6 +15002,11 @@ if ($(".mail").length > 0) {
 var $contactForm = $(".contactform");
 
 $(".send").on("click", function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  console.log('triggered');
+  
+
   $(".load-wrapper").addClass("visible");
   $(".overtake").addClass("visible");
 
@@ -15021,12 +15026,11 @@ $(".send").on("click", function (e) {
     mailHandler = "http://mailhandler.test";
   }
 
-  e.preventDefault();
   axios
     .post(mailHandler, { jellekuiper: body })
     .then(function (res) {
       $(".send.button").addClass("success").attr("value", "Bericht verzonden");
-      console.log("success");
+      console.log("sent");
     })
     .catch(function (err) {
       console.log(err);
