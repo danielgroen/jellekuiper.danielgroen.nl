@@ -82,11 +82,3 @@ summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij 
   image="trouwambtenaar/Trouwambtenaar-Jelle-Kuiper-knuffel-contact.jpg"
   message="Bv. Hoi Jelle, ik ga trouwen op 20 Juni. Ben je dan beschikbaar als trouwambtenaar? Groetjes, Charlotte" %}
 {% include entities/page/page.teaser.html teasers="bedrijfsoptredens, theaterproducties"%}
-<!-- <script>
-	function trackButton(e) {
-    e.preventDefault();
-    
-		return gtag_report_conversion('https://jellekuiper.nl/trouwambtenaar');
-  }
-  document.getElementsByClassName('google-tracker')[0].addEventListener("click", trackButton);
-</script> -->

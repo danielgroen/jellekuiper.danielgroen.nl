@@ -32,10 +32,12 @@ if ($(".mail").length > 0) {
 // form
 var $contactForm = $(".contactform");
 
-$(".send").on("click", function (e) {
+$(".send").on("click", async function (e) {
   e.preventDefault();
   e.stopPropagation();
-  console.log('triggered');
+  
+  // GOOGLE TAG EVENT
+  await gtag_report_conversion(window.location.href)
   
 
   $(".load-wrapper").addClass("visible");
