@@ -1,33 +1,35 @@
 {% capture block %}
-	<form id="gform" class="form" method="POST">
-		<strong class="subtitle">{% if include.title %}{{include.title}}{% else %}Contact{% endif %}</strong>
-		<p>Heb je een vraag? Bel op <a class="tel"></a> of stuur me een berichtje.</p>
+<form id="gform" class="form" method="POST">
+  <strong class="subtitle">{% if include.title %}{{include.title}}{% else %}Contact{% endif %}</strong>
+  <p>Heb je een vraag? Bel op <a class="tel"></a> of stuur me een berichtje.</p>
 
-		<div class="salutation">
-			<label for="name">Naam</label>
-		  <input class="form-field" type="text" id="name" name="name" placeholder="B.v. Charlotte van Dijk" required>
-		</div>
+  <div class="salutation">
+    <label for="name">Naam</label>
+    <input class="form-field" type="text" id="name" name="name" placeholder="B.v. Charlotte van Dijk" required>
+  </div>
 
-		<div class="salutation-2">
-			<label for="email">E-mail</label>
-		  <input class="form-field" type="email" id="mail" name="email" placeholder="B.v. charlottevandijk@gmail.com" required>
-		</div>
+  <div class="salutation-2">
+    <label for="email">E-mail</label>
+    <input class="form-field" type="email" id="mail" name="email" placeholder="B.v. charlottevandijk@gmail.com"
+      required>
+  </div>
 
-		<label for="subject">Onderwerp</label>
-	  <input class="form-field" type="text" id="subject" name="subject" placeholder="{{include.subject}}" required>
+  <label for="subject">Onderwerp</label>
+  <input class="form-field" type="text" id="subject" name="subject" placeholder="{{include.subject}}" required>
 
-		<label for="message">Bericht</label>
-    <textarea class="form-field" id="message" name="message" rows="5" placeholder="{{include.message}}" required></textarea>
+  <label for="message">Bericht</label>
+  <textarea class="form-field" id="message" name="message" rows="5" placeholder="{{include.message}}"
+    required></textarea>
 
-	  <input type="hidden" id="email" type="text" name="email" value="" />
-	  <input class="send button google-tracker" type="submit" value="Verstuur bericht" >
-	  <span class="checkmark">{% include svg/checkmark.svg %}</span>
-	</form>
-	{% if include.image%}
-	<picture class="focuspoint picture">
-			<img class="img" src="/assets/img/{{ include.image }}" alt="Jelle Kuiper">
-	</picture>
-	{% endif %}
+  <input type="hidden" id="email" type="text" name="email" value="" />
+  <input class="send button" type="submit" value="Verstuur bericht">
+  <span class="checkmark">{% include svg/checkmark.svg %}</span>
+</form>
+{% if include.image%}
+<picture class="focuspoint picture">
+  <img class="img" src="/assets/img/{{ include.image }}" alt="Jelle Kuiper">
+</picture>
+{% endif %}
 {% endcapture %}
 
 {% include block/block.html classes="contactform" id="contact" %}

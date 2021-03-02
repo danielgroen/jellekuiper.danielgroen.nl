@@ -14999,45 +14999,48 @@ if ($(".mail").length > 0) {
 }
 
 // form
-var $contactForm = $(".contactform");
+$(window).on( 'load', function() {
+  console.log('form loadinga');
 
-$(".send").on("click", function (e) {
-  e.preventDefault();
-  e.stopPropagation();
-  
-  // GOOGLE TAG EVENT
-  gtag_report_conversion(window.location.href)
-  
+  $(".send").on("click", function (e) {
+    console.log('clicked');
+    e.preventDefault();
+    e.stopPropagation();
+    
+    // GOOGLE TAG EVENT
+    gtag_report_conversion(window.location.href)
+    
 
-  $(".load-wrapper").addClass("visible");
-  $(".overtake").addClass("visible");
+    $(".load-wrapper").addClass("visible");
+    $(".overtake").addClass("visible");
 
-  if ($("#email").val()) return false; // honeypot
+    if ($("#email").val()) return false; // honeypot
 
-  var body = {
-    name: $("#name").val(),
-    subject: $("#subject").val(),
-    email: $("#mail").val(),
-    honeypot: $("#email").val(),
-    message: $("#message").val(),
-  };
-  var mailHandler;
-  if (!window.location.href.includes("localhost")) {
-    mailHandler = "https://mailhandler.danielgroen.nl";
-  } else {
-    mailHandler = "http://mailhandler.test";
-  }
+    var body = {
+      name: $("#name").val(),
+      subject: $("#subject").val(),
+      email: $("#mail").val(),
+      honeypot: $("#email").val(),
+      message: $("#message").val(),
+    };
+    var mailHandler;
+    if (!window.location.href.includes("localhost")) {
+      mailHandler = "https://mailhandler.danielgroen.nl";
+    } else {
+      mailHandler = "http://mailhandler.test";
+    }
 
-  axios
-    .post(mailHandler, { jellekuiper: body })
-    .then(function (res) {
-      $(".send.button").addClass("success").attr("value", "Bericht verzonden");
-      console.log("sent");
-    })
-    .catch(function (err) {
-      console.log(err);
-      // catch error
-    });
+    axios
+      .post(mailHandler, { jellekuiper: body })
+      .then(function (res) {
+        $(".send.button").addClass("success").attr("value", "Bericht verzonden");
+        console.log("sent");
+      })
+      .catch(function (err) {
+        console.log(err);
+        // catch error
+      });
+  });
 });
 
 // grid visualizer
