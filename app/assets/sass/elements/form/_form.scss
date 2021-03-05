@@ -79,6 +79,7 @@
 		}
 
 		&[type='submit'],
+		&[type='button'],
 		.send {
 			color: $white;
 			font-weight: 800;
@@ -124,6 +125,7 @@
 		}
 
 		input[type='submit'],
+		input[type='button'],
 		.send {
 			width: calc(#{$max-width} / 37 * 15);
 

@@ -38,9 +38,7 @@ $(window).on( 'load', function() {
     e.preventDefault();
     e.stopPropagation();
     
-    // GOOGLE TAG EVENT
-    gtag_report_conversion(window.location.href)
-    
+ 
 
     $(".load-wrapper").addClass("visible");
     $(".overtake").addClass("visible");
@@ -66,6 +64,7 @@ $(window).on( 'load', function() {
       .then(function (res) {
         $(".send.button").addClass("success").attr("value", "Bericht verzonden");
         console.log("sent");
+        return gtag_report_conversion(window.location.href);
       })
       .catch(function (err) {
         console.log(err);
