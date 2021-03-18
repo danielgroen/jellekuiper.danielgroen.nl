@@ -9,7 +9,8 @@ teaserText: Omdat standaard huwelijksceremonies best wat leuker en wat minder st
 summary: Jelle Kuiper is cabaretier en buitengewoon ambtenaar, ook wel BABS hij mag in heel Nederland officieel huwelijken sluiten. Jelle is in 2014 uitgeroepen tot trouwambtenaar van het jaar bij de Dutch Wedding Awards en heeft inmiddels meer dan 500 huwelijken gesloten!
 ---
 
-{% include block/block.video.html src="https://www.youtube.com/embed/sQZcXToH1CU" %}
+<!-- TODO:: UNCOMMENT AND REPLACE VIDEO -->
+<!-- {% include block/block.video.html src="https://www.youtube.com/embed/sQZcXToH1CU" %} -->
 
 <!-- block usp -->
 <section class="block usps">
